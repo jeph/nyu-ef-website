@@ -1,0 +1,113 @@
+
+body{
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#logo{
+  width: 140%;
+  height: auto;
+  margin-left: -20%;
+  /* animation-name: fadeIn;
+  animation-duration: 4s; */
+}
+
+@keyframes fadeIn{
+  from{opacity: 0;}
+  to {opacity: 1;}
+}
+
+#headerContainer{
+  /* background-color: #151717; */
+  background-color: ##57068C;
+}
+
+
+main{
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+footer{
+  margin-top: 20%;
+}
+
+button{
+  margin-top: 3%;
+  margin-right: 2%;
+  margin-left: 2%;
+}
+
+.w3-btn:hover{
+  background-color: #1eb0bf;
+}
+
+
+
+.#aboutTag{
+  background-color:#57068C;
+}
+
+.w3-tag{
+  background-color: #57068C;
+}
+
+.w3-btn{
+  background-color: #57068C;
+  color: white;
+}
+.w3-myColor{
+  background-color: #57068C;
+
+}
+
+#stats{
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 13%;
+
+}
+
+#stats li{
+  font-size: 2em;
+
+
+}
+
+.statistics{
+  font-size: 3em;
+  margin-right: 17%;
+  margin-left: 20%;
+  color: teal;
+
+}
+
+.colorize_stats{
+  color: teal;
+}
+.animation-elements{
+  opacity: 0;
+  -moz-transition: all 700ms ease-out;
+  -webkit-transition: all 700ms ease-out;
+  -o-transition: all 700ms ease-out;
+  transition: all 700ms ease-out;
+  -moz-transform: translate3d(0px, 50px, 0px);
+  -webkit-transform: translate3d(0px, 50px, 0px);
+  -o-transform: translate(0px, 50px);
+  -ms-transform: translate(0px, 50px);
+  transform: translate3d(0px, 50, 0px);
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.in-view {
+  opacity: 1;
+  -moz-transform: translate3d(0px, 0px, 0px);
+  -webkit-transform: translate3d(0px, 0px, 0px);
+  -o-transform: translate(0px, 0px);
+  -ms-transform: translate(0px, 0px);
+  transform: translate3d(0px, 0px, 0px);
+}

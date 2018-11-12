@@ -1,0 +1,128 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <title>NYU Entrepreneurs Festival</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+    <link href = "styles/style.css" rel = "stylesheet" type = "text/css">
+    <style>
+    body,h1,h5 {font-family: "Raleway", sans-serif}
+    body, html {height: 100%}
+    .bgimg {
+      background-color: black;
+      /* background-color: #57068C; */
+      min-height: 100%;
+      background-position: center;
+      background-size: cover;
+    }
+    </style>
+
+  </head>
+
+  <body>
+
+    <div id = "home" class="bgimg w3-display-container w3-text-white">
+      <div class="w3-display-middle w3-jumbo w3-center w3-animate-opacity">
+        <img id = "logo" src = "images/logoWhite.gif">
+        <!-- <p>logo</p> -->
+        <p class="w3-xlarge w3-center">February 28- February 29, 2018</p>
+        <p class="w3-large w3-center">Leslie E-Lab</p>
+        <!-- <p class="w3-large w3-center">35 days left</p> -->
+
+      </div>
+
+      <!-- Navbar (sit on top) -->
+      <div class="w3-top">
+        <div class="w3-bar" id="myNavbar">
+          <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
+            <i class="fa fa-bars"></i>
+          </a>
+          <a href="#home" class="w3-bar-item w3-button">Home</a>
+          <a href="#about" class="w3-bar-item w3-button w3-hide-small"> About</a>
+          <a href="#portfolio" class="w3-bar-item w3-button w3-hide-small"> Schedule</a>
+          <a href="#contact" class="w3-bar-item w3-button w3-hide-small">Blah Blah</a>
+        </div>
+
+        <!-- Navbar on small screens -->
+        <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
+          <a href="#about" class="w3-bar-item w3-button" onclick="toggleFunction()">About</a>
+          <a href="#portfolio" class="w3-bar-item w3-button" onclick="toggleFunction()">Schedule</a>
+          <a href="#contact" class="w3-bar-item w3-button" onclick="toggleFunction()">Blah Blah</a>
+        </div>
+      </div>
+
+    </div>
+
+
+
+    <main>
+      <section>
+        <div class="w3-large">
+
+          <!-- About Container -->
+          <div class="w3-container" id="about">
+            <div class="w3-content" style="max-width:900px">
+              <h1 id = "slide" class="animation-elements w3-center w3-padding-64"><span id = "aboutTag" class="w3-tag w3-wide">About</span></h1>
+
+              <div id = "stats">
+                <ul class="w3-ul w3-border-bottom">
+                  <li class = "animation-elements"><span class = "statistics">20</span> Speakers</li>
+                  <li class = "animation-elements"><span class = "statistics">32</span> Exhibitions</li>
+                  <li class = "animation-elements"><span class = "statistics">10</span> Alumni</li>
+                </ul>
+                <!-- <p><span class = "statistics">20</span> Speakers</p>
+                <p><span class = "statistics">32</span> Exhibitions</p>
+                <p><span class = "statistics">1</span> Hackathon</p> -->
+
+
+              </div>
+
+
+
+              <p class = "animation-elements">The NYU Entrepreneurs Festival is an annual 2-day gathering and is the largest student-run event of
+              its kind. Through talks, workshops, & roundtables, over 1000 people gather to exchange ideas, lessons,
+              and inspiration.</p>
+              <div class="animation-elements w3-panel w3-leftbar w3-light-gray">
+                <p><i>"The bestest event I've ever been to! Wow!!!!"</i></p>
+                <p>Spongebob SquarePants</p>
+              </div>
+              <p class= "animation-elements"><strong>Date:</strong> Sometime in February</p>
+              <p class= "animation-elements"><strong>Location:</strong> 15 Adr street, 5015, NY</p>
+              <div class = "animation-elements w3-center">
+                <button class = "w3-btn w3-xlarge w3-hover-teal">See our schedule!</button>
+                <button class = "w3-btn w3-xlarge w3-hover-teal">Buy some tickets!</button>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+
+
+
+
+
+
+      </section>
+
+    </main>
+
+
+
+    <!-- Footer -->
+    <footer class="w3-center w3-black w3-padding-64">
+      <a id = "backToTop" class="backToTop w3-btn">To the top</a>
+      <div class="w3-xlarge w3-section">
+
+      </div>
+    </footer>
+
+
+    <script src= "scripts/w3Script.js"> </script>
+    <script src= "scripts/myScript.js"> </script>
+  </body>
+</html>
