@@ -1,5 +1,16 @@
+@font-face {
+    font-family: Gotham-Book;
+    src: url("fonts/Gotham-Book.otf");
+}
+
+@font-face {
+    font-family: Gotham-Bold;
+    src: url("fonts/Gotham-Bold.otf");
+}
+
 
 body{
+  font-family: Gotham-Book;
   margin-left: auto;
   margin-right: auto;
 }
@@ -43,13 +54,14 @@ button{
   background-color: #1eb0bf;
 }
 
-
-
-.#aboutTag{
-  background-color:#57068C;
+h3{
+  font-family: Gotham-Book;
 }
 
+
+
 .w3-tag{
+  font-family: Gotham-Book;
   background-color: #57068C;
 }
 
@@ -61,6 +73,7 @@ button{
   background-color: #57068C;
 
 }
+
 
 #stats{
   width: 80%;
@@ -110,4 +123,55 @@ button{
   -o-transform: translate(0px, 0px);
   -ms-transform: translate(0px, 0px);
   transform: translate3d(0px, 0px, 0px);
+}
+
+
+#speakers{
+  padding-top: 6%;
+  margin-top: 10%;
+  border-top: dashed #1eb0bf 3px;
+  /* background-color: black; */
+  /* color: white; */
+}
+#speakers img{
+
+  width: 80%;
+  height: auto;
+}
+
+
+#speakers p{
+  text-transform: uppercase;
+}
+
+#pastFestivals{
+  padding-top: 6%;
+  margin-top: 10%;
+  /* background-color: #1eb0bf; */
+  border-top: dashed #1eb0bf 3px;
+}
+
+#pastFestivals img{
+  width: 95%;
+  /* border-radius: 50%; */
+  /* height: 270px; */
+
+}
+
+#pastFestival .w3-card{
+  border-style: none !important;
+  box-shadow: none;
+}
+
+#pastFestivals .pastBios{
+  width: 90%;
+  text-align: justify;
+}
+
+#pastFestivals video{
+  margin-bottom: 5%;
+}
+
+#pastFestivals .w3-row{
+  margin-top: 8%;
 }
