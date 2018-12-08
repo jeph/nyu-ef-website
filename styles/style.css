@@ -173,7 +173,7 @@ button {
     justify-content: center;
 }
 
-#speakers-description{
+#speakers-description {
     display: flex;
     justify-content: center;
 }
@@ -184,8 +184,21 @@ button {
     width: 100%;
 }
 
-.speaker-container{
+.speaker-container {
     margin: 50px;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.speaker-container-large {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.speaker-container-large img {
+    margin: 4%;
+    min-width: 50%;
     flex-direction: row;
     flex-wrap: wrap;
 }
