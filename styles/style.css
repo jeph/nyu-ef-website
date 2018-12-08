@@ -99,6 +99,14 @@ button {
     bottom: 0px;
 }
 
+#date {
+    position: absolute;
+    right: 5%;
+    bottom: 20px;
+    z-index: 3;
+    color: white;
+}
+
 .w3-bar {
     color: black;
     font-size: 1.5rem;
@@ -130,10 +138,7 @@ button {
     color: teal;
 }
 
-#about-section {
-}
-
-#about-h1 {
+#about-h1, #speakers-h1 {
     padding-top: 40px;
 }
 
@@ -161,6 +166,28 @@ button {
 
 .colorize_stats {
     color: teal;
+}
+
+#speakers-h1 {
+    display: flex;
+    justify-content: center;
+}
+
+#speakers-description{
+    display: flex;
+    justify-content: center;
+}
+
+#speakers-container {
+    display: inline-flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.speaker-container{
+    margin: 50px;
+    flex-direction: row;
+    flex-wrap: wrap;
 }
 
 .animation-elements {

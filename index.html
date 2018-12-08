@@ -21,22 +21,22 @@
 </head>
 
 <body>
+<h1 id="date" class="w3-xlarge w3-right">March 8-9th, 2019</h1>
 <div id="home" class="bgimg w3-display-container w3-text-black">
     <div class="w3-display-middle w3-jumbo w3-center w3-animate-opacity">
         <img id="logo" src="images/landing-page-title-logo.png" alt="Pretend there's something here :)">
-        <p class="w3-xlarge w3-right">March 8-9th, 2019</p>
         <a href="https://www.eventbrite.com/e/8th-annual-nyu-entrepreneurs-festival-tickets-53021626111"
            id="get-tickets-button" class="w3-left">Get Tickets Now</a>
     </div>
     <img id="eighth-annual" class="w3-hide-small" src="images/8th-annual.png" alt="Whoops :(">
     <img id="left-blob" class="w3-hide-small" src="images/left-blob.png" alt="Whoops :(">
-    <img id="right-blob" class="w3-hide-small" src="images/right-blob.png" alt="Whoops :(">
+    <img id="right-blob" src="images/right-blob.png" alt="Whoops :(">
     <!-- Navbar-->
     <div class="w3-top">
         <div class="w3-bar" id="navbar">
             <a href="#home" class="navbar-item w3-bar-item w3-hide-small">Home</a>
             <a href="#about" class="w3-bar-item w3-hide-small">About</a>
-            <a href="" class="w3-bar-item w3-hide-small">Speakers</a>
+            <a href="#speakers" class="w3-bar-item w3-hide-small">Speakers</a>
             <a href="https://www.eventbrite.com/e/8th-annual-nyu-entrepreneurs-festival-tickets-53021626111"
                class="w3-bar-item w3-hide-small">Tickets</a>
         </div>
@@ -45,55 +45,91 @@
         <div id="navbar-mobile" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
             <a href="#home" class="w3-bar-item w3-button" onclick="toggleFunction()">Home</a>
             <a href="#about" class="w3-bar-item w3-button" onclick="toggleFunction()">About</a>
-            <a href="" class="w3-bar-item w3-button" onclick="toggleFunction()">Speakers</a>
-            <a href="" class="w3-bar-item w3-button" onclick="toggleFunction()">Tickets</a>
+            <a href="#speakers" class="w3-bar-item w3-button" onclick="toggleFunction()">Speakers</a>
+            <a href="https://www.eventbrite.com/e/8th-annual-nyu-entrepreneurs-festival-tickets-53021626111"
+               class="w3-bar-item w3-button" onclick="toggleFunction()">Tickets</a>
         </div>
     </div>
 </div>
 
-    <main>
-        <section id="about-section">
-            <div class="w3-large">
+<main>
+    <section id="about-section">
+        <div class="w3-large">
 
-                <!-- About Container -->
-                <div class="w3-container" id="about">
-                    <div class="w3-content" style="max-width:900px">
-                        <h1 id="about-h1" class="animation-elements">
+            <!-- About Container -->
+            <div class="w3-container" id="about">
+                <div class="w3-content" style="max-width:900px">
+                    <div class="animation-elements">
+                        <h1 id="about-h1">
                             <span class="about-title">About The Festival</span>
                         </h1>
-                        <div class="animation-elements">
-                            <p>The festival is a two-day celebration which features keynotes,
-                                a Hackathon, panels, roundtables, workshops, and an NYU Startup Exhibition
-                                (feat. 60+ NYU Startups). All keynotes and panelists are NYU student, faculty,
-                                or alumni entrepreneurs.</p>
+                        <p>The festival is a two-day celebration which features keynotes,
+                            a Hackathon, panels, roundtables, workshops, and an NYU Startup Exhibition
+                            (feat. 60+ NYU Startups). All keynotes and panelists are NYU student, faculty,
+                            or alumni entrepreneurs.</p>
 
-                            <p>This year's keynotes will be released soon!</p>
+                        <p>This year's keynotes will be released soon!</p>
 
-                            <p>Admission provides unlimited access to all talks, panels, and
-                                roundtables, refreshments on both days, breakfast + lunch on Saturday.
-                                1000+ Attendees</p>
-                            <br>
+                        <p>Admission provides unlimited access to all talks, panels, and
+                            roundtables, refreshments on both days, breakfast + lunch on Saturday.
+                            1000+ Attendees</p>
+                        <br>
+                    </div>
+                    <h3 class="animation-elements">Featuring</h3>
+                    <br>
+                    <h3><span class="statistics animation-elements">100+</span>NYU Alumni Entrepreneur Speakers</h3>
+                    <h3><span class="statistics animation-elements">60+</span>NYU Startups on Display</h3>
+                    <h3><span class="statistics animation-elements">3</span>Keynote Speakers</h3>
+                    <h3><span class="statistics animation-elements">14</span>Startup Roundtables</h3>
+                    <h3><span class="statistics animation-elements">6</span>Founders Workshops</h3>
+                    <h3><span class="statistics animation-elements">6</span>Entrepreneur Panels</h3>
+                    <h3><span class="statistics animation-elements">1</span>Hackathon</h3>
+                    <h3><span class="statistics animation-elements">1</span>Pitch Competition</h3>
+                    <h3><span class="statistics animation-elements">1</span>After Party</h3>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+    <br>
+    <section id="speakers-section">
+        <div class="w3-large">
+
+            <!-- About Container -->
+            <div class="w3-container" id="speakers">
+                <div class="w3-content" style="max-width:90%">
+                    <h1 id="speakers-h1" class="animation-elements">
+                        <span class="about-title">Keynote Speakers</span>
+                    </h1>
+                    <div id="speakers-description" class="animation-elements">
+                        <h2>2019 Speakers are TBA but check out our previous speakers below!</h2>
+                    </div>
+                    <div id="speakers-container">
+                    <div class="speaker-container">
+                        <img class="animation-elements" src="https://avatars.schd.ws/9/df/4909917/avatar.jpg.320x320px.jpg?0a9" alt="whoops :{">
+                        <br><br>
+                        <p class="animation-elements">Lorem ipsum dolor amet keytar gochujang roof party raclette polaroid, meh brunch messenger bag. Health goth chicharrones chartreuse poutine roof party godard everyday carry adaptogen enamel pin subway tile listicle. Next level williamsburg organic vice. Bicycle rights tote bag hammock gentrify freegan selvage la croix tofu hell of air plant. Hoodie pop-up knausgaard meh, pour-over roof party cray dreamcatcher raw denim everyday carry hashtag. Ramps cred bespoke, put a bird on it beard organic locavore occupy vaporware 3 wolf moon. Roof party letterpress lumbersexual franzen, four dollar toast chicharrones photo booth man braid messenger bag.</p>
+                    </div>
+                    <div class="speaker-container">
+                        <img class="animation-elements" src="https://avatars.schd.ws/9/df/4909917/avatar.jpg.320x320px.jpg?0a9" alt="whoops :{">
+                        <br><br>
+                        <p class="animation-elements">Lorem ipsum dolor amet keytar gochujang roof party raclette polaroid, meh brunch messenger bag. Health goth chicharrones chartreuse poutine roof party godard everyday carry adaptogen enamel pin subway tile listicle. Next level williamsburg organic vice. Bicycle rights tote bag hammock gentrify freegan selvage la croix tofu hell of air plant. Hoodie pop-up knausgaard meh, pour-over roof party cray dreamcatcher raw denim everyday carry hashtag. Ramps cred bespoke, put a bird on it beard organic locavore occupy vaporware 3 wolf moon. Roof party letterpress lumbersexual franzen, four dollar toast chicharrones photo booth man braid messenger bag.</p>
+                    </div>
+                    <div class="speaker-container">
+                        <img class="animation-elements" src="https://avatars.schd.ws/9/df/4909917/avatar.jpg.320x320px.jpg?0a9" alt="whoops :{">
+                        <br><br>
+                        <p class="animation-elements">Lorem ipsum dolor amet keytar gochujang roof party raclette polaroid, meh brunch messenger bag. Health goth chicharrones chartreuse poutine roof party godard everyday carry adaptogen enamel pin subway tile listicle. Next level williamsburg organic vice. Bicycle rights tote bag hammock gentrify freegan selvage la croix tofu hell of air plant. Hoodie pop-up knausgaard meh, pour-over roof party cray dreamcatcher raw denim everyday carry hashtag. Ramps cred bespoke, put a bird on it beard organic locavore occupy vaporware 3 wolf moon. Roof party letterpress lumbersexual franzen, four dollar toast chicharrones photo booth man braid messenger bag.</p>
                         </div>
-                        <h3 class="animation-elements">Featuring</h3>
-                        <h3><span class="statistics animation-elements">100+</span>NYU Alumni Entrepreneur Speakers</h3>
-                        <h3><span class="statistics animation-elements">60+</span>NYU Startups on Display</h3>
-                        <h3><span class="statistics animation-elements">3</span>Keynote Speakers</h3>
-                        <h3><span class="statistics animation-elements">14</span>Startup Roundtables</h3>
-                        <h3><span class="statistics animation-elements">6</span>Founders Workshops</h3>
-                        <h3><span class="statistics animation-elements">6</span>Entrepreneur Panels</h3>
-                        <h3><span class="statistics animation-elements">1</span>Hackathon</h3>
-                        <h3><span class="statistics animation-elements">1</span>Pitch Competition</h3>
-                        <h3><span class="statistics animation-elements">1</span>After Party</h3>
                     </div>
                 </div>
             </div>
-</div>
-</section>
+        </div>
+    </section>
 </main>
 
 <!-- Footer -->
 <footer class="w3-center">
-    <a id="backToTop" class="backToTop w3-btn w3-right">To The Top</a>
+    <a href="#home" id="backToTop" class="backToTop w3-btn w3-right">To The Top</a>
 </footer>
 
 <script src="scripts/w3Script.js"></script>
