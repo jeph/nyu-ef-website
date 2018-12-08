@@ -23,21 +23,19 @@
 <body>
 <div id="home" class="bgimg w3-display-container w3-text-white">
     <div class="w3-display-middle w3-jumbo w3-center w3-animate-opacity">
-        <img alt="Pretend theres something here :)" id="logo" src="images/logoWhite.gif">
-        <!-- <p>logo</p> -->
-        <p class="w3-xlarge w3-center">February 28- February 29, 2019</p>
+        <img id="logo" src="images/landing-page-title-logo.png" alt="Pretend there's something here :)">
+        <p class="w3-xlarge w3-center">February 28 - February 29, 2019</p>
         <p class="w3-large w3-center">Leslie E-Lab</p>
-        <!-- <p class="w3-large w3-center">35 days left</p> -->
     </div>
 
     <!-- Navbar-->
     <div class="w3-top">
-        <div class="w3-bar" id="myNavbar">
-            <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right"
+        <div class="w3-bar" id="navbar">
+            <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large"
                href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
                 <i class="fa fa-bars"></i>
             </a>
-            <a href="#home" class="w3-bar-item w3-button w3-hide-small">Home</a>
+            <a href="#home" class="navbar-item w3-bar-item w3-button w3-hide-small">Home</a>
             <a href="#about" class="w3-bar-item w3-button w3-hide-small">About</a>
             <a href="" class="w3-bar-item w3-button w3-hide-small">Schedule</a>
             <a href="" class="w3-bar-item w3-button w3-hide-small">Tickets</a>
@@ -60,32 +58,20 @@
             <!-- About Container -->
             <div class="w3-container" id="about">
                 <div class="w3-content" style="max-width:900px">
-                    <h1 id="slide" class="animation-elements w3-center w3-padding-64"><span id="aboutTag"
-                                                                                            class="w3-tag w3-wide">About</span>
+                    <h1 id="slide" class="animation-elements">
+                        <span class="about-title">About</span>
                     </h1>
-
-                    <!--<div id = "stats">-->
-                    <!--<ul class="w3-ul w3-border-bottom">-->
-                    <!--<li class = "animation-elements"><span class = "statistics">20</span> Speakers</li>-->
-                    <!--<li class = "animation-elements"><span class = "statistics">32</span> Exhibitions</li>-->
-                    <!--<li class = "animation-elements"><span class = "statistics">10</span> Alumni</li>-->
-                    <!--</ul>-->
-                    <!--&lt;!&ndash; <p><span class = "statistics">20</span> Speakers</p>-->
-                    <!--<p><span class = "statistics">32</span> Exhibitions</p>-->
-                    <!--<p><span class = "statistics">1</span> Hackathon</p> &ndash;&gt;-->
-                    <!--</div>-->
-
                     <p class="animation-elements">Speakers will go here
                         and inspiration.</p>
-                    <div class="animation-elements w3-panel w3-leftbar w3-light-gray">
+                    <div class="animation-elements w3-panel w3-leftbar">
                         <p><i>"The bestest event I've ever been to! Wow!!!!"</i></p>
                         <p>Spongebob SquarePants</p>
                     </div>
                     <p class="animation-elements"><strong>Date:</strong> Sometime in February</p>
                     <p class="animation-elements"><strong>Location:</strong> 15 Adr street, 5015, NY</p>
                     <div class="animation-elements w3-center">
-                        <button class="w3-btn w3-xlarge w3-hover-teal">See our schedule!</button>
-                        <button class="w3-btn w3-xlarge w3-hover-teal">Buy some tickets!</button>
+                        <button class="w3-btn w3-xlarge">See our schedule!</button>
+                        <button class="w3-btn w3-xlarge">Buy some tickets!</button>
                     </div>
                 </div>
             </div>
@@ -97,7 +83,7 @@
         <!-- About Container -->
         <div class="w3-container" id="speakers">
             <div class="w3-content" style="max-width:900px">
-                <h1 id="slide" class="animation-elements w3-center w3-padding-64"><span id="aboutTag"
+                <h1 id="slide2" class="animation-elements w3-center w3-padding-64"><span id="aboutTag"
                                                                                         class="w3-tag w3-wide">Speakers</span>
                 </h1>
                 <p class="animation-elements">The NYU Entrepreneurs Festival is an annual 2-day gathering and is the
@@ -113,16 +99,12 @@
         </div>
     </div>
     <section>
-
     </section>
 </main>
 
 <!-- Footer -->
-<footer class="w3-center w3-black w3-padding-64">
-    <a id="backToTop" class="backToTop w3-btn">To the top</a>
-    <div class="w3-xlarge w3-section">
-
-    </div>
+<footer class="w3-center">
+    <a id="backToTop" class="backToTop w3-btn w3-right">To The Top</a>
 </footer>
 
 <script src="scripts/w3Script.js"></script>

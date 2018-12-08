@@ -1,5 +1,3 @@
-
-
 $(document).ready(function(){
 
   $window.on('scroll resize', check_if_in_view);
@@ -8,13 +6,7 @@ $(document).ready(function(){
   var topButton = $("#backToTop");
   topButton.on("click", function(){
     $("html, body").animate({ scrollTop: 0 }, "slow");
-
-
-
-
   });
-
-
 });
 
 var $animation_elements = $('.animation-elements');
@@ -37,9 +29,5 @@ function check_if_in_view() {
     } else {
       $element.removeClass('in-view');
     }
-
-
-
-
   });
 }

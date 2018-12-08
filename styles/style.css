@@ -39,18 +39,11 @@ body, html {height: 100%}
   width: 140%;
   height: auto;
   margin-left: -20%;
-  /* animation-name: fadeIn;
-  animation-duration: 4s; */
 }
 
 @keyframes fadeIn{
   from {opacity: 0;}
   to {opacity: 1;}
-}
-
-#headerContainer{
-  /* background-color: #151717; */
-  background-color: #57068C;
 }
 
 main{
@@ -71,6 +64,7 @@ button{
 
 .w3-top {
   margin: auto;
+  background-color: white;
   padding: 10px;
 }
 
@@ -86,25 +80,12 @@ button{
   margin-right: 3rem;
 }
 
-.w3-btn:hover{
-  background-color: #1eb0bf;
+#slide{
+  padding-top: 40px;
 }
 
-.aboutTag{
-  background-color:#57068C;
-}
-
-.w3-tag{
-  background-color: #57068C;
-}
-
-.w3-btn{
-  background-color: #57068C;
-  color: white;
-}
-
-.w3-myColor{
-  background-color: #57068C;
+.about-title {
+  font-size: 4rem;
 }
 
 #stats{
