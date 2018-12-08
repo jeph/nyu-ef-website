@@ -83,7 +83,13 @@ button {
     max-width: 10%;
     height: auto;
     position: absolute;
+    z-index: 3;
+}
+
+#left-blob {
+    max-height: 100vh;
     z-index: 2;
+    position: absolute;
 }
 
 .w3-bar {
