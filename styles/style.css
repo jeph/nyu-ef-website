@@ -92,6 +92,13 @@ button {
     position: absolute;
 }
 
+#right-blob {
+    position: absolute;
+    max-height: 30%;
+    right: 0px;
+    bottom: 0px;
+}
+
 .w3-bar {
     color: black;
     font-size: 1.5rem;
@@ -109,7 +116,7 @@ button {
     color: teal;
 }
 
-#navbar-mobile{
+#navbar-mobile {
     background-color: blue;
 }
 
