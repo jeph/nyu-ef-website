@@ -96,10 +96,21 @@ button {
 .w3-bar-item {
     margin-left: 3rem;
     margin-right: 3rem;
+    text-decoration: none;
+}
+
+.w3-bar-item:hover {
+    color: teal;
 }
 
 #get-tickets-button {
+    font-family: "Gotham-Rounded-Bold", Arial, sans-serif;
+    font-size: 1.5rem;
     text-decoration: underline;
+}
+
+#get-tickets-button:hover {
+    color: teal;
 }
 
 #about-section {
