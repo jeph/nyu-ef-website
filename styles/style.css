@@ -83,7 +83,7 @@ button {
     max-width: 10%;
     height: auto;
     position: absolute;
-    z-index: 9000;
+    z-index: 2;
 }
 
 .w3-bar {
@@ -101,6 +101,10 @@ button {
 
 .w3-bar-item:hover {
     color: teal;
+}
+
+#navbar-mobile{
+    background-color: blue;
 }
 
 #get-tickets-button {
@@ -138,8 +142,7 @@ button {
 
 .statistics {
     font-size: 3em;
-    margin-right: 17%;
-    margin-left: 20%;
+    margin-right: 4%;
     color: teal;
 }
 
