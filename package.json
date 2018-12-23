@@ -1,0 +1,22 @@
+{
+  "name": "nyu-ef-website",
+  "version": "1.0.0",
+  "description": "A website for the NYU Entrepreneurs Festival",
+  "main": "src/index.html",
+  "scripts": {
+    "start-dev": "live-server --host=127.0.0.1 --port=8081 --open=/ --mount=/:src --watch=src"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jeph/nyu-ef-website.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jeph/nyu-ef-website/issues"
+  },
+  "homepage": "https://github.com/jeph/nyu-ef-website#readme",
+  "devDependencies": {
+    "live-server": "^1.2.1"
+  }
+}
