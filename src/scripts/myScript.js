@@ -3,9 +3,9 @@ $(document).ready(function(){
   $window.on('scroll resize', check_if_in_view);
   $window.trigger('scroll');
 
-  const topButton = $("#backToTop");
-  topButton.on("click", function(){
-    $("html, body").animate({ scrollTop: 0 }, "slow");
+  const topButton = $('#backToTop');
+  topButton.on('click', function(){
+    $('html, body').animate({ scrollTop: 0 }, 'slow');
   });
 });
 
@@ -24,7 +24,7 @@ function check_if_in_view() {
     const element_bottom_position = (element_top_position + element_height);
 
     //check to see if this current container is within viewport
-    if ((element_top_position <= window_bottom_position) && (element_bottom_position <= window_bottom_position)) {
+    if ((element_top_position <= window_bottom_position) || (element_bottom_position <= window_bottom_position)) {
       $element.addClass('in-view');
     } else {
       $element.removeClass('in-view');
