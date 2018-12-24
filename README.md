@@ -4,7 +4,7 @@ The promotional and informational website for the NYU Entrepreneur's Festival
 ## Quickstart
 Ensure you have node installed.
 
-Open terminal and `cd` into project root
+Open terminal or command line and change directory into project root directory
 
 Install node modules: 
 ```
