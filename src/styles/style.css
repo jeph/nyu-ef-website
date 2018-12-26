@@ -193,33 +193,14 @@ button {
     color: teal;
 }
 
-#speakers-h1 {
-    display: flex;
-    justify-content: center;
-}
 
-#speakers-content {
-    margin: 0;
-    padding: 0;
+#speakers-container{
+  display: flex;
 }
-
-#speakers-description {
-    display: flex;
-    justify-content: center;
-}
-
-#speakers-container {
-    width: 100%;
-    margin: 0;
-    padding: 0;
-}
-
 .speaker-container {
-    display: inline-block;
-    margin: 3rem;
-    width: 250px;
-    flex-direction: row;
     flex-wrap: wrap;
+    width: 31%;
+    margin: 2%;
 }
 
 .speaker-container-large {
