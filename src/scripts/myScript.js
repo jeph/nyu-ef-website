@@ -3,6 +3,12 @@ $(document).ready(function(){
   lineScroll();
 
   $window.on('scroll', navScroll);
+
+  const mq = window.matchMedia( "(min-width: 600px)" );
+  if (mq.matches) {
+    $window.on('scroll', animateFooterLogo);
+  }
+  
   $window.on('scroll resize', check_if_in_view);
   $window.trigger('scroll');
 
@@ -38,16 +44,15 @@ function check_if_in_view() {
 
 // function that adds nav shadow on scroll
 function navScroll(){
-  console.log($(window).scrollTop());
   if($(window).scrollTop() >= 100) {
     $("#navbar-container").css("box-shadow", "0 5px 5px grey");
-    $(".navbar-item").each(function(){
+    $(".w3-bar-item").each(function(){
       $(this).css("color", "black");
     });
   } else{
     $("#navbar-container").css("box-shadow", "none");
-    $(".navbar-item").each(function(){
-      $(this).css("color", "grey");
+    $(".w3-bar-item").each(function(){
+      $(this).css("color", "gray");
     });
   }
 
@@ -76,4 +81,13 @@ function lineScroll(){
     // Reverse the drawing (when scrolling upwards)
     line.style.strokeDashoffset = length - draw;
   }
+}
+
+function animateFooterLogo(){
+  if($(window).scrollTop() + $(window).height() == $(document).height()){
+    $('#footer-logo').toggleClass('footerLogoAnimate');
+
+  }
+
+
 }

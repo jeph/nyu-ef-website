@@ -131,7 +131,7 @@ button {
 }
 
 .w3-bar {
-    color: black;
+    /* color: black; */
     font-size: 1.5rem;
     display: flex;
     justify-content: center;
@@ -139,18 +139,16 @@ button {
 }
 
 .w3-bar-item {
+    color: gray;
     padding-left: 10rem;
     padding-right: 3rem;
     text-decoration: none;
 }
 
-.navbar-item:hover {
+.w3-bar-item:hover {
     color: #57068c !important;
 }
 
-#navbar-mobile {
-    background-color: blue;
-}
 
 #get-tickets-button {
     font-family: "Gotham-Rounded-Bold", Arial, sans-serif;
@@ -166,6 +164,9 @@ button {
     padding-top: 40px;
 }
 
+#featuring{
+  font-size: 2em;
+}
 .about-title {
     font-size: 4rem;
 }
@@ -249,8 +250,9 @@ button {
     transform: translate3d(0px, 0px, 0px);
 }
 
+
+/* stats grid styling */
 .grid-container {
-  /* justify-items: right; */
   column-gap: 2%;
   align-items: center;
   display: grid;
@@ -262,3 +264,160 @@ button {
 .gridAlignStats{
   justify-self: center;
 }
+
+/* footer styles */
+footer{
+  text-align: center;
+  height: 20%;
+  border-top: 1px solid grey;
+  /* background-color: purple; */
+  padding: 10%;
+}
+#footer-logo{
+  width: 5%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#footer-logo:hover{
+  animation-name: slightBounce;
+  animation-duration: 1s;
+}
+
+#backToTop{
+  font-size: 1.2em;
+  margin-top: 2%;
+}
+
+.footerLogoAnimate{
+  animation-name: toggleZoom;
+  animation-duration: 1s;
+}
+@keyframes toggleZoom {
+  0% {width: 5%;}
+  50% {width: 8%;}
+  100% {width: 5%;}
+}
+
+@keyframes slightBounce {
+  0% {transform:translateY(0%);}
+  50% {transform:translateY(-15%);}
+  100% {transform:translateY(0%);}
+
+}
+
+
+/* for-phones */
+@media screen and (max-width: 509px) {
+
+  #logo{
+    width: 180%;
+    margin-left: -40%;
+  }
+  main{
+    width: 92%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+
+  /* navbar */
+  #hamburger{
+    position: absolute;
+    right: 0;
+    font-size: 1.3em;
+    padding: .5% 2% .5% 2%;
+    background-color: white;
+  }
+
+  #eighth-annual-container{
+    width: 100%;
+    background-color: white;
+    height: 50px;
+    padding-bottom: 5%;
+  }
+  #navbar{
+    background-color: white;
+    width: 100%;
+    top: 50px;
+    position: absolute;
+  }
+
+  /* resize stats grid */
+  h3{
+    font-size: 1.1em;
+  }
+
+  .grid-container {
+    column-gap: 5%;
+    grid-template-columns: auto auto;
+
+  }
+
+  /* undo speakers flex */
+  #speakers-container{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .speaker-container {
+    text-align: center;
+    width: 100%;
+    margin-top: 40%;
+
+  }
+
+  .speaker-container h3, .speaker-container h4, .speaker-container p {
+    text-align: justify;
+  }
+
+  .speaker-container img {
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .about-title{
+    font-size: 1.2em;
+
+  }
+
+  .sectionSubjectTitle{
+    text-align: center;
+  }
+
+  .speaker-container p{
+    line-height: 1.8;
+  }
+
+  #footer-logo{
+    width: 15%;
+  }
+
+  #backToTop{
+    padding-bottom: 10%;
+  }
+
+
+}
+
+/* for-tablet-portrait-up */
+@media screen and (min-width: 600px) {
+  selector { property: value; }
+}
+
+/* for-tablet-landscape-up */
+@media screen and (min-width: 900px) {
+  selector { property: value; }
+}
+
+/*
+@media screen and (min-width: 768px) {
+  selector { property: value; }
+}
+
+
+@media screen and (min-width: 768px) {
+  selector { property: value; }
+} */

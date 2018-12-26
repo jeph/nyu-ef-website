@@ -23,6 +23,8 @@
     <link rel="stylesheet" type="text/css" href="blobs/css/normalize.css" />
 		<link rel="stylesheet" type="text/css" href="blobs/css/demo.css" />
 
+    <!-- media query stylesheets -->
+
 </head>
 
 <body class= "loading">
@@ -56,29 +58,32 @@
     <img id="left-blob-mobile" class="w3-hide-medium w3-hide-large" src="images/left-blob-mobile.png" alt="Whoops :(">
 
     <div id="navbar-container" class="w3-top">
-        <span class="w3-bar" id="navbar">
-            <span id="eighth-annual-container">
-                <img id="eighth-annual" class="w3-hide-small w3-hide-medium" src="images/8th-annual.png" alt="Whoops :(">
-            </span>
-            <a href="#home" class="navbar-item w3-bar-item w3-hide-small">Home</a>
-            <a href="#about" class="navbar-item w3-bar-item w3-hide-small">About</a>
-            <a href="#speakers" class="navbar-item w3-bar-item w3-hide-small">Speakers</a>
-            <a href="https://www.eventbrite.com/e/8th-annual-nyu-entrepreneurs-festival-tickets-53021626111"
-               class="navbar-item w3-bar-item w3-hide-small">Tickets</a>
-        </span>
 
-        <div id="navbar-mobile" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
-            <a href="#home" class="w3-bar-item w3-button" onclick="toggleFunction()">Home</a>
-            <a href="#about" class="w3-bar-item w3-button" onclick="toggleFunction()">About</a>
-            <a href="#speakers" class="w3-bar-item w3-button" onclick="toggleFunction()">Speakers</a>
+      <div id="navbar-mobile" class="w3-bar w3-white">
+          <span id="eighth-annual-container">
+              <img id="eighth-annual" src="images/8th-annual.png" alt="Whoops :(">
+          </span>
+          <a href="#home" class="w3-bar-item w3-button w3-hide-small">Home</a>
+          <a href="#about" class="w3-bar-item w3-button w3-hide-small" >About</a>
+          <a href="#speakers" class="w3-bar-item w3-button w3-hide-small" >Speakers</a>
+          <a href="https://www.eventbrite.com/e/8th-annual-nyu-entrepreneurs-festival-tickets-53021626111"
+             class="w3-bar-item w3-button w3-hide-small">Tickets</a>
+          <a id = "hamburger" href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="toggleFunction()">&#9776;</a>
+      </div>
+
+      <div id="navbar" class="w3-bar-block w3-hide w3-hide-large w3-hide-medium">
+            <a href="#home" class="navbar-item w3-bar-item w3-button" onclick="toggleFunction()">Home</a>
+            <a href="#about" class="navbar-item w3-bar-item w3-button" onclick="toggleFunction()">About</a>
+            <a href="#speakers" class="navbar-item w3-bar-item w3-button" onclick="toggleFunction()">Speakers</a>
             <a href="https://www.eventbrite.com/e/8th-annual-nyu-entrepreneurs-festival-tickets-53021626111"
-               class="w3-bar-item w3-button" onclick="toggleFunction()">Tickets</a>
-        </div>
+               class="navbar-item w3-bar-item w3-button" onclick="toggleFunction()">Tickets</a>
+      </div>
+
+
     </div>
 </div>
 <svg id= "lineSvg" height= "50px" width="10000px">
   <path fill="none" stroke="#57068c" stroke-width="4" id="line" d="M0 0 L10000 0 Z"/>
-  <!-- <line x1="0" y1="0" x2="100%" y2="0" style="stroke:rgb(255,0,0);stroke-width:2" /> -->
 </svg>
 <main>
     <section id="about-section">
@@ -88,7 +93,7 @@
             <div class="w3-container" id="about">
                 <div class="w3-content">
                     <div class="animation-elements">
-                        <h1 id="about-h1">
+                        <h1 id="about-h1" class= "sectionSubjectTitle">
                             <span class="about-title">About The Festival</span>
                         </h1>
                         <h3 style="color: #1eb0bf">The NYU Entrepreneurs Festival is a 2-day celebration of student entrepreneurship.</h3>
@@ -104,7 +109,7 @@
                         <p>This year's speakers and event topics will be released soon.</p>
                         <br>
                     </div>
-                    <h3 class="animation-elements">Featuring</h3>
+                    <h3 id = "featuring" class="animation-elements">Featuring</h3>
                     <br>
 
                     <div class="grid-container">
@@ -160,13 +165,13 @@
             <!-- Speakers Container -->
             <div class="w3-container" id="speakers">
                 <div id="speakers-content" class="w3-content" style="max-width:90%">
-                    <h1 id="speakers-h1" class="animation-elements">
+                    <h1 id="speakers-h1" class= "sectionSubjectTitle">
                         <span class="about-title">Keynote Speakers</span>
                     </h1>
                     <div id="speakers-description" class="animation-elements">
                         <span>
-                            <h2 style = "text-align: center; color: #57068c">Speakers for the 2019 Festival will be announcened soon.</h2>
-                            <h3 style="text-align: center">Check out our previous speakers below!</h3>
+                            <h2 style = "color: #57068c">Speakers for the 2019 Festival will be announced soon.</h2>
+                            <h3>Check out our previous speakers below!</h3>
                         </span>
                     </div>
                     <!--<div class="speaker-container-large">-->
@@ -267,7 +272,9 @@
   </main>
 
   <footer class="w3-center">
-      <a href="#home" id="backToTop" class="backToTop w3-btn w3-right">To The Top</a>
+      <a href= "#home"><img id="footer-logo" src="images/colorLogo.png" alt="Pretend there's something here :)"></a><br>
+      <a href="#home" id="backToTop" class="backToTop w3-btn">To The Top</a>
+
   </footer>
 
   <script src="scripts/w3Script.js"></script>
