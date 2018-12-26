@@ -224,6 +224,10 @@ button {
     flex-wrap: wrap;
 }
 
+.speakersPics{
+  border-radius: 50%;
+}
+
 .animation-elements {
     opacity: 0;
     -moz-transition: all 700ms ease-out;
