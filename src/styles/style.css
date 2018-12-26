@@ -144,8 +144,8 @@ button {
     text-decoration: none;
 }
 
-.w3-bar-item:hover {
-    color: teal;
+.navbar-item:hover {
+    color: #57068c !important;
 }
 
 #navbar-mobile {
@@ -247,4 +247,18 @@ button {
     -o-transform: translate(0px, 0px);
     -ms-transform: translate(0px, 0px);
     transform: translate3d(0px, 0px, 0px);
+}
+
+.grid-container {
+  /* justify-items: right; */
+  column-gap: 2%;
+  align-items: center;
+  display: grid;
+  justify-content: center;
+  grid-template-columns: 25% auto;
+
+}
+
+.gridAlignStats{
+  justify-self: center;
 }
