@@ -102,10 +102,11 @@ button {
     filter: progid:DXImageTransform.Microsoft.BasicImage(invert='1');
 }
 
-#left-blob {
+#leftBlob {
     max-height: 100vh;
     z-index: 0;
     position: absolute;
+    left: -30px;
 }
 
 #left-blob-mobile {
@@ -115,16 +116,16 @@ button {
     left: 0;
 }
 
-#right-blob {
+#rightBlob {
     position: absolute;
     max-height: 30%;
-    right: 0;
+    right: -60px;
     bottom: 0;
 }
 
 #date {
     position: absolute;
-    right: 5%;
+    right: 2%;
     bottom: 20px;
     z-index: 3;
     color: white;
@@ -320,6 +321,9 @@ footer{
     margin-right: auto;
   }
 
+  #rightBlob{
+    right: -70px;
+  }
 
   /* navbar */
   #hamburger{
@@ -404,20 +408,14 @@ footer{
 
 /* for-tablet-portrait-up */
 @media screen and (min-width: 600px) {
-  selector { property: value; }
+  #rightBlob{
+    right: -80px;
+  }
 }
 
 /* for-tablet-landscape-up */
 @media screen and (min-width: 900px) {
-  selector { property: value; }
+  #rightBlob{
+    right: -80px;
+  }
 }
-
-/*
-@media screen and (min-width: 768px) {
-  selector { property: value; }
-}
-
-
-@media screen and (min-width: 768px) {
-  selector { property: value; }
-} */
