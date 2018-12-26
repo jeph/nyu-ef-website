@@ -135,7 +135,6 @@ button {
     font-size: 1.5rem;
     display: flex;
     justify-content: center;
-    box-shadow: 0 5px 5px grey;
     margin: 0;
 }
 
@@ -203,6 +202,9 @@ button {
     margin: 2%;
 }
 
+.speaker-container img{
+  width: 95%;
+}
 .speaker-container-large {
     display: flex;
     align-items: center;

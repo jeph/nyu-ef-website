@@ -1,5 +1,5 @@
 $(document).ready(function(){
-
+  $window.on('scroll', navShadow);
   $window.on('scroll resize', check_if_in_view);
   $window.trigger('scroll');
 
@@ -30,4 +30,16 @@ function check_if_in_view() {
       $element.removeClass('in-view');
     }
   });
+}
+
+
+// function that adds nav shadow on scroll
+function navShadow(){
+  console.log($(window).scrollTop());
+  if($(window).scrollTop() >= 100) {
+    $("#navbar-container").css("box-shadow", "0 5px 5px grey");
+  } else{
+    $("#navbar-container").css("box-shadow", "none");
+  }
+
 }
