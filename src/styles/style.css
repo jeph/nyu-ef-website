@@ -193,13 +193,17 @@ button {
 }
 
 
+/* Note: position relative needed for blob positioning */
 #speakers-container{
+  margin-top: 10%;
+  position: relative;
   display: flex;
 }
 .speaker-container {
-    flex-wrap: wrap;
-    width: 31%;
-    margin: 2%;
+  position: relative;
+  flex-wrap: wrap;
+  width: 31%;
+  margin: 2%;
 }
 
 .speaker-container img{
@@ -233,6 +237,8 @@ button {
     -moz-backface-visibility: hidden;
     backface-visibility: hidden;
 }
+
+
 
 .in-view {
     opacity: 1;
