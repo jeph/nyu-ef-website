@@ -151,14 +151,34 @@ main {
 	left: -50px;
 }
 
+#speakerBlob1Hidden{
+	top: -70px;
+	left: 190px;
+	z-index: -1;
+	width: 40%;
+}
 #speakerBlob2{
 	top: -120px;
 	left: -20px;
 }
 
+#speakerBlob2Hidden{
+	top: -90px;
+	left: 23%;
+	z-index: -1;
+	width: 40%;
+}
+
 #speakerBlob3{
 	top: -120px;
 	left: -30px;
+}
+
+#speakerBlob3Hidden{
+	top: -70px;
+	left: 27%;
+	z-index: -1;
+	width: 40%;
 }
 
 .item:nth-of-type(even) {

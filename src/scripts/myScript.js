@@ -108,3 +108,14 @@ function animateFooterLogo(){
 
 
 }
+
+
+function revealFullSpeakerBios(id){
+  $(".speaker-container").hide();
+  $(id).fadeIn();
+}
+
+function hideFullSpeakerBios(id){
+  $(id).hide();
+  $(".speaker-container").fadeIn();
+}

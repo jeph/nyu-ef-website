@@ -168,6 +168,12 @@ button {
 #featuring{
   font-size: 2em;
 }
+
+.featureHighlights{
+  color: #57068c;
+  font-size: 1.2em;
+  font-weight: bold;
+}
 .about-title {
     font-size: 4rem;
 }
@@ -197,6 +203,7 @@ button {
 
 /* Note: position relative needed for blob positioning */
 #speakers-container{
+  text-align: left;
   margin-top: 10%;
   position: relative;
   display: flex;
@@ -206,6 +213,10 @@ button {
   flex-wrap: wrap;
   width: 31%;
   margin: 2%;
+
+}
+.speaker-container:hover{
+  cursor: pointer;
 }
 
 .speaker-container img{
@@ -227,6 +238,18 @@ button {
 .speakersPics{
   border-radius: 50%;
 }
+
+.speaker-container-hidden{
+  display: none;
+  position: relative;
+  text-align: center;
+}
+
+.speaker-container-hidden p{
+  text-align: left;
+}
+
+
 
 .animation-elements {
     opacity: 0;
