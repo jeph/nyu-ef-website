@@ -8,6 +8,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="styles/style.css" rel="stylesheet" type="text/css">
 
     <title>NYU Entrepreneur's Festival</title>
@@ -86,12 +87,11 @@
     <svg id= "leftBlob" class="w3-hide-small" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="350.4px"
       height="767.3px" viewBox="0 0 350.4 767.3" style="enable-background:new 0 0 350.4 767.3;" xml:space="preserve">
         <defs>
-            <linearGradient id="MyGradient" x1="-749.51" y1="619.99" x2="916.16" y2="1766.26" gradientUnits="userSpaceOnUse">
-    					<stop offset="0" stop-color="#19afbe"/><stop offset="1" stop-color="#562b85"/>
-
-            </linearGradient>
+          <linearGradient id="leftGradient" x1="-182.5" y1="184.96" x2="381.79" y2="573.29" gradientUnits="userSpaceOnUse">
+            <stop offset="0" stop-color="#19afbe"/><stop offset="1" stop-color="#562b85"/>
+          </linearGradient>
         </defs>
-        <path id="left-blob" fill= "url(#MyGradient)" class="path"  stroke-miterlimit="10" d="M350.4,0c-4.4,8.8-9.8,16.9-15.5,24.8c-15.4,21-33.4,39.6-53.1,56.5c-18.5,15.8-38.3,29.9-60,41.2c-8.4,4.4-17,8.1-25.6,12
+        <path id="left-blob" fill= "url(#leftGradient)" class="path"  stroke-miterlimit="10" d="M350.4,0c-4.4,8.8-9.8,16.9-15.5,24.8c-15.4,21-33.4,39.6-53.1,56.5c-18.5,15.8-38.3,29.9-60,41.2c-8.4,4.4-17,8.1-25.6,12
          c-4.5,2.1-9.1,3.9-13.6,5.9c-25.7,11.7-44.8,30.3-58.1,55.1c-5.2,9.8-9.3,20-13.2,30.3c-6.7,17.8-13.3,35.7-20.3,53.4
          c-9,23-19.8,45.3-32.3,66.8c-0.6,1.1-1.4,2.1-2.1,3.1c-2.7,3.5-5,7.2-7.5,10.8c-10.7,15.3-15.4,32.5-15.8,51
          c-0.4,16,3.4,31.1,9.5,45.7c4.5,10.6,10.1,20.7,16.3,30.4c9,14,18.9,27.4,29.2,40.4c13.5,17.1,27.1,34,40.5,51.2
@@ -119,10 +119,10 @@
       <svg id= "rightBlob" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="429.2px"
       	 height="270.2px" viewBox="0 0 429.2 270.2" style="enable-background:new 0 0 429.2 270.2;" xml:space="preserve">
           <defs>
-              <linearGradient id="rightGradient" x1="-749.51" y1="619.99" x2="916.16" y2="1766.26" gradientUnits="userSpaceOnUse">
-      					<stop offset="0" stop-color="#19afbe"/><stop offset="1" stop-color="#562b85"/>
+            <linearGradient id="rightGradient" x1="-77.85" y1="67.01" x2="416.27" y2="335.37" gradientUnits="userSpaceOnUse">
+              <stop offset="0" stop-color="#19afbe"/><stop offset="1" stop-color="#562b85"/>
+            </linearGradient>
 
-              </linearGradient>
           </defs>
           <path id="right-blob" fill= "url(#rightGradient)" class="path"  stroke-miterlimit="10" d="M429.2,270c-1.9,0.1-3.8,0.2-5.7,0.2c-139-0.1-278-0.3-417-0.4c-2.1,0-4.1,0.2-6.2-0.3c-0.8-1.8,0.1-3.2,0.7-4.7
           	c3.5-9.6,6.9-19.3,10.6-28.8c10-26,21-51.5,33.8-76.3c11.3-21.9,23.9-43.1,38.4-63c15-20.6,31.9-39.6,51.8-55.7
@@ -378,8 +378,29 @@
   </main>
 
   <footer class="w3-center">
+    <div class="footer-grid-container">
+      <div class="footer-grid-item footerNoShow">
+        <h3>Contact Us</h3>
+        <a href= "https://www.facebook.com/NYUEntrepreneur/" target="_blank"><i class="fa fa-facebook-square w3-xxlarge" aria-hidden="true"></i></a>
+        <a href= "https://twitter.com/NYUEntrepreneur" target="_blank"><i class="fa fa-twitter-square w3-xxlarge" aria-hidden="true"></i></a>
+        <a href= "mailto:entrepreneur@nyu.edu" target="_blank"><i class="fa fa-envelope-square w3-xxlarge" aria-hidden="true"></i></a>
+        <h4>NYU Stern School of Business</h4>
+        <p>44 West 4th Street New York, NY 10012</p>
+      </div>
+
+      <div class="footer-grid-item poweredBy footerNoShow">
+        <h3>Powered By:</h3>
+        <img src = "images/footer/entrepreneurialInstitute.png" alt = "entrepreneurial institute logo" width= "500" height = "88">
+        <img src = "images/footer/NYUStern.png" alt = "NYU Stern logo" width= "500" height = "313"><br>
+        <img src = "images/footer/entrepreneursNetwork.png" alt = "Entrepreneurs Network logo" width= "500" height = "55">
+      </div>
+
+    </div>
+
+    <div class="backToTop">
       <a href= "#home"><img id="footer-logo" src="images/colorLogo.png" alt="Pretend there's something here :)"></a><br>
       <a href="#home" id="backToTop" class="backToTop w3-btn">To The Top</a>
+    </div>
 
   </footer>
 

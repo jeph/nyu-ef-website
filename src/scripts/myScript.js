@@ -7,8 +7,11 @@ $(document).ready(function(){
   const mq = window.matchMedia( "(min-width: 600px)" );
   if (mq.matches) {
     $window.on('scroll', animateFooterLogo);
+  } else{
+    // $("footer").css("background-color", "#57068c");
+    $('#footer-logo').attr('src', "images/whiteLogo.png");
   }
-  
+
   $window.on('scroll resize', check_if_in_view);
   $window.trigger('scroll');
 
@@ -85,8 +88,22 @@ function lineScroll(){
 
 function animateFooterLogo(){
   if($(window).scrollTop() + $(window).height() == $(document).height()){
+    $('#footer-logo').attr('src', "images/whiteLogo.png");
     $('#footer-logo').toggleClass('footerLogoAnimate');
+    $('#footer-logo').css('width', "6%");
+    $("footer").css("background", "#57068c");
+    $("footer").css("transition", "background 1s");
+    $("#backToTop").addClass("w3-white");
+    $(".footer-grid-item a:link").css("color","#1eb0bf");
+    $(".footer-grid-item i").css("color","#1eb0bf");
 
+
+  } else{
+    $("#backToTop").removeClass("w3-white");
+    $('#footer-logo').attr('src', "images/colorLogo.png");
+    $("footer").css("background-color", "white");
+    $(".footer-grid-item a:link").css("color","white");
+    $(".footer-grid-item i").css("color","white");
   }
 
 

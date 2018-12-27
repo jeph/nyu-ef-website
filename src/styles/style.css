@@ -140,7 +140,7 @@ button {
 }
 
 .w3-bar-item {
-    color: gray;
+    color: rgba(0,0,0,.6);
     padding-left: 10rem;
     padding-right: 3rem;
     text-decoration: none;
@@ -158,7 +158,7 @@ button {
 }
 
 #get-tickets-button:hover {
-    color: teal;
+    color: #1eb0bf;
 }
 
 #about-h1, #speakers-h1 {
@@ -187,11 +187,11 @@ button {
 .statistics {
     font-size: 3em;
     margin-right: 4%;
-    color: teal;
+    color: #1eb0bf;
 }
 
 .colorize_stats {
-    color: teal;
+    color: #1eb0bf;
 }
 
 
@@ -272,10 +272,10 @@ button {
 
 /* footer styles */
 footer{
+  font-family: "Gotham-Medium", Arial, sans-serif;
   text-align: center;
-  height: 20%;
-  border-top: 1px solid grey;
-  /* background-color: purple; */
+  height: 80%;
+  border-top: 1px solid rgba(0,0,0,.6);
   padding: 10%;
 }
 #footer-logo{
@@ -288,6 +288,20 @@ footer{
   animation-name: slightBounce;
   animation-duration: 1s;
 }
+
+.footer-grid-container{
+  display: grid;
+  grid-template-columns: 50% 50%;
+  justify-content: center;
+  justify-items: center;
+}
+
+.poweredBy img{
+  width: 40%;
+  height: auto;
+}
+
+
 
 #backToTop{
   font-size: 1.2em;
@@ -311,6 +325,19 @@ footer{
 
 }
 
+
+
+.footerNoShow{
+  color: white;
+}
+
+.footer-grid-item a:link, .footer-grid-item i{
+  color: white;
+}
+
+.footer-grid-item a:link:hover, .footer-grid-item i:hover{
+  color: #DEDEE7 !important;
+}
 
 /* for-phones */
 @media screen and (max-width: 509px) {
@@ -405,6 +432,33 @@ footer{
 
   #backToTop{
     padding-bottom: 10%;
+  }
+
+  footer{
+    color: white;
+    background-color: #57068c;
+  }
+  .poweredBy img{
+    width: 100%;
+    height: auto;
+  }
+
+  .footer-grid-container{
+    column-gap: 10%;
+
+  }
+
+  .footer-grid-container i, .footer-grid-container a:link{
+    color: #1eb0bf;
+
+  }
+
+  .backToTop{
+    margin-top: 15%;
+  }
+
+  .backToTop:hover{
+    color: white;
   }
 
 
