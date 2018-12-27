@@ -4,7 +4,7 @@ $(document).ready(function(){
 
   $window.on('scroll', navScroll);
 
-  const mq = window.matchMedia( "(min-width: 600px)" );
+  const mq = window.matchMedia( "(min-width: 900px)" );
   if (mq.matches) {
     $window.on('scroll', animateFooterLogo);
   } else{

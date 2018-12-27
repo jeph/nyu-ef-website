@@ -251,7 +251,7 @@ main {
 
 	#speakerBlob1{
 		top: -80px;
-		left: -30px;
+		left: -20px;
 	}
 
 	#speakerBlob2{
@@ -268,12 +268,53 @@ main {
 		width: 100%;
 	}
 
-	
+}
 
+/* for-tablet-portrait-up */
+@media screen and (min-width: 600px)  and (max-width: 900px){
+	#speakerBlob1{
+		top: -170px;
+		left: -20px;
+	}
+
+	#speakerBlob2{
+		top: -170px;
+		left: -10px;
+	}
+
+	#speakerBlob3{
+		top: -170px;
+		left: -10px;
+	}
+
+	.item__svg{
+		width: 120%;
+	}
 
 }
 
+/* for-tablet-landscape-up */
+@media screen and (min-width: 900px) and (max-width: 1100px) {
+	#speakerBlob1{
+		top: -170px;
+		left: -20px;
+	}
 
+	#speakerBlob2{
+		top: -170px;
+		left: -10px;
+	}
+
+	#speakerBlob3{
+		top: -170px;
+		left: -10px;
+	}
+
+	.item__svg{
+		width: 120%;
+	}
+
+}
 
 @media screen and (max-width: 60em) {
 	.item:first-of-type {
