@@ -430,8 +430,17 @@ footer{
 
   }
 
-  .speaker-container h3, .speaker-container h4, .speaker-container p {
-    text-align: justify;
+  .speaker-container h3, .speaker-container h4 {
+    text-align: center;
+  }
+
+  .speaker-container p{
+    text-align: left;
+  }
+
+
+  .speaker-container-hidden p{
+    text-align: left;
   }
 
   .speaker-container img {
