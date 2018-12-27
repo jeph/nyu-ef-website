@@ -245,6 +245,10 @@ button {
   text-align: center;
 }
 
+.speaker-container-hidden:hover{
+  cursor: pointer;
+}
+
 .speaker-container-hidden p{
   text-align: left;
 }
