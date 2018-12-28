@@ -87,20 +87,24 @@ function lineScroll(){
 }
 
 function animateFooterLogo(){
-  if($(window).scrollTop() + $(window).height() == $(document).height()){
+  if($(window).scrollTop() + $(window).height() >= ($(document).height()-150)){
+    $("footer").addClass("purpleBackFooter");
     $('#footer-logo').attr('src', "images/whiteLogo.png");
-    $('#footer-logo').toggleClass('footerLogoAnimate');
+    // $('#footer-logo').toggleClass('footerLogoAnimate');
     $('#footer-logo').css('width', "6%");
-    $("footer").css("background", "#57068c");
-    $("footer").css("transition", "background 1s");
+    // $("footer").css("background", "#57068c");
+    // $("footer").css("-webkit-transition", "background 1s");
+    // $("footer").css("transition", "background 1s");
     $("#backToTop").addClass("w3-white");
     $(".footer-grid-item a:link").css("color","#1eb0bf");
     $(".footer-grid-item i").css("color","#1eb0bf");
 
 
-  } else{
+  } else if ($(window).scrollTop() + $(window).height() < $(document).height()){
     $("#backToTop").removeClass("w3-white");
     $('#footer-logo').attr('src', "images/colorLogo.png");
+    // $("footer").css("background-color", "white");
+    $("footer").removeClass("purpleBackFooter");
     $("footer").css("background-color", "white");
     $(".footer-grid-item a:link").css("color","white");
     $(".footer-grid-item i").css("color","white");
@@ -118,4 +122,8 @@ function revealFullSpeakerBios(id){
 function hideFullSpeakerBios(id){
   $(id).hide();
   $(".speaker-container").fadeIn();
+}
+
+function grayscalePic(id){
+  $(id).toggleClass("w3-grayscale");
 }

@@ -310,22 +310,23 @@ function myFunction(){
 		}
 	}
 
-
+	const items = Array.from(document.querySelectorAll('.item'));
+	// const init = (() => items.forEach(item => new ImgItem(item)))();
 	setTimeout(() => document.body.classList.remove('loading'), 2000);
 };
 
 
-$window.on('scroll', function(){
-  animationToBlobL = leftAnimations[0];
-  animationToBlobR = rightAnimations[0];
-  if($(window).scrollTop() >= 20) {
-    animationToBlobL.beginElement();
-    animationToBlobR.beginElement();
-
-  } else if ($(window).scrollTop() < 20){
-    document.getElementById("leftAnimationOg").beginElement();
-    document.getElementById("rightAnimationOg").beginElement();
-  }
-
-
-});
+// $window.on('scroll', function(){
+//   animationToBlobL = leftAnimations[0];
+//   animationToBlobR = rightAnimations[0];
+//   if($(window).scrollTop() >= 20) {
+//     animationToBlobL.beginElement();
+//     animationToBlobR.beginElement();
+//
+//   } else if ($(window).scrollTop() < 20){
+//     document.getElementById("leftAnimationOg").beginElement();
+//     document.getElementById("rightAnimationOg").beginElement();
+//   }
+//
+//
+// });
