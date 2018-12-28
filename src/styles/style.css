@@ -102,13 +102,16 @@ button {
     padding: 10px;
 }
 
-#eighth-annual-container {
+/* #eighth-annual-container {
     position: absolute;
     left: 0;
     top: 0;
-}
+} */
 
 #eighth-annual {
+  position: absolute;
+  left: 0;
+  top: 0;
   margin-top: .5%;
   height: auto;
   width: 10%;
