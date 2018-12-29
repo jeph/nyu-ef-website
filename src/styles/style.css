@@ -143,6 +143,10 @@ button {
     left: 0;
 }
 
+#right-blob-mobile {
+    display:none;
+}
+
 #rightBlob {
     overflow: hidden;
     position: absolute;
@@ -161,9 +165,9 @@ button {
 } */
 
 #date{
-  color: white;
-  font-size: 2em;
-  padding-right: 2%;
+  font-size: 2.5em;
+  font-family: "Gotham-Book", Arial, sans-serif;
+  /* padding-right: 2%; */
 
 }
 #date-container{
@@ -481,10 +485,11 @@ footer{
   }
 
   #right-blob-mobile{
+    display: block;
     position: absolute;
     right: 0;
     bottom: 0;
-    width: 80%;
+    width: 70%;
   }
   #logo{
     width: 180%;
@@ -497,7 +502,7 @@ footer{
   }
 
   #date{
-    font-size: 1.5em;
+    /* font-size: 1.5em; */
   }
 
   #rightBlob{
@@ -641,9 +646,16 @@ footer{
 
 /* for-tablet-portrait-up */
 @media screen and (min-width: 600px) and (max-width: 900px){
-  #rightBlob{
-    right: -80px;
+  /* #rightBlob{
+    display: none;
   }
+
+  #right-blob-mobile{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 80%;
+  } */
 
   footer{
     color: white;
