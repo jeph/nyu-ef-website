@@ -151,12 +151,28 @@ button {
     bottom: 0px;
 }
 
-#date {
+/* #date {
     position: absolute;
-    right: 3%;
+    font-size: 1.8em;
+    right: 1.8%;
     bottom: 3%;
     z-index: 3;
     color: white;
+} */
+
+#date{
+  color: white;
+  font-size: 2em;
+  padding-right: 2%;
+
+}
+#date-container{
+  text-align: right;
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+  z-index: 3;
+  width: 100%;
 }
 
 .w3-bar {
@@ -460,7 +476,16 @@ footer{
 
 /* for-phones */
 @media screen and (max-width: 509px) {
+  #rightBlob{
+    display: none;
+  }
 
+  #right-blob-mobile{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 80%;
+  }
   #logo{
     width: 180%;
     margin-left: -40%;
@@ -471,30 +496,44 @@ footer{
     margin-right: auto;
   }
 
+  #date{
+    font-size: 1.5em;
+  }
+
   #rightBlob{
     right: -70px;
   }
 
   /* navbar */
   #hamburger{
-    position: absolute;
-    right: 0;
-    font-size: 1.3em;
-    padding: .5% 2% .5% 2%;
     background-color: white;
+    font-size: 1.3em;
+    background-color: white;
+    margin-left: 84% !important;
+
   }
 
-  #eighth-annual-container{
+  /* #navbar-container{
+    background-color: white !important;
     width: 100%;
-    background-color: white;
-    height: 50px;
-    padding-bottom: 5%;
-  }
+    height: 12%;
+
+  } */
   #navbar{
-    background-color: white;
+    text-align: right;
+    height: 12%;
+    background-color:white;
     width: 100%;
-    top: 50px;
-    position: absolute;
+  }
+  #navbar-mobile{
+    text-align: right;
+    background-color:white;
+    width: 100%;
+  }
+
+  #eighth-annual{
+    margin-top: 3%;
+    width: 20%;
   }
 
   /* resize stats grid */
@@ -589,6 +628,14 @@ footer{
     color: white;
   }
 
+  #lineSvg{
+    display: none;
+
+  }
+
+
+
+
 
 }
 
@@ -605,12 +652,10 @@ footer{
 
   .footer-grid-container i, .footer-grid-container a:link{
     color: #1eb0bf;
-
   }
 
   #speakers-container{
     width: 100%;
-
   }
 
   main{
@@ -620,8 +665,6 @@ footer{
   .speakers-container{
     width: 100%;
   }
-
-
 }
 
 /* for-tablet-landscape-up */

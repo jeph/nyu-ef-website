@@ -1,8 +1,12 @@
 
+const ogLogoWidth = $("#eighth-annual").width();
 $(document).ready(function(){
   lineScroll();
 
   $window.on('scroll', navScroll);
+
+
+
 
   const mq = window.matchMedia( "(min-width: 900px)" );
   if (mq.matches) {
@@ -47,16 +51,40 @@ function check_if_in_view() {
 
 // function that adds nav shadow on scroll
 function navScroll(){
+  const mq = window.matchMedia( "(max-width: 500px)" );
+
+
+
+
+
   if($(window).scrollTop() >= 100) {
     $("#navbar-container").css("box-shadow", "0 5px 5px grey");
     $(".w3-bar-item").each(function(){
       $(this).css("color", "black");
     });
+
+    if (mq.matches) {
+      $("#eighth-annual").attr("src", "images/landing-page-title-logo.png");
+      $("#eighth-annual").css("padding-left", "3%");
+      $("#eighth-annual").css("filter", "none");
+      $("#eighth-annual").css("-webkit-filter", "none");
+      $("#eighth-annual").css("width", "40%");
+    }
+
   } else{
     $("#navbar-container").css("box-shadow", "none");
     $(".w3-bar-item").each(function(){
       $(this).css("color", "gray");
     });
+    if (mq.matches) {
+      $("#eighth-annual").attr("src", "images/8th-annual.png");
+      $("#eighth-annual").css("filter", "progid:DXImageTransform.Microsoft.BasicImage(invert='1')");
+      $("#eighth-annual").css("-webkit-filter", "invert(100%)");
+      $("#eighth-annual").css("width", ogLogoWidth);
+      $("#eighth-annual").css("padding-left", "0%");
+    }
+
+
   }
 
 }
