@@ -333,6 +333,7 @@ button {
 
 .speakersPics{
   border-radius: 50%;
+  max-width: 100%;
 }
 
 .speaker-container-hidden{
@@ -348,7 +349,6 @@ button {
 .speaker-container-hidden p{
   text-align: left;
 }
-
 
 
 .animation-elements {
@@ -438,8 +438,6 @@ footer{
   height: auto;
 }
 
-
-
 #backToTop{
   font-size: 1.2em;
   margin-top: 2%;
@@ -502,8 +500,6 @@ footer{
   50% {transform:translateY(-15%);}
   100% {transform:translateY(0%);}
 }
-
-
 
 .footerNoShow{
   color: white;
@@ -676,11 +672,6 @@ footer{
     display: none;
 
   }
-
-
-
-
-
 }
 
 /* for-tablet-portrait-up */
