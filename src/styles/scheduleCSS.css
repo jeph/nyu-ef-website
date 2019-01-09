@@ -8,15 +8,20 @@
     src: url(../fonts/gotham-book.otf);
 }
 
+p {
+    font-family: "Gotham-Book", Arial, sans-serif;
+    font-size: 1.5em;
+}
+
 .title{
 	font-family: "Gotham-Book", Arial, sans-serif;
-	font-size: 16px;
+	font-size: 1.5em;
 	padding-top: 5%;
 
 }
 .heading-title{
 	font-family: "Gotham-Rounded-Medium", Arial, sans-serif;
-	font-size: 2em;
+	font-size: 2.5em;
 }
 .heading-title1 {
 	font-size: 4rem;
@@ -26,21 +31,20 @@
     position: relative;
     background: #1EB0BF;
     /*border: 2px solid #1EB0BF;*/
-	height: 52px;
+	height: 10%;
 	width: 50%;
-    right: 42px;
+    right: 35px;
     text-align: center;
     margin-bottom: 5px;
     border-radius: 2px;
 }
 
-
 .box:before {
     content:'';
     position: absolute;
 	top: 30%;
-	left: -24px;
-	border: solid 12px transparent;
+	left: -28px;
+	border: solid 14px transparent;
     z-index: -1;
 	border-right-color: #1EB0BF;
 }
@@ -53,7 +57,6 @@
 	/* border-right-color: #1EB0BF; */
 	border-right-color: #333333;
 }
-
 
 /* timeline */
 .container{
@@ -75,7 +78,7 @@
 	left: 25%;
 	width: 0px;
 	height: 100%;
-	border: 2px solid #666666;
+	border: 3px solid #666666;
 }
 
 .container ul li {
@@ -90,20 +93,19 @@
 	left: -60px;
 	width: 0px;
 	height: 100%;
-	border: 2px solid #57068c;
+	border: 3px solid #57068c;
 	border-radius: 10px;
 }
 
 .container ul li > span:before, .container ul li > span:after{
 	content:'';
-	width: 10px;
-	height: 10px;
-	border: 2px solid #57068c;
+	width: 15px;
+	height: 15px;
+	border: 3px solid #57068c;
 	/*border: 2px solid #ba9ddb;*/
-
 	border-radius: 50%;
 	position: absolute;
-	left: -5px;
+	left: -7px;
 	background: #57068c;
 	/*background: #e06b50;*/
 
@@ -119,19 +121,19 @@
 
 .container ul li .time span{
 	position: absolute;
-	font-size: 12px;
+	font-size: 14px;
 	color: #666666;
 	font-family: "Gotham-Book", Arial, sans-serif;
 }
 
 .container ul li .time span:first-child {
-	left:-100px;
-	top: -13px;
+	left:-110px;
+	top: -14px;
 }
 
 .container ul li .time span:last-child {
-	left:-100px;
-	top: 90%;
+	left:-110px;
+	top: 95%;
 }
 
 /* event details */ 
@@ -144,21 +146,21 @@
 }
 
 .event-item-info{
-  display: none;
-  /*font-size: 1em;*/
-  position: relative;
-  right: 5%;
+	display: none;
+	/*font-size: 1em;*/
+	position: relative;
+	right: 3%;
 }
 
 .panel-title{
 	color: #333333;
-	font-size: 14px;
+	font-size: 18px;
 	font-weight: bold;
 }
 
 .panel-details{
 	color: #333333;
-	font-size: 12px;
+	font-size: 16px;
 }
 
 .speaker {
@@ -169,11 +171,11 @@
 img {
   border-radius: 50%;
   z-index: 1;
-  width: 70px;
+  width: 80px;
   float: left;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 670px) {
 
   .box {
     height: 50px;
@@ -181,7 +183,7 @@ img {
     right: 18%;
     margin-bottom: 2px;
     border-radius: 2px;
-    background: #1EB0BF;
+    background: #57068C;
   }
   .box:before {
 	top: 30%;
@@ -195,7 +197,7 @@ img {
   }
   .panel-title{
 	color: #333333;
-	font-size: 12px;
+	font-size: 1em;
  }
 
 .panel-details{
