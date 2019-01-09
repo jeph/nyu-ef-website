@@ -1,0 +1,616 @@
+<!DOCTYPE>
+<html lang="en">
+<title>NYU Entrepreneur's Festival</title>
+<head>
+    
+    <!-- schedule -->
+	<link rel="stylesheet" href="styles/scheduleCSS.css">
+	<script src="scripts/scheduleScripts.js"></script>
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- <script src= "https://cdnjs.cloudflare.com/ajax/libs/animejs/2.2.0/anime.min.js"> </script> -->
+
+    <script src= "https://cdnjs.cloudflare.com/ajax/libs/animejs/2.2.0/anime.min.js"> </script>
+    <!-- <script src="blobs/js/anime.min.js"></script> -->
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+    <link href="styles/style.css" rel="stylesheet" type="text/css">
+
+
+    <!--Favicons-->
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <!-- <link rel="manifest" href="/site.webmanifest"> -->
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#1eb0bf">
+    <meta name="msapplication-TileColor" content="#1eb0bf">
+    <meta name="theme-color" content="#ffffff">
+
+
+</head>
+
+<body>
+	<div id="navbar-container" class="w3-top">
+
+      <div id="navbar-mobile" class="w3-bar w3-white">
+          <span id="eighth-annual-container">
+              <img id="eighth-annual" src="images/8th-annual.png" alt="Whoops :(">
+          </span>
+          <a href="index.html" class="w3-bar-item w3-button w3-hide-small">Home</a>
+          <a href="#about" class="w3-bar-item w3-button w3-hide-small" >About</a>
+          <a href="schedule.html" class="w3-bar-item w3-button w3-hide-small" >Schedule</a>
+          <a href="#speakers" class="w3-bar-item w3-button w3-hide-small" >Speakers</a>
+          <a href="https://www.eventbrite.com/e/8th-annual-nyu-entrepreneurs-festival-tickets-53021626111"
+             class="w3-bar-item w3-button w3-hide-small">Tickets</a>
+          <a id = "hamburger" href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="toggleFunction()">&#9776;</a>
+      </div>
+
+      <div id="navbar" class="w3-bar-block w3-hide w3-hide-large w3-hide-medium">
+            <a href="index.html" class="navbar-item w3-bar-item w3-button" onclick="toggleFunction()">Home</a>
+            <a href="#about" class="navbar-item w3-bar-item w3-button" onclick="toggleFunction()">About</a>
+            <a href="schedule.html" class="navbar-item w3-bar-item w3-button" onclick="toggleFunction()">Schedule</a>
+            <a href="#speakers" class="navbar-item w3-bar-item w3-button" onclick="toggleFunction()">Speakers</a>
+            <a href="https://www.eventbrite.com/e/8th-annual-nyu-entrepreneurs-festival-tickets-53021626111"
+               class="navbar-item w3-bar-item w3-button" onclick="toggleFunction()">Tickets</a>
+      </div>
+
+    </div>
+
+<div class="container">
+
+	<div class="heading-title heading-title1">2019 Schedule</div>
+
+	<p> Full schedule for 2019 coming soon! </p>
+
+	<div class="heading-title">FRIDAY MARCH 8th</div>
+
+
+
+	<ul>
+		<li>
+			<span></span>
+			<div class="box" onclick="showEventInfo('registration-info')"><span><div class="title">Registration</div></span></div>
+			<div class="event-item-info event-description" id="registration-info">
+				<div class="panel-details">Paulson Auditorium 44 West 4th Street</div>
+				<div class="panel-details">New York, NY 10012 </div>
+				<div class="panel-details">12:00pm-1:00pm</div>
+			</div>
+
+			<div class="box" onclick="showEventInfo('welcome-info')"><span><div class="title">Welcome and Opening Remarks</div></span></div>
+			<div class="event-item-info event-description" id="welcome-info">
+				<div class="panel-details">Paulson Auditorium 44 West 4th Street</div>
+				<div class="panel-details">New York, NY 10012 </div>
+				<div class="panel-details">1:00pm-2:00pm</div>
+			</div>
+			<div class="time">
+				<span>12:00</span>
+				<span>1:50</span>
+			</div>
+		</li>
+
+		<li>
+			<span></span>
+			<div class="box" onclick="showEventInfo('keynote-info')"><span><div class="title">KEYNOTE I '18</div></span></div>
+			<div class="event-item-info" id="keynote-info">
+				<div class="event-description">
+			    <img src="images/speakersPics/DiAnnEisnorBW.jpg" alt="oops">
+				<div class="speaker">
+    				<div class="panel-title">WAZE</div>
+    				<div class="panel-details">Di-Ann Eisnor</div>
+    				<div class="panel-details">Waze | @DiAnnEisnor</div>
+    			</div>
+    			</div>
+    			<br>
+    			<div class="event-description panel-details">Location: Paulson Auditorium 44 West 4th Street, New York, NY 10012</div>
+    		</div>
+			<div class="time">
+				<span>2:00</span>
+				<span>2:50</span>
+			</div>
+		</li>
+
+		<li>
+			<span></span>
+			<div class="box" onclick="showEventInfo('panel-info')">
+				<span><div class="title">PANELS</div></span>
+			</div>
+			<div class="event-item-info" id="panel-info">
+			    <div class="event-description">
+    				<div class="panel-title">Starting a Startup While in School</div>
+    				<div class="panel-details"><b>Moderators:</b></div>
+    				<div class="panel-details">TBA</div>
+    				<!-- <div class="panel-details">Company | @username</div> --->
+
+    			</div>
+    			<div class="event-description">
+    				<div class="panel-details"><b>Speakers:</b></div>
+    				<div class="panel-details">TBA</div>
+    				<!-- <div class="panel-details">Company | @username</div> --->
+
+    			</div>
+    			<div class="event-description">
+    				<div class="panel-details">Paulson Auditorium, 44 West 4th Street, New York, NY</div>
+	    		</div>
+
+	    		<div class="event-description">
+    				<div class="panel-title">Female Founders</div>
+    				<div class="panel-details"><b>Moderators:</b></div>
+    				<div class="panel-details">Name</div>
+    				<!-- <div class="panel-details">Company | @username</div> --->
+
+    			</div>
+    			<div class="event-description">
+    				<div class="panel-details"><b>Speakers:</b></div>
+    				<div class="panel-details">TBA</div>
+    				<!-- <div class="panel-details">Company | @username</div> --->
+
+    			</div>
+    			<div class="event-description">
+    				<div class="panel-details">T200, 44 West 4th Street, New York, NY</div>
+	    		</div>
+			</div>
+	
+			<div class="time">
+				<span>3:00</span>
+				<span>3:50</span>
+			</div>
+
+			<div class="box" onclick="showEventInfo('exhibition-info')"><span><div class="title">ALUMNI STARTUP EXHIBITION</div></span></div>
+			<div class="event-item-info event-description" id="exhibition-info">
+				<div class="panel-details">Patron's Lobby 44 West 4th Street</div>
+				<div class="panel-details">New York, NY, 10012</div>
+				<div class="panel-details">3:00pm-5:50pm</div>
+			</div>
+		</li>
+
+
+		<li>
+			<span></span>
+
+			<div class="box" onclick="showEventInfo('networking-info')">
+				<span><div class="title">NETWORKING</div></span>
+			</div>
+
+			<div class="event-item-info event-description" id="networking-info">
+				<div class="panel-details">Patron's Lobby 44 West 4th Street</div>
+				<div class="panel-details">New York, NY 10012</div>
+				<div class="panel-details">3:50pm-5:00pm</div>
+			</div>
+
+
+			<div class="box" onclick="showEventInfo('rountable-info')">
+				<span><div class="title">ROUNDTABLES '18</div></span>
+			</div>
+			<div class="event-item-info" id="rountable-info">
+				<div class="event-description">
+		    		<div class="panel-title">Getting the Most out of Your VC Relationship</div>
+		    		<div class="panel-details">Maria Palma</div>
+		    		<div class="panel-details">RRE | @RRE</div>
+		    	</div>
+
+	    		<div class="event-description">
+	    			<div class="panel-title">IP and Corporate Basics for Entrepreneurs</div>
+	    			<div class="panel-details">Evan Kipperman & Michael Kasdan</div>
+	    			<div class="panel-details">Wiggin and Dana | @WigginLLP</div>
+	    		</div>
+	    		<div class="event-description">
+    				<div class="panel-title">Maximize Your Success During the Seed Phase</div>
+    				<div class="panel-details">Owen Davis</div>
+    				<div class="panel-details">Contour Ventures | @owendavis</div>
+	    		</div>
+	    		<div class="event-description">
+    				<div class="panel-title">Nimble Marketing in a New Age of Personal Care & Beauty</div>
+    				<div class="panel-details">Marco Viotti</div>
+    				<div class="panel-details">eos Products | @marcoviotti</div>
+	    		</div>
+	    		<div class="event-description">
+    				<div class="panel-title">Setting up Your Startup for Success by Getting Payroll & Benefits Right the First Time</div>
+    				<div class="panel-details">JoshuaTyrrell</div>
+    				<div class="panel-details">TriNet  | @JJEL_Tyrrell</div>
+	    		</div>
+	    		<div class="event-description">
+    				<div class="panel-title">Storytelling for the Entertainment Entrepreneur</div>
+    				<div class="panel-details">Ro Reddick (Stern MBA ‘16) & Kate Stahl (Stern MBA/Tisch MFA ‘18)</div>
+    				<div class="panel-details">NYU Production Lab |  @NYUProduxnLab</div>
+	    		</div>
+	    		<div class="event-description">
+    				<div class="panel-title">Who Runs the World? Female Founders!</div>
+    				<div class="panel-details">Evan Kipperman & Michael Kasdan</div>
+    				<div class="panel-details">Wiggin and Dana | @WigginLLP</div>
+	    		</div>
+	    		<div class="event-description">
+    				<div class="panel-title">The Challenges of Starting and Scaling a Business</div>
+    				<div class="panel-details">Robb Granado</div>
+    				<div class="panel-details">Common Bond |  @commonbond </div>
+	    		</div>
+
+	    		<div class="event-description">
+	    			<div class="panel-detail" style="color:#57068C;">Location: L 101 44 West 4th Street, New York, NY 10012 | 3:50pm-5:50pm </div>
+	    		</div>
+		    </div>
+
+
+			<div class="box" onclick="showEventInfo('panel-two-info')">
+				<span><div class="title">PANELS II</div></span>
+			</div>
+			<div class="event-item-info" id="panel-two-info">
+	    		<div class="event-description">
+    				<div class="panel-title">Food and Beverage</div>
+    				<div class="panel-details"><b>Moderators:</b></div>
+    				<div class="panel-details">TBA</div>
+    				<!-- <div class="panel-details">Company | @username</div> --->
+    			</div>
+    			<div class="event-description">
+    				<div class="panel-details"><b>Speakers:</b></div>
+    				<div class="panel-details">TBA</div>
+    				<!-- <div class="panel-details">Company | @username</div> --->
+
+    			</div>
+    			<div class="event-description">
+    				<div class="panel-details">Paulson Auditorium, 44 West 4th Street, New York, NY, 10012</div>
+	    		</div>
+			</div>
+	
+			<div class="time">
+				<span>3:50</span>
+				<span>5:50</span>
+			</div>
+		</li>
+
+
+		<li>
+			<span></span>
+			<div class="box" onclick="showEventInfo('keynote-two-info')"><span><div class="title">KEYNOTE II '18</div></span></div>
+			<div class="event-item-info" id="keynote-two-info">
+
+				<div class="event-description">
+					<img src="images/speakersPics/nedalShamiBW.jpg" alt="oops">
+				 	<div class="speaker">
+				 		<div class="panel-title">CITYMD</div>
+	    				<div class="panel-details">Nedal Shami</div>
+	    				<div class="panel-details">Co-Founder & Chief Strategy Officer</div>
+	    				<div class="panel-details">CityMD | @CityMD</div>
+    				</div>
+    			</div>
+    			<div class="event-description">
+    				<img src="images/speakersPics/SwartzBW.jpg" alt="oops">
+    				<div class="speaker"><br>
+    					<div class="panel-details">Moderator: Jessica Swartz</div>
+    					<div class="panel-details">Pfizer</div>
+    				</div>
+    			</div>
+    			<div class="event-description"> <br>
+    				<div class="panel-details">Location: Paulson Auditorium 44 West 4th Street, New York, NY 10012</div>
+    			</div>
+
+			</div>
+
+			<div class="time">
+				<span>6:00</span>
+				<span>6:50</span>
+			</div>
+		</li>
+
+		<li>
+			<span></span>
+			<div class="box" onclick="showEventInfo('hackathon-info')"><span><div class="title">HACKATHON</div></span></div>
+			<div class="event-item-info" id="hackathon-info">
+				<div class="event-description">
+					<div class="panel-title">Our Second Annual Hackathon!</div>
+					<div class="panel-details">Join us at our second annual NYU Entrepreneurs Festival Hackathon! </div>
+					<div class="panel-details" style="color: #57068C;">Sponsered by: RoughDraft Ventures</div>
+					<div class="panel-details">No technical experience is required. Bring a laptop.</div>
+				</div>
+				<div class="event-description">
+					<div class="panel-details">16 Washington Pl</div>
+					<div class="panel-details">New York, NY 10003</div>
+					<div class="panel-details">7:00pm-11:00pm</div>
+				</div>
+			</div>
+
+			<div class="time">
+				<span>7:15</span>
+				<span>11:00</span>
+			</div>
+		</li>
+
+
+	</ul>
+
+<div class="heading-title">SATURDAY MARCH 9th</div>
+
+
+
+	<ul>
+		<li>
+			<span></span>
+			<div class="box" onclick="showEventInfo('registration')"><span><div class="title">Registration</div></span></div>
+			<div class="event-item-info event-description" id="registration">
+				<div class="panel-details">Paulson Lobby, 44 West 4th Street</div>
+				<div class="panel-details">New York, NY 10012 </div>
+				<div class="panel-details">9:00am-10:00am</div>
+			</div>
+
+			<div class="box" onclick="showEventInfo('networking-breakfast')"><span><div class="title">NETWORKING BREAKFAST</div></span></div>
+			<div class="event-item-info" id="networking-breakfast">
+				<div class="event-description">
+					<div class="panel-title">Brooklyn Bagel & Coffee Company</div>
+				</div>
+				<div class="event-description">
+					<div class="panel-details">Patron's Lobby, 44 West 4th Street</div>
+					<div class="panel-details">New York, NY 10012 </div>
+					<div class="panel-details">9:00am-10:00am</div>
+				</div>
+			</div>
+			<div class="time">
+				<span>9:00</span>
+				<span>9:50</span>
+			</div>
+		</li>
+
+		<li>
+			<span></span>
+			<div class="box" onclick="showEventInfo('workshop-i-info')"><span><div class="title">WORKSHOP '18</div></span></div>
+			<div class="event-item-info" id="workshop-i-info">
+				<div class="event-description">
+    				<div class="panel-title">A VC's View on Raising Your First Round</div>
+    				<div class="panel-details">Jesse Middleton</div>
+    				<div class="panel-details">Partner at Flybridge Capital | @flybridge</div>
+    			</div>
+    			<div class="event-description panel-details">Location: M2-60 44 West 4th Street, New York, NY 10012</div>
+
+    			<div class="event-description">
+    				<div class="panel-title">So I Have an Idea, Now What?</div>
+    				<div class="panel-details">Desiree Frieson & Sarah Maibach</div>
+    				<div class="panel-details">NYU Entrepreneurial Institute</div>
+    			</div>
+    			<div class="event-description panel-details">Location: UC-25 44 West 4th Street, New York, NY 10012</div>
+
+    			<div class="event-description">
+    				<div class="panel-title">Startup Legal Issues for First-Time Founders</div>
+    				<div class="panel-details">Kristine Di Bacco</div>
+    				<div class="panel-details">Partner at FenwickWest | @FenwickWest</div>
+    			</div>
+    			<div class="event-description panel-details">Location: T200 44 West 4th Street, New York, NY 10012</div>
+    		</div>
+			<div class="time">
+				<span>10:00</span>
+				<span>10:55</span>
+			</div>
+		</li>
+
+		<li>
+			<span></span>
+			<div class="box" onclick="showEventInfo('workshop-ii-info')"><span><div class="title">WORKSHOP '18 (cont.)</div></span></div>
+			<div class="event-item-info" id="workshop-ii-info">
+				<div class="event-description">
+    				<div class="panel-title">Five Financial Mistakes Startups Make</div>
+    				<div class="panel-details">Michael Gawley</div>
+    				<div class="panel-details">Partner at EisnerAmper LLP | @EisnerAmper</div>
+    			</div>
+    			<div class="event-description panel-details">Location: T200 44 West 4th Street, New York, NY 10012</div>
+
+    			<div class="event-description">
+    				<div class="panel-title">Legal Issues with Capital Raising</div>
+    				<div class="panel-details">David Sorin</div>
+    				<div class="panel-details">Partner at McCarter & English | @mccarterenglish</div>
+    			</div>
+    			<div class="event-description panel-details">Location: M2-60 44 West 4th Street, New York, NY 10012</div>
+
+    			<div class="event-description">
+    				<div class="panel-title">The Art of Making Something People Want</div>
+    				<div class="panel-details">Cynthia Franklin</div>
+    				<div class="panel-details">W.R. Berkley Innovation Labs | @nyuinnovation </div>
+    			</div>
+    			<div class="event-description panel-details">Location: UC-25 44 West 4th Street, New York, NY 10012</div>
+			</div>
+
+			<div class="box" onclick="showEventInfo('networking-lunch')"><span><div class="title">NETWORKING LUNCH</div></span></div>
+			<div class="event-item-info event-description" id="networking-lunch">
+				<div class="panel-title">Otto's Taco and Chopt</div>
+
+				<div class="panel-details">Patron's Lobby 44 West 4th Street</div>
+				<div class="panel-details">New York, NY 10012 </div>
+				<div class="panel-details">11:30am-12:50pm</div>
+			</div>
+
+			<div class="time">
+				<span>11:00</span>
+				<span>11:55</span>
+			</div>
+		</li>
+
+		<li>
+			<span></span>
+			<div class="box" onclick="showEventInfo('keynote-day2')"><span><div class="title">KEYNOTE '18</div></span></div>
+			<div class="event-item-info" id="keynote-day2">
+				<div class="event-description">
+			    <img src="images/speakersPics/tonyShureBW.jpeg" alt="oops">
+				<div class="speaker">
+    				<div class="panel-title">CHOPT</div>
+    				<div class="panel-details">Tony Shure</div>
+    				<div class="panel-details">Co-Founder at Chopt </div>
+    			</div>
+    			</div>
+    			<br>
+    			<div class="event-description panel-details">Location: Paulson Auditorium 44 West 4th Street, New York, NY 10012</div>
+    		</div>
+
+			<div class="time">
+				<span>1:00</span>
+				<span>1:50</span>
+			</div>
+
+		<li>
+			<span></span>
+			<div class="box" onclick="showEventInfo('panel-ii')">
+				<span><div class="title">PANELS</div></span>
+			</div>
+			<div class="event-item-info" id="panel-ii">
+			    <div class="event-description">
+    				<div class="panel-title">Emerging Tech</div>
+    				<div class="panel-details"><b>Moderators:</b></div>
+    				<div class="panel-details">TBA</div>
+    				<!-- <div class="panel-details">Company | @username</div> --->
+    			</div>
+    			<div class="event-description">
+    				<div class="panel-details"><b>Speakers:</b></div>
+    				<div class="panel-details">TBA</div>
+    				<!-- <div class="panel-details">Company | @username</div> --->
+    			</div>
+    			<div class="event-description">
+    				<div class="panel-details">Paulson Auditorium, 44 West 4th Street, New York, NY</div>
+	    		</div>
+
+	    		<div class="event-description">
+    				<div class="panel-title">Social Ventures</div>
+    				<div class="panel-details"><b>Moderators:</b></div>
+    				<div class="panel-details">TBA</div>
+    				<!-- <div class="panel-details">Company | @username</div> --->
+    			</div>
+    			<div class="event-description">
+    				<div class="panel-details"><b>Speakers:</b></div>
+    				<div class="panel-details">TBA</div>
+    				<!-- <div class="panel-details">Company | @username</div> --->
+    			</div>
+    			<div class="event-description">
+    				<div class="panel-details">UC-24, 44 West 4th Street, New York, NY</div>
+	    		</div>
+			</div>
+
+			<div class="box" onclick="showEventInfo('startup-exhibition')">
+				<span><div class="title">STUDENT STARTUP EXHIBITION</div></span>
+			</div>
+
+			<div class="event-item-info event-description" id="startup-exhibition">
+				<div class="panel-details">The student exhibition will showcase startup ventures founded by NYU entrepreneurs.</div>
+				<div class="panel-details">Patron's Lobby 44 West 4th Street</div>
+				<div class="panel-details">New York, NY 10012</div>
+				<div class="panel-details">2:00pm-4:50pm</div>
+			</div>
+	
+			<div class="time">
+				<span>2:00</span>
+				<span>2:50</span>
+			</div>
+
+		</li>
+
+
+		<li>
+			<span></span>
+
+			<div class="box" onclick="showEventInfo('networking-break')">
+				<span><div class="title">NETWORKING BREAK</div></span>
+			</div>
+
+			<div class="event-item-info event-description" id="networking-break">
+				<div class="panel-details">Patron's Lobby 44 West 4th Street</div>
+				<div class="panel-details">New York, NY 10012</div>
+				<div class="panel-details">2:50pm-4:00pm</div>
+			</div>
+
+
+			<div class="box" onclick="showEventInfo('startup-roundtable')">
+				<span><div class="title">ROUNDTABLES '18</div></span>
+			</div>
+			<div class="event-item-info" id="startup-roundtable">
+				<div class="event-description">
+		    		<div class="panel-title">Common Legal Startup Issues</div>
+		    		<div class="panel-details">Jared Sorin</div>
+		    		<div class="panel-details">McCarter & English | @mccarterenglish</div>
+		    	</div>
+
+	    		<div class="event-description">
+	    			<div class="panel-title">How Gen Z & Millennials Can Collaborate on Social Entrepreneurial Ventures</div>
+	    			<div class="panel-details">Lilia Hoberman (Wagner ‘17)</div>
+	    			<div class="panel-details">NYU Social EntrepreneurshipProgram | @NYUSocENT </div>
+	    			<div class="panel-details">Momachi Pabrai (Gallatin ‘18)</div>
+	    			<div class="panel-details">Gallatin Business Club</div>
+	    		</div>
+
+	    		<div class="event-description">
+	    			<div class="panel-details">Location: M5-50 44 West 4th Street, New York, NY, 10012</div>
+	    		    <div class="panel-details">2:50pm-4:50pm</div>
+	    		</div>
+			</div>
+
+			<div class="box" onclick="showEventInfo('panel-ii-info')">
+				<span><div class="title">PANELS</div></span>
+			</div>
+			<div class="event-item-info" id="panel-ii-info">
+			    <div class="event-description">
+    				<div class="panel-title">Venture Capital</div>
+    				<div class="panel-details"><b>Moderators:</b></div>
+    				<div class="panel-details">TBA</div>
+    				<!-- <div class="panel-details">Company | @username</div> --->
+    			</div>
+    			<div class="event-description">
+    				<div class="panel-details"><b>Speakers:</b></div>
+    				<div class="panel-details">TBA</div>
+    				<!-- <div class="panel-details">Company | @username</div> --->
+    			</div>
+    			<div class="event-description">
+    				<div class="panel-details">Paulson Auditorium, 44 West 4th Street, New York, NY | 4:00pm-4:50pm</div>
+	    		</div>
+			</div>
+	
+			<div class="time">
+				<span>3:00</span>
+				<span>4:50</span>
+			</div>
+		</li>
+
+
+		<li>
+			<span></span>
+			<div class="box" onclick="showEventInfo('pitch')"><span><div class="title">THE PITCH</div></span></div>
+			<div class="event-item-info" id="pitch">
+
+				<div class="event-description">
+				 	<div class="panel-details">Throughout the festival, every attendee will be given the opportunity to vote on their favorite student startup venture. The top three teams, designated by the number of votes they receive,will be given the opportunity to pitch to a panel of Venture Investors that have been invited to speak at the Festival.</div>
+	    			<div class="panel-details">These investors will award one of these teams with a $1,000 non-dilutive grant during a pitch-off.</div>
+    			</div>
+    			<div class="event-description">
+    				<div class="panel-details">Location: Paulson Auditorium 44 West 4th Street, New York, NY 10012 | 5:00pm-6:00pm</div>
+    			</div>
+
+			</div>
+
+	
+			<div class="box" onclick="showEventInfo('closing-info')"><span><div class="title">CLOSING REMARKS</div></span></div>
+			<div class="event-item-info" id="closing-info">
+				<div class="event-description">
+					<div class="panel-details">Location: Paulson Auditorium 44 West 4th Street, New York, NY 10012 | 6:00pm-6:15pm</div>
+				</div>
+			</div>
+
+			<div class="time">
+				<span>5:00</span>
+				<span>6:15</span>
+			</div>
+		</li>
+
+
+		<li>
+			<span></span>
+			<div class="box" onclick="showEventInfo('party-info')"><span><div class="title">After Party!</div></span></div>
+			<div class="event-item-info" id="party-info">
+				<div class="event-description">
+					<div class="panel-details">Location TBA</div>
+				</div>
+			</div>
+
+			<div class="time">
+				<span>6:30</span>
+				<span>8:30</span>
+			</div>
+		</li>
+
+
+	</ul>
+</div>
+</body>
+</html>
