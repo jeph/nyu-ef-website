@@ -1,27 +1,16 @@
-/* @font-face {
-    font-family: Gotham-Medium;
-    src: url(../fonts/gotham-medium.otf);
-} */
 
 @font-face {
     font-family: Gotham-Rounded-Medium;
     src: url(../fonts/gotham-rounded-medium.otf);
 }
 
-/* @font-face {
-    font-family: Gotham-Rounded-Bold;
-    src: url(../fonts/gotham-rounded-bold.otf);
-} */
-
-/* @font-face {
-    font-family: Gotham-Light;
-    src: url(../fonts/gotham-light.otf);
-} */
 
 @font-face {
     font-family: Gotham-Book;
     src: url(../fonts/gotham-book.otf);
 }
+
+
 
 h1, h2, h3 {
     font-family: "Gotham-Rounded-Medium", Arial, sans-serif;
@@ -318,6 +307,10 @@ button {
 .speaker-container img{
   width: 95%;
 }
+.speaker-container h3, .speaker-container h4{
+  text-align: center;
+}
+
 .speaker-container-large {
     display: flex;
     align-items: center;
