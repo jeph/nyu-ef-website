@@ -1,3 +1,7 @@
+@font-face {
+    font-family: Gotham-Bold-Italic;
+    src: url(../fonts/gotham-bold-italic.otf);
+}
 
 @font-face {
     font-family: Gotham-Rounded-Medium;
@@ -58,22 +62,22 @@ body, html {
   position: fixed;
   z-index: 1;
   padding-top: 100px;
+  padding-bottom: 100px;
   left: 0;
   top: 0;
   width: 100%;
   height: 100%;
   overflow: auto;
-  background-color: rgb(0,0,0);
   background-color: rgba(0,0,0,.4);
 }
 
 .modal-content{
+  padding: 5%;
   background-color: #fefefe;
   margin: auto;
-  padding: 20px;
   border: 1px solid #888;
   width: 80%;
-  font-size: 15px;
+  font-size: 18px;
 }
 
 .speaker-modal-header{
@@ -305,12 +309,21 @@ button {
 }
 
 .speaker-container img{
-  width: 95%;
-}
-.speaker-container h3, .speaker-container h4{
-  text-align: center;
+  width: 85%;
+  height: auto;
 }
 
+.nedalPic{
+  border-radius: 50%;
+}
+
+.speaker-container h3{
+  text-align: center;
+}
+.speaker-container h4, .speaker-modal-header h4{
+  text-align: center;
+  font-family: "Gotham-Bold-Italic", Arial, sans-serif;
+}
 .speaker-container-large {
     display: flex;
     align-items: center;
@@ -325,7 +338,6 @@ button {
 }
 
 .speakersPics{
-  border-radius: 50%;
   max-width: 100%;
 }
 
@@ -508,6 +520,22 @@ footer{
 
 /* for-phones */
 @media screen and (max-width: 509px) {
+  .modal-content{
+    width: 95%;
+    line-height: 2;
+  }
+
+  .modal-content h3{
+    font-size: 1.3em;
+  }
+  .speaker-modal-header{
+    margin-bottom: 8%;
+  }
+
+  .speaker-modal-header img{
+    margin-bottom: 5%;
+  }
+
   #rightBlob{
     display: none;
   }
