@@ -15,23 +15,25 @@ p {
 
 .title{
 	font-family: "Gotham-Book", Arial, sans-serif;
-	font-size: 1.5em;
+	font-size: 1.1em;
 	padding-top: 5%;
 
 }
-.heading-title{
+
+
+.heading-title {
 	font-family: "Gotham-Rounded-Medium", Arial, sans-serif;
 	font-size: 2.5em;
 }
 .heading-title1 {
 	font-size: 4rem;
 }
-.box{
+.box {
 	color: #333333;
     position: relative;
     background: #1EB0BF;
     /*border: 2px solid #1EB0BF;*/
-	height: 10%;
+	height: 60px;
 	width: 50%;
     right: 35px;
     text-align: center;
@@ -48,18 +50,18 @@ p {
     z-index: -1;
 	border-right-color: #1EB0BF;
 }
-.box:hover{
+.box:hover {
 	background: #333333;
 	color: #FFFFFF;
 }
 
-.box:hover:before{
+.box:hover:before {
 	/* border-right-color: #1EB0BF; */
 	border-right-color: #333333;
 }
 
 /* timeline */
-.container{
+.container {
 	margin: 90px 40px 60px 90px;
 	padding-left: 10%;
 	padding-top: 2%;
@@ -78,7 +80,7 @@ p {
 	left: 25%;
 	width: 0px;
 	height: 100%;
-	border: 3px solid #666666;
+	border: 2px solid #666666;
 }
 
 .container ul li {
@@ -86,42 +88,42 @@ p {
 	position: relative;
 }
 
-.container ul li > span{
+.container ul li > span {
 	content: '';
 	position: absolute;
 	top: 0;
 	left: -60px;
 	width: 0px;
 	height: 100%;
-	border: 3px solid #57068c;
+	border: 2px solid #57068c;
 	border-radius: 10px;
 }
 
-.container ul li > span:before, .container ul li > span:after{
+.container ul li > span:before, .container ul li > span:after {
 	content:'';
-	width: 15px;
-	height: 15px;
-	border: 3px solid #57068c;
+	width: 10px;
+	height: 10px;
+	border: 2px solid #57068c;
 	/*border: 2px solid #ba9ddb;*/
 	border-radius: 50%;
 	position: absolute;
-	left: -7px;
+	left: -5px;
 	background: #57068c;
 	/*background: #e06b50;*/
 
 }
 
-.container ul li > span:before{
+.container ul li > span:before {
 	top: -11px;
 }
 
-.container ul li > span:after{
+.container ul li > span:after {
 	top:100%;
 }
 
-.container ul li .time span{
+.container ul li .time span {
 	position: absolute;
-	font-size: 14px;
+	font-size: 12px;
 	color: #666666;
 	font-family: "Gotham-Book", Arial, sans-serif;
 }
@@ -138,29 +140,30 @@ p {
 
 /* event details */ 
 
-.event-description{
+.event-description {
 	font-family: "Gotham-Book", Arial, sans-serif;
     /*font-weight: bold;*/
 	padding-bottom: 10px;
 	width: 100%;
 }
 
-.event-item-info{
+.event-item-info {
 	display: none;
 	/*font-size: 1em;*/
 	position: relative;
 	right: 3%;
+
 }
 
-.panel-title{
+.panel-title {
 	color: #333333;
-	font-size: 18px;
+	font-size: 14px;
 	font-weight: bold;
 }
 
 .panel-details{
 	color: #333333;
-	font-size: 16px;
+	font-size: 12px;
 }
 
 .speaker {
@@ -175,41 +178,107 @@ img {
   float: left;
 }
 
-@media only screen and (max-width: 670px) {
+/*mobile*/
 
+@media screen and (max-width: 670px) {
+  .container {
+  	margin: 90px 40px 60px 30px;
+	padding-left: 0%;
+	padding-top: 2%;
+
+}
   .box {
     height: 50px;
-	width: 200px;
-    right: 18%;
-    margin-bottom: 2px;
+	width: 250px;
+    right: 40px;
+    margin-bottom: 3px;
     border-radius: 2px;
-    background: #57068C;
-  }
+    background: #1EB0BF;
+
+}
   .box:before {
 	top: 30%;
 	left: -22px;
 	border: solid 11px transparent;
 	border-right-color: #1EB0BF;
-  }
-  .title{
-	font-size: 12px;
-	padding-top: 15px;
-  }
-  .panel-title{
-	color: #333333;
+}
+  .title {
 	font-size: 1em;
- }
+	padding-top: 15px;
+}
+  .panel-title {
+	color: #333333;
+	font-size: 12px;
+}
 
-.panel-details{
+  .panel-details {
 	color: #333333;
 	font-size: 10px;
- }
-.event-item-info{
+}
+  .event-item-info {
   display: none;
   /*font-size: 1em;*/
   position: relative;
-  right: 15%;
- }
+  right: 30px;
+  width: 180%;
+}
+
+  p {
+    font-family: "Gotham-Book", Arial, sans-serif;
+    font-size: 1em;
+}
+  .heading-title {
+	font-family: "Gotham-Rounded-Medium", Arial, sans-serif;
+	font-size: 2em;
+}
+  .heading-title1 {
+	font-size: 3rem;
+}
 
 }
 
+/*tablet */
+
+@media screen and (max-width: 1024px) and (min-width: 671px) {
+  .container {
+  	margin: 90px 40px 60px 60px;
+	padding-left: 5%;
+	padding-top: 0%;
+
+}
+  .box {
+    height: 55px;
+	width: 290px;
+    right: 40px;
+    margin-bottom: 3px;
+    border-radius: 2px;
+    background: #1EB0BF;
+
+}
+  .box:before {
+	top: 30%;
+	left: -22px;
+	border: solid 11px transparent;
+	border-right-color: #1EB0BF;
+}
+ 
+  .event-item-info {
+  	display: none;
+  	/*font-size: 1em;*/
+  	position: relative;
+  	right: 30px;
+  	width: 180%;
+}
+  p {
+    font-family: "Gotham-Book", Arial, sans-serif;
+    font-size: 1em;
+}
+  .heading-title{
+  	font-family: "Gotham-Rounded-Medium", Arial, sans-serif;
+	font-size: 2em;
+}
+  .heading-title1 {
+	font-size: 3rem;
+}
+
+}
