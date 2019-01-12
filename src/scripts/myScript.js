@@ -72,6 +72,7 @@ function navScroll(){
       $("#eighth-annual").css("filter", "none");
       $("#eighth-annual").css("-webkit-filter", "none");
       $("#eighth-annual").css("width", "40%");
+      $("#eighth-annual").css("border-radius", "0%");
     }
 
   } else{
@@ -85,6 +86,7 @@ function navScroll(){
       $("#eighth-annual").css("-webkit-filter", "invert(100%)");
       $("#eighth-annual").css("width", ogLogoWidth);
       $("#eighth-annual").css("padding-left", "0%");
+      $("#eighth-annual").css("border-radius", "0%");
     }
 
 
