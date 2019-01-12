@@ -19,6 +19,8 @@ p {
     /* font-size: 1.5em; */
 }
 
+
+
 .title{
 	font-family: "Gotham-Book", Arial, sans-serif;
 	font-size: 1.1em;
@@ -70,7 +72,8 @@ p {
 
 /* timeline */
 .container {
-	margin: 90px 40px 60px 90px;
+  margin-top: 10%;
+	/* margin: 90px 40px 8% 90px; */
 	padding-left: 10%;
 	padding-top: 2%;
 }
@@ -92,7 +95,7 @@ p {
 }
 
 .container ul li {
-	margin: 50px 60px;
+	margin: 5% 60px;
 	position: relative;
 }
 
@@ -160,21 +163,13 @@ p {
 	/*font-size: 1em;*/
 	position: relative;
 	right: 3%;
-<<<<<<< HEAD
-
-=======
   width: 80%;
   padding: 5%;
->>>>>>> style schedule page; fix footer on schedule page
 }
 
 .panel-title {
 	color: #333333;
-<<<<<<< HEAD
-	font-size: 14px;
-=======
 	font-size: 1.3em;
->>>>>>> style schedule page; fix footer on schedule page
 	font-weight: bold;
   margin-top: 3%;
   margin-bottom: 2%;
@@ -186,7 +181,6 @@ p {
 }
 .panel-details{
 	color: #333333;
-	font-size: 12px;
 }
 
 .speaker {
@@ -209,9 +203,6 @@ img {
   float: left;
 }
 
-<<<<<<< HEAD
-/*mobile*/
-=======
 
 /* footer styles */
 footer{
@@ -344,159 +335,198 @@ footer img{
   color: #DEDEE7 !important;
 }
 
-@media only screen and (max-width: 670px) {
->>>>>>> style schedule page; fix footer on schedule page
 
 @media screen and (max-width: 670px) {
   .container {
   	margin: 90px 40px 60px 30px;
-	padding-left: 0%;
-	padding-top: 2%;
+	  padding-left: 0%;
+	  padding-top: 2%;
+  }
 
-}
   .box {
     height: 50px;
-	width: 250px;
+    width: 250px;
     right: 40px;
     margin-bottom: 3px;
     border-radius: 2px;
     background: #1EB0BF;
 
-}
-  .box:before {
-	top: 30%;
-	left: -22px;
-	border: solid 11px transparent;
-	border-right-color: #1EB0BF;
-}
-  .title {
-	font-size: 1em;
-	padding-top: 15px;
-}
-  .panel-title {
-	color: #333333;
-	font-size: 12px;
-}
+  }
 
-<<<<<<< HEAD
+  .box:before {
+  	top: 30%;
+  	left: -22px;
+  	border: solid 11px transparent;
+  	border-right-color: #1EB0BF;
+  }
+
+  .title {
+  	font-size: 1em;
+  	padding-top: 15px;
+  }
+
+  .panel-title {
+    font-size: 1.1em;
+
+  	color: #333333;
+  }
+
+  .panelTitleSpan{
+    padding: 2%;
+  }
+
   .panel-details {
-	color: #333333;
-	font-size: 10px;
-}
+  	color: #333333;
+  }
+
   .event-item-info {
-  display: none;
-  /*font-size: 1em;*/
-  position: relative;
-  right: 30px;
-  width: 180%;
-}
+    display: none;
+    /*font-size: 1em;*/
+    position: relative;
+    right: 30px;
+    width: 130%;
+  }
 
   p {
     font-family: "Gotham-Book", Arial, sans-serif;
     font-size: 1em;
-}
+  }
+
   .heading-title {
-	font-family: "Gotham-Rounded-Medium", Arial, sans-serif;
-	font-size: 2em;
-}
+  	font-family: "Gotham-Rounded-Medium", Arial, sans-serif;
+  	font-size: 2em;
+  }
+
   .heading-title1 {
-	font-size: 3rem;
-}
+  	font-size: 3rem;
+  }
+
+  footer{
+    color: white;
+    background-color: #57068c;
+  }
+  .poweredBy img{
+    width: 100%;
+    height: auto;
+  }
+
+  .footer-grid-container{
+    column-gap: 10%;
+
+  }
+
+  .footer-grid-container i, .footer-grid-container a:link{
+    color: #1eb0bf;
+
+  }
+
+  .backToTop{
+    margin-top: 15%;
+  }
+
+  .backToTop:hover{
+    color: white;
+  }
+
+  .container ul:before{
+    left: 20%;
+  }
+  .container ul{
+    padding-left: 20%;
+  }
+
+  .container ul li{
+    margin-bottom: 10%;
+  }
 
 }
 
 /*tablet */
 
 @media screen and (max-width: 1024px) and (min-width: 671px) {
+  .container ul:before{
+    left: 20%;
+  }
+  .container ul{
+    padding-left: 20%;
+  }
   .container {
   	margin: 90px 40px 60px 60px;
-	padding-left: 5%;
-	padding-top: 0%;
+  	padding-left: 5%;
+  	padding-top: 0%;
 
-}
+  }
   .box {
     height: 55px;
-	width: 290px;
+	  width: 290px;
     right: 40px;
     margin-bottom: 3px;
     border-radius: 2px;
     background: #1EB0BF;
 
-}
+  }
   .box:before {
-	top: 30%;
-	left: -22px;
-	border: solid 11px transparent;
-	border-right-color: #1EB0BF;
-}
- 
+  	top: 30%;
+  	left: -22px;
+  	border: solid 11px transparent;
+  	border-right-color: #1EB0BF;
+  }
+
   .event-item-info {
   	display: none;
   	/*font-size: 1em;*/
   	position: relative;
   	right: 30px;
   	width: 120%;
-}
+  }
 
   p {
     font-family: "Gotham-Book", Arial, sans-serif;
     font-size: 1em;
-}
+  }
+
   .heading-title{
   	font-family: "Gotham-Rounded-Medium", Arial, sans-serif;
-	font-size: 2em;
-}
+	   font-size: 2em;
+   }
+
   .heading-title1 {
-	font-size: 3rem;
-}
-
-}
-=======
-  .panel-details{
-  	color: #333333;
-  	font-size: 10px;
-   }
-  .event-item-info{
-    display: none;
-    /*font-size: 1em;*/
-    position: relative;
-    right: 15%;
+	   font-size: 3rem;
    }
 
-   #footer-logo{
-     width: 15%;
-   }
+  #footer-logo{
+    width: 15%;
+  }
 
-   #backToTop{
-     padding-bottom: 10%;
-   }
+  #backToTop{
+    padding-bottom: 10%;
+  }
 
-   footer{
-     color: white;
-     background-color: #57068c;
-   }
-   .poweredBy img{
-     width: 100%;
-     height: auto;
-   }
+  footer{
+    color: white;
+    background-color: #57068c;
+  }
+  .poweredBy img{
+    width: 100%;
+    height: auto;
+  }
 
-   .footer-grid-container{
-     column-gap: 10%;
+  .footer-grid-container{
+    column-gap: 10%;
 
-   }
+  }
 
-   .footer-grid-container i, .footer-grid-container a:link{
-     color: #1eb0bf;
+  .footer-grid-container i, .footer-grid-container a:link{
+    color: #1eb0bf;
 
-   }
+  }
 
-   .backToTop{
-     margin-top: 15%;
-   }
+  .backToTop{
+    margin-top: 15%;
+  }
 
-   .backToTop:hover{
-     color: white;
-   }
+  .backToTop:hover{
+    color: white;
+  }
 
 }
->>>>>>> style schedule page; fix footer on schedule page
