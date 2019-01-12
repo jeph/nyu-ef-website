@@ -1,7 +1,10 @@
 
 const ogLogoWidth = $("#eighth-annual").width();
 $(document).ready(function(){
-  lineScroll();
+  if (document.getElementById("line") != null){
+    lineScroll();
+  }
+
 
   $window.on('scroll', navScroll);
 
@@ -140,61 +143,66 @@ function animateFooterLogo(){
 }
 
 //modal for first speakers
-var first_modal = document.getElementById('first-modal');
-var first_modalbutton = document.getElementById('first-modalbutton');
-var span = document.getElementsByClassName("close")[0];
 
-first_modalbutton.onclick = function(){
-  first_modal.style.display = "block";
-}
+if (document.getElementById('first-modal') != null){
+  var first_modal = document.getElementById('first-modal');
+  var first_modalbutton = document.getElementById('first-modalbutton');
+  var span = document.getElementsByClassName("close")[0];
 
-span.onclick = function(){
-  first_modal.style.display = "none";
-}
+  first_modalbutton.onclick = function(){
+    first_modal.style.display = "block";
+  }
 
-window.addEventListener("click", function(event){
-  if(event.target == first_modal){
+  span.onclick = function(){
     first_modal.style.display = "none";
   }
-});
 
-//modal for second speaker
-var second_modal = document.getElementById('second-modal');
-var second_modalbutton = document.getElementById('second-modalbutton');
-var span = document.getElementsByClassName("close")[1];
+  window.addEventListener("click", function(event){
+    if(event.target == first_modal){
+      first_modal.style.display = "none";
+    }
+  });
 
-second_modalbutton.onclick = function(){
-  second_modal.style.display = "block";
-}
+  //modal for second speaker
+  var second_modal = document.getElementById('second-modal');
+  var second_modalbutton = document.getElementById('second-modalbutton');
+  var span = document.getElementsByClassName("close")[1];
 
-span.onclick = function(){
-  second_modal.style.display = "none";
-}
+  second_modalbutton.onclick = function(){
+    second_modal.style.display = "block";
+  }
 
-window.addEventListener("click", function(event){
-  if(event.target == second_modal){
+  span.onclick = function(){
     second_modal.style.display = "none";
   }
-});
 
-//modal for third speaker
-var third_modal = document.getElementById('third-modal');
-var third_modalbutton = document.getElementById('third-modalbutton');
-var span = document.getElementsByClassName("close")[2];
+  window.addEventListener("click", function(event){
+    if(event.target == second_modal){
+      second_modal.style.display = "none";
+    }
+  });
 
-third_modalbutton.onclick = function(){
-  third_modal.style.display = "block";
-}
+  //modal for third speaker
+  var third_modal = document.getElementById('third-modal');
+  var third_modalbutton = document.getElementById('third-modalbutton');
+  var span = document.getElementsByClassName("close")[2];
 
-span.onclick = function(){
-  third_modal.style.display = "none";
-}
+  third_modalbutton.onclick = function(){
+    third_modal.style.display = "block";
+  }
 
-window.addEventListener("click", function(event){
-  if(event.target == third_modal){
+  span.onclick = function(){
     third_modal.style.display = "none";
   }
-});
+
+  window.addEventListener("click", function(event){
+    if(event.target == third_modal){
+      third_modal.style.display = "none";
+    }
+  });
+
+}
+
 
 function grayscalePic(id){
   $(id).toggleClass("w3-grayscale");

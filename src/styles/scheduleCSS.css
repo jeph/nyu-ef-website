@@ -8,9 +8,15 @@
     src: url(../fonts/gotham-book.otf);
 }
 
+@font-face {
+    font-family: Gotham-Bold-Italic;
+    src: url(../fonts/gotham-bold-italic.otf);
+}
+
+
 p {
     font-family: "Gotham-Book", Arial, sans-serif;
-    font-size: 1.5em;
+    /* font-size: 1.5em; */
 }
 
 .title{
@@ -32,6 +38,7 @@ p {
 	color: #333333;
     position: relative;
     background: #1EB0BF;
+
     /*border: 2px solid #1EB0BF;*/
 	height: 60px;
 	width: 50%;
@@ -53,6 +60,7 @@ p {
 .box:hover {
 	background: #333333;
 	color: #FFFFFF;
+  cursor: pointer;
 }
 
 .box:hover:before {
@@ -138,7 +146,7 @@ p {
 	top: 95%;
 }
 
-/* event details */ 
+/* event details */
 
 .event-description {
 	font-family: "Gotham-Book", Arial, sans-serif;
@@ -152,15 +160,30 @@ p {
 	/*font-size: 1em;*/
 	position: relative;
 	right: 3%;
+<<<<<<< HEAD
 
+=======
+  width: 80%;
+  padding: 5%;
+>>>>>>> style schedule page; fix footer on schedule page
 }
 
 .panel-title {
 	color: #333333;
+<<<<<<< HEAD
 	font-size: 14px;
+=======
+	font-size: 1.3em;
+>>>>>>> style schedule page; fix footer on schedule page
 	font-weight: bold;
+  margin-top: 3%;
+  margin-bottom: 2%;
 }
 
+.panelTitleSpan{
+  background-color: #1EB0BF;
+  padding: 1%;
+}
 .panel-details{
 	color: #333333;
 	font-size: 12px;
@@ -171,6 +194,14 @@ p {
 	left: 5px;
 }
 
+.location, .innerTime{
+  background-color: #57068C;
+  color: white;
+  margin-right: 1%;
+  padding: 2px;
+  font-weight: bold;
+  font-size: 1.1em;
+}
 img {
   border-radius: 50%;
   z-index: 1;
@@ -178,7 +209,143 @@ img {
   float: left;
 }
 
+<<<<<<< HEAD
 /*mobile*/
+=======
+
+/* footer styles */
+footer{
+  float: none;
+  font-weight: normal;
+  /* font-size: .7em; */
+  font-family: "Gotham-Book", Arial, sans-serif;
+  text-align: center;
+  height: 80%;
+  border-top: 1px solid rgba(0,0,0,.6);
+  padding: 10%;
+  width: 100%;
+}
+
+footer img{
+  float: none;
+  border-radius: 0%;
+}
+.purpleBackFooter{
+  background: #57068c !important;
+  transition: background 1s;
+  -webkit-transition: background 1s;
+  -moz-transition: background 1s;
+  -o-transition: background 1s;
+}
+#footer-logo{
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#footer-logo:hover{
+  animation-name: slightBounce;
+  animation-duration: 1s;
+  -moz-animation-name: slightBounce;
+  -webkit-animation-name: slightBounce;
+  -o-transition-animation-name: slightBounce;
+  -moz-animation-duration: 1s;
+  -webkit-animation-duration: 1s;
+  -o-animation-duration: 1s;
+}
+
+.footer-grid-container{
+  display: grid;
+  grid-template-columns: 50% 50%;
+  justify-content: center;
+  justify-items: center;
+}
+
+.poweredBy img{
+  width: 40%;
+  height: auto;
+}
+
+#backToTop{
+  text-align: center;
+  font-size: 1.2em;
+  margin-top: 2%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.footerLogoAnimate{
+  animation-name: toggleZoom;
+  animation-duration: 1s;
+
+  -moz-animation-name: toggleZoom;
+  -moz-animation-duration: 1s;
+
+  -webkit-animation-name: toggleZoom;
+  -webkit-animation-duration: 1s;
+
+  -o-transition-animation-name: toggleZoom;
+  -o-animation-duration: 1s;
+}
+
+@keyframes toggleZoom {
+  0% {width: 5%;}
+  50% {width: 8%;}
+  100% {width: 5%;}
+}
+
+@-webkit-keyframes toggleZoom {
+  0% {width: 5%;}
+  50% {width: 8%;}
+  100% {width: 5%;}
+}
+@-moz-keyframes toggleZoom {
+  0% {width: 5%;}
+  50% {width: 8%;}
+  100% {width: 5%;}
+}
+@-o-keyframes toggleZoom {
+  0% {width: 5%;}
+  50% {width: 8%;}
+  100% {width: 5%;}
+}
+
+@-webkit-keyframes slightBounce {
+  0% {transform:translateY(0%);}
+  50% {transform:translateY(-15%);}
+  100% {transform:translateY(0%);}
+}
+
+@-moz-keyframes slightBounce {
+  0% {transform:translateY(0%);}
+  50% {transform:translateY(-15%);}
+  100% {transform:translateY(0%);}
+}
+@-o-keyframes slightBounce {
+  0% {transform:translateY(0%);}
+  50% {transform:translateY(-15%);}
+  100% {transform:translateY(0%);}
+}
+@keyframes slightBounce {
+  0% {transform:translateY(0%);}
+  50% {transform:translateY(-15%);}
+  100% {transform:translateY(0%);}
+}
+
+.footerNoShow{
+  color: white;
+}
+
+.footer-grid-item a:link, .footer-grid-item i{
+  color: white;
+}
+
+.footer-grid-item a:link:hover, .footer-grid-item i:hover{
+  color: #DEDEE7 !important;
+}
+
+@media only screen and (max-width: 670px) {
+>>>>>>> style schedule page; fix footer on schedule page
 
 @media screen and (max-width: 670px) {
   .container {
@@ -211,6 +378,7 @@ img {
 	font-size: 12px;
 }
 
+<<<<<<< HEAD
   .panel-details {
 	color: #333333;
 	font-size: 10px;
@@ -283,3 +451,52 @@ img {
 }
 
 }
+=======
+  .panel-details{
+  	color: #333333;
+  	font-size: 10px;
+   }
+  .event-item-info{
+    display: none;
+    /*font-size: 1em;*/
+    position: relative;
+    right: 15%;
+   }
+
+   #footer-logo{
+     width: 15%;
+   }
+
+   #backToTop{
+     padding-bottom: 10%;
+   }
+
+   footer{
+     color: white;
+     background-color: #57068c;
+   }
+   .poweredBy img{
+     width: 100%;
+     height: auto;
+   }
+
+   .footer-grid-container{
+     column-gap: 10%;
+
+   }
+
+   .footer-grid-container i, .footer-grid-container a:link{
+     color: #1eb0bf;
+
+   }
+
+   .backToTop{
+     margin-top: 15%;
+   }
+
+   .backToTop:hover{
+     color: white;
+   }
+
+}
+>>>>>>> style schedule page; fix footer on schedule page
