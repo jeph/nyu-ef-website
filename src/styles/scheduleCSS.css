@@ -80,7 +80,7 @@ p {
 	left: 25%;
 	width: 0px;
 	height: 100%;
-	border: 2px solid #666666;
+	border: 2.5px solid #666666;
 }
 
 .container ul li {
@@ -95,19 +95,19 @@ p {
 	left: -60px;
 	width: 0px;
 	height: 100%;
-	border: 2px solid #57068c;
+	border: 2.5px solid #57068c;
 	border-radius: 10px;
 }
 
 .container ul li > span:before, .container ul li > span:after {
 	content:'';
-	width: 10px;
-	height: 10px;
+	width: 11px;
+	height: 11px;
 	border: 2px solid #57068c;
 	/*border: 2px solid #ba9ddb;*/
 	border-radius: 50%;
 	position: absolute;
-	left: -5px;
+	left: -5.5px;
 	background: #57068c;
 	/*background: #e06b50;*/
 
@@ -267,8 +267,9 @@ img {
   	/*font-size: 1em;*/
   	position: relative;
   	right: 30px;
-  	width: 180%;
+  	width: 120%;
 }
+
   p {
     font-family: "Gotham-Book", Arial, sans-serif;
     font-size: 1em;
