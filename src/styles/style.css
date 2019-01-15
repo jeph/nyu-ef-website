@@ -834,6 +834,10 @@ footer{
     line-height: 90px;
   }
 
+  #get-tickets-button{
+    font-size: .5em;
+  }
+
 }
 
 @media screen and (min-aspect-ratio: 7/7) and (min-width: 750px) and (max-width: 1000px){
@@ -877,7 +881,7 @@ footer{
   }
 
   #get-tickets-button{
-    font-size: .5em;
+    font-size: .35em;
   }
 
   #navbar{
