@@ -393,6 +393,8 @@ footer{
 }
 
 .purpleBackFooter{
+  /* max-height: auto; */
+  /* min-height: 20% !important; */
   background: #57068c !important;
   transition: background 1s;
   -webkit-transition: background 1s;
@@ -528,7 +530,24 @@ footer{
 
 
 
+
+
+
 /* 6/6 for-portraits */
+@media (min-width: 800px){
+  footer{
+    font-size: 1.5em;
+    background: #57068c !important;
+    color: white !important;
+  }
+
+  .poweredBy img{
+    width: 60%;
+    height: auto;
+  }
+
+}
+
 
 @media (max-aspect-ratio: 6/6){
   #leftBlob {
@@ -557,6 +576,10 @@ footer{
     width: 150% !important;
     margin-left: -20% !important;
 
+  }
+
+  footer{
+    background: #57068c !important;
   }
 
 }
@@ -720,7 +743,7 @@ footer{
 
   footer{
     color: white;
-    background-color: #57068c;
+    /* background-color: #57068c; */
   }
   .poweredBy img{
     width: 100%;
@@ -757,8 +780,8 @@ footer{
 
   footer{
     color: white;
-    background-color: #57068c;
-    height: 20% !important;
+    /* background-color: #57068c; */
+    /* height: 20% !important; */
     padding: 5% !important;
   }
 
@@ -794,8 +817,8 @@ footer{
 
   footer{
     color: white;
-    background-color: #57068c;
-    height: 20% !important;
+    /* background-color: #57068c;
+    height: 20% !important; */
     padding: 5% !important;
   }
 
@@ -903,6 +926,8 @@ footer{
     font-size: .3em;
   }
 
+
+
 }
 
 @media screen and (min-aspect-ratio: 7/7) and (min-width: 1000px) and (max-width: 1350px){
@@ -938,8 +963,8 @@ footer{
 
   footer{
     color: white;
-    background-color: #57068c;
-    height: 40% !important;
+    /* background-color: #57068c;
+    height: 40% !important; */
     padding: 5% !important;
   }
 
@@ -978,10 +1003,10 @@ footer{
 
 @media screen and (min-aspect-ratio: 7/7) and (max-width: 1000px){
 
-  footer{
+  /* footer{
     color: white;
     background-color: #57068c;
-  }
+  } */
 
   .footer-grid-container i, .footer-grid-container a:link{
     color: #1eb0bf;
@@ -1024,12 +1049,12 @@ footer{
 
 @media screen and (max-aspect-ratio: 7/7) and (min-width: 750px) and (max-width: 900px){
 
-  footer{
+  /* footer{
     color: white;
     background-color: #57068c;
     height: 35% !important;
     padding: 5% !important;
-  }
+  } */
 
   .footer-grid-container i, .footer-grid-container a:link{
     color: #1eb0bf;
@@ -1068,12 +1093,12 @@ footer{
 
 @media screen and (min-aspect-ratio: 7/7) and (max-width: 750px){
 
-  footer{
+  /* footer{
     color: white;
     background-color: #57068c;
     height: 500px !important;
     padding: 5% !important;
-  }
+  } */
 
 
 
@@ -1270,9 +1295,6 @@ footer{
 
   }
 
-  footer{
-    height: 500px !important;
-  }
 
   /* undo speakers flex */
   #speakers-container{
