@@ -154,7 +154,7 @@ p {
 .event-description {
 	font-family: "Gotham-Book", Arial, sans-serif;
     /*font-weight: bold;*/
-	padding-bottom: 10px;
+	padding-bottom:10px;
 	width: 100%;
 }
 
@@ -162,44 +162,54 @@ p {
 	display: none;
 	/*font-size: 1em;*/
 	position: relative;
-	right: 3%;
+	right: 5%;
   width: 80%;
-  padding: 5%;
+  padding: 1%;
 }
 
-.panel-title {
+.event-title {
 	color: #333333;
-	font-size: 1.3em;
+	font-size: 1.2em;
 	font-weight: bold;
   margin-top: 3%;
   margin-bottom: 2%;
 }
 
-.panelTitleSpan{
+.eventTitleSpan{
   background-color: #1EB0BF;
   padding: 1%;
 }
-.panel-details{
+.event-details{
 	color: #333333;
 }
 
 .speaker {
 	position: relative;
-	left: 5px;
+	left: 2%;
+  margin-bottom: 4%;
+}
+
+
+.speaker1{
+  margin-bottom: 2%;
+}
+.speaker2{
+  margin-bottom: 10%;
 }
 
 .location, .innerTime{
   background-color: #57068C;
   color: white;
   margin-right: 1%;
-  padding: 2px;
+  padding: 1px;
   font-weight: bold;
-  font-size: 1.1em;
+  font-size: 1em;
 }
 img {
   border-radius: 50%;
   z-index: 1;
-  width: 80px;
+  width: 100px;
+  padding-right: 15px;
   float: left;
 }
 
@@ -335,7 +345,7 @@ footer img{
   color: #DEDEE7 !important;
 }
 
-
+/* phones portrait */
 @media screen and (max-width: 670px) {
   .container {
   	margin: 90px 40px 60px 30px;
@@ -365,26 +375,31 @@ footer img{
   	padding-top: 15px;
   }
 
-  .panel-title {
+  .event-title {
     font-size: 1.1em;
 
   	color: #333333;
   }
 
-  .panelTitleSpan{
+  .eventTitleSpan{
     padding: 2%;
   }
 
-  .panel-details {
+  .event-details {
   	color: #333333;
-  }
+    font-size: 0.9em;
+    
 
+  }
   .event-item-info {
     display: none;
     /*font-size: 1em;*/
     position: relative;
     right: 30px;
-    width: 130%;
+    width: 150%;
+  }
+  .speaker{
+    margin-bottom: 10%;
   }
 
   p {
