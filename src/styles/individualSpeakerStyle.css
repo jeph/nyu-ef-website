@@ -25,6 +25,7 @@ p{
 }
 
 h3{
+
   margin-top: 5%;
 }
 
@@ -42,5 +43,30 @@ a:hover{
 
 
 h1{
+
   text-align: center;
+}
+
+h4{
+  color: #57068c;
+}
+
+h5{
+  font-weight: bold;
+  color: #1eb0bf;
+}
+
+@media only screen and (max-width: 768px) {
+  main{
+    margin-top: 15% !important;
+  }
+
+  p{
+    width: 100%;
+  }
+
+  h3{
+    font-size: 2em;
+  }
+
 }
