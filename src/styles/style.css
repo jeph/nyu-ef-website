@@ -31,6 +31,10 @@ p, a {
     background-size: cover;
 }
 
+#eightLogo{
+  width: 20%;
+  height: auto;
+}
 html {
     font-family: "Gotham", Arial, sans-serif;
 }
