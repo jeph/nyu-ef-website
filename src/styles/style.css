@@ -284,6 +284,7 @@ button {
 }
 .speaker-container {
   position: relative;
+  text-align: center;
   /* position: relative;
   flex-wrap: wrap; */
   /* width: 100%; */

@@ -1,0 +1,46 @@
+@font-face {
+    font-family: Gotham-Bold-Italic;
+    src: url(../fonts/gotham-bold-italic.otf);
+}
+
+@font-face {
+    font-family: Gotham-Rounded-Medium;
+    src: url(../fonts/gotham-rounded-medium.otf);
+}
+
+
+@font-face {
+    font-family: Gotham-Book;
+    src: url(../fonts/gotham-book.otf);
+}
+
+p{
+  width: 70%;
+  font-family: Gotham-Book, Helvetica, sans-serif;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 1.2em;
+  line-height: 1.8;
+}
+
+h3{
+  margin-top: 5%;
+}
+
+main{
+  margin-top: 10% !important;
+}
+
+.fa-arrow-left{
+  font-size: 4em;
+}
+
+a:hover{
+  color: #57068c;
+}
+
+
+h1{
+  text-align: center;
+}

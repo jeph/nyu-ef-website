@@ -146,64 +146,88 @@ function animateFooterLogo(){
 
 //modal for first speakers
 
-if (document.getElementById('first-modal') != null){
-  var first_modal = document.getElementById('first-modal');
-  var first_modalbutton = document.getElementById('first-modalbutton');
-  var span = document.getElementsByClassName("close")[0];
 
-  first_modalbutton.onclick = function(){
-    first_modal.style.display = "block";
-  }
 
-  span.onclick = function(){
-    first_modal.style.display = "none";
-  }
+const first_speaker = document.getElementById('speaker1');
+const second_speaker = document.getElementById('speaker2');
+const third_speaker = document.getElementById('speaker3');
 
-  window.addEventListener("click", function(event){
-    if(event.target == first_modal){
-      first_modal.style.display = "none";
-    }
-  });
-
-  //modal for second speaker
-  var second_modal = document.getElementById('second-modal');
-  var second_modalbutton = document.getElementById('second-modalbutton');
-  var span = document.getElementsByClassName("close")[1];
-
-  second_modalbutton.onclick = function(){
-    second_modal.style.display = "block";
-  }
-
-  span.onclick = function(){
-    second_modal.style.display = "none";
-  }
-
-  window.addEventListener("click", function(event){
-    if(event.target == second_modal){
-      second_modal.style.display = "none";
-    }
-  });
-
-  //modal for third speaker
-  var third_modal = document.getElementById('third-modal');
-  var third_modalbutton = document.getElementById('third-modalbutton');
-  var span = document.getElementsByClassName("close")[2];
-
-  third_modalbutton.onclick = function(){
-    third_modal.style.display = "block";
-  }
-
-  span.onclick = function(){
-    third_modal.style.display = "none";
-  }
-
-  window.addEventListener("click", function(event){
-    if(event.target == third_modal){
-      third_modal.style.display = "none";
-    }
+if ($("#speaker1") != null){
+  $("#speaker1").on("click", function(){
+    window.location.replace("speaker1.html");
   });
 
 }
+
+if ($("#speaker2") != null){
+  $("#speaker2").on("click", function(){
+    window.location.replace("speaker2.html");
+  });
+}
+
+if ($("#speaker3") != null){
+  $("#speaker3").on("click", function(){
+    window.location.replace("speaker3.html");
+  });
+}
+// if (document.getElementById('first-modal') != null){
+//   var first_modal = document.getElementById('first-modal');
+//   var first_modalbutton = document.getElementById('first-modalbutton');
+//   var span = document.getElementsByClassName("close")[0];
+//
+//   first_modalbutton.onclick = function(){
+//     first_modal.style.display = "block";
+//   }
+//
+//   span.onclick = function(){
+//     first_modal.style.display = "none";
+//   }
+//
+//   window.addEventListener("click", function(event){
+//     if(event.target == first_modal){
+//       first_modal.style.display = "none";
+//     }
+//   });
+//
+//   //modal for second speaker
+//   var second_modal = document.getElementById('second-modal');
+//   var second_modalbutton = document.getElementById('second-modalbutton');
+//   var span = document.getElementsByClassName("close")[1];
+//
+//   second_modalbutton.onclick = function(){
+//     second_modal.style.display = "block";
+//   }
+//
+//   span.onclick = function(){
+//     second_modal.style.display = "none";
+//   }
+//
+//   window.addEventListener("click", function(event){
+//     if(event.target == second_modal){
+//       second_modal.style.display = "none";
+//     }
+//   });
+//
+//   //modal for third speaker
+//   var third_modal = document.getElementById('third-modal');
+//   var third_modalbutton = document.getElementById('third-modalbutton');
+//   var span = document.getElementsByClassName("close")[2];
+//
+//   third_modalbutton.onclick = function(){
+//     third_modal.style.display = "block";
+//   }
+//
+//   span.onclick = function(){
+//     third_modal.style.display = "none";
+//   }
+//
+//   window.addEventListener("click", function(event){
+//     if(event.target == third_modal){
+//       third_modal.style.display = "none";
+//     }
+//   });
+//
+// }
 
 
 function grayscalePic(id){
