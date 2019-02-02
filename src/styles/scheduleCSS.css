@@ -221,8 +221,6 @@ footer{
   /* font-size: .7em; */
   font-family: "Gotham-Book", Arial, sans-serif;
   text-align: center;
-  height: 80%;
-  border-top: 1px solid rgba(0,0,0,.6);
   padding: 10%;
   width: 100%;
 }
@@ -388,7 +386,7 @@ footer img{
   .event-details {
   	color: #333333;
     font-size: 0.9em;
-    
+
 
   }
   .event-item-info {
