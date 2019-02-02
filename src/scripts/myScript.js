@@ -56,10 +56,6 @@ function check_if_in_view() {
 function navScroll(){
   const mq = window.matchMedia( "(max-width: 500px)" );
 
-
-
-
-
   if($(window).scrollTop() >= 100) {
     $("#navbar-container").css("box-shadow", "0 5px 5px grey");
     $(".w3-bar-item").each(function(){
@@ -75,20 +71,21 @@ function navScroll(){
       $("#eighth-annual").css("border-radius", "0%");
     }
 
+
+
   } else{
     $("#navbar-container").css("box-shadow", "none");
     $(".w3-bar-item").each(function(){
       $(this).css("color", "gray");
     });
     if (mq.matches) {
-      $("#eighth-annual").attr("src", "images/8th-annual.png");
-      $("#eighth-annual").css("filter", "progid:DXImageTransform.Microsoft.BasicImage(invert='1')");
-      $("#eighth-annual").css("-webkit-filter", "invert(100%)");
+      $("#eighth-annual").attr("src", "images/colorLogo.png");
+      // $("#eighth-annual").css("filter", "progid:DXImageTransform.Microsoft.BasicImage(invert='1')");
+      // $("#eighth-annual").css("-webkit-filter", "invert(100%)");
       $("#eighth-annual").css("width", ogLogoWidth);
-      $("#eighth-annual").css("padding-left", "0%");
+      $("#eighth-annual").css("padding-left", "2%");
       $("#eighth-annual").css("border-radius", "0%");
     }
-
 
   }
 

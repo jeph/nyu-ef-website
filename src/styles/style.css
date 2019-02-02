@@ -519,10 +519,10 @@ footer{
 }
 
 
-#eighth-annual {
+/* #eighth-annual {
   -webkit-filter: invert(100%);
   filter: progid:DXImageTransform.Microsoft.BasicImage(invert='1');
-}
+} */
 
 .w3-bar {
     left: 0px;
