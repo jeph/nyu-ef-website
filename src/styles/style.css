@@ -278,14 +278,16 @@ button {
 /* Note: position relative needed for blob positioning */
 #speakers-container{
   text-align: left;
-  margin-top: 10%;
+  /* margin-top: 10%; */
   position: relative;
   display: flex;
 }
 .speaker-container {
   position: relative;
-  flex-wrap: wrap;
-  width: 31%;
+  /* position: relative;
+  flex-wrap: wrap; */
+  /* width: 100%; */
+  flex-basis: 53%;
   margin: 2%;
 
 }
@@ -293,9 +295,19 @@ button {
   cursor: pointer;
 }
 
-.speaker-container img{
+.speaker-container .speakersPics{
   width: 85%;
   height: auto;
+}
+
+.speaker-container .speakerBlobs{
+  width: 130%;
+  left: -50px;
+  /* right: .1px; */
+  top: -60px;
+  height: auto;
+  position: absolute;
+
 }
 
 .nedalPic{
