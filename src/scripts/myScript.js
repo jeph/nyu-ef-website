@@ -167,65 +167,65 @@ if ($("#speaker3") != null){
     window.location.replace("speaker3.html");
   });
 }
-// if (document.getElementById('first-modal') != null){
-//   var first_modal = document.getElementById('first-modal');
-//   var first_modalbutton = document.getElementById('first-modalbutton');
-//   var span = document.getElementsByClassName("close")[0];
-//
-//   first_modalbutton.onclick = function(){
-//     first_modal.style.display = "block";
-//   }
-//
-//   span.onclick = function(){
-//     first_modal.style.display = "none";
-//   }
-//
-//   window.addEventListener("click", function(event){
-//     if(event.target == first_modal){
-//       first_modal.style.display = "none";
-//     }
-//   });
-//
-//   //modal for second speaker
-//   var second_modal = document.getElementById('second-modal');
-//   var second_modalbutton = document.getElementById('second-modalbutton');
-//   var span = document.getElementsByClassName("close")[1];
-//
-//   second_modalbutton.onclick = function(){
-//     second_modal.style.display = "block";
-//   }
-//
-//   span.onclick = function(){
-//     second_modal.style.display = "none";
-//   }
-//
-//   window.addEventListener("click", function(event){
-//     if(event.target == second_modal){
-//       second_modal.style.display = "none";
-//     }
-//   });
-//
-//   //modal for third speaker
-//   var third_modal = document.getElementById('third-modal');
-//   var third_modalbutton = document.getElementById('third-modalbutton');
-//   var span = document.getElementsByClassName("close")[2];
-//
-//   third_modalbutton.onclick = function(){
-//     third_modal.style.display = "block";
-//   }
-//
-//   span.onclick = function(){
-//     third_modal.style.display = "none";
-//   }
-//
-//   window.addEventListener("click", function(event){
-//     if(event.target == third_modal){
-//       third_modal.style.display = "none";
-//     }
-//   });
-//
-// }
 
+if (document.getElementById('hackathon-modal') != null){
+  var hackathonModal = document.getElementById('hackathon-modal');
+  var hackathonButton = document.getElementById('hackathon');
+  var span = document.getElementsByClassName("close")[0];
+
+  hackathonButton.onclick = function(){
+    hackathonModal.style.display = "block";
+  }
+
+  span.onclick = function(){
+    hackathonModal.style.display = "none";
+  }
+
+  window.addEventListener("click", function(event){
+    if(event.target == hackathonModal){
+      hackathonModal.style.display = "none";
+    }
+  });
+
+  //modal for second speaker
+  var pitchCompeitionModal = document.getElementById('pitch-competition-modal');
+  var pitchCompetitionButton = document.getElementById('pitch-competition');
+  var span = document.getElementsByClassName("close")[1];
+
+  pitchCompetitionButton.onclick = function(){
+    pitchCompeitionModal.style.display = "block";
+  }
+
+  span.onclick = function(){
+    pitchCompeitionModal.style.display = "none";
+  }
+
+  window.addEventListener("click", function(event){
+    if(event.target == pitchCompeitionModal){
+      pitchCompeitionModal.style.display = "none";
+    }
+  });
+
+  //modal for third speaker
+  var afterPartyModal = document.getElementById('after-party-modal');
+  var afterPartyButton = document.getElementById('after-party');
+  var span = document.getElementsByClassName("close")[2];
+
+  afterPartyButton.onclick = function(){
+    afterPartyModal.style.display = "block";
+  }
+
+  span.onclick = function(){
+    afterPartyModal.style.display = "none";
+  }
+
+  window.addEventListener("click", function(event){
+    if(event.target == afterPartyModal){
+      afterPartyModal.style.display = "none";
+    }
+  });
+
+}
 
 function grayscalePic(id){
   $(id).toggleClass("w3-grayscale");

@@ -253,6 +253,10 @@ button {
   justify-content: center;
 }
 
+#hackathon {
+  cursor: pointer;
+}
+
 .speaker-container-large img {
   margin: 4%;
   min-width: 50%;
