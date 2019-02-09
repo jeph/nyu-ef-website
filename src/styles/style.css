@@ -278,6 +278,14 @@ button {
   text-align: left;
 }
 
+.box{
+  border:1px solid black;
+  box-sizing: border-box;
+  min-height: 100px;
+  width: 33%;
+  float: left;
+}
+
 .animation-elements {
   opacity: 0;
   -moz-transition: all 700ms ease-out;
@@ -513,7 +521,6 @@ footer {
     width: 60%;
     height: auto;
   }
-
 }
 
 @media (max-aspect-ratio: 6/6) {
@@ -542,13 +549,17 @@ footer {
   #logo {
     width: 150% !important;
     margin-left: -20% !important;
-
   }
 
   footer {
     background: #57068c !important;
   }
-
+  .box{
+    border:1px solid black;
+    box-sizing: border-box;
+    width: 100%;
+    float: center;
+  }
 }
 
 @media (max-aspect-ratio: 6/6) and (min-width: 350px) {
@@ -574,6 +585,12 @@ footer {
   .navbar-item, .w3-bar-item {
     width: 100% !important;
   }
+  .box{
+    border:1px solid black;
+    box-sizing: border-box;
+    width: 100%;
+    float: center;
+  }
 }
 
 @media (max-aspect-ratio: 6/6) and (max-width: 350px) {
@@ -597,6 +614,12 @@ footer {
 
   .navbar-item, .w3-bar-item {
     width: 100% !important;
+  }
+  .box{
+    border:1px solid black;
+    box-sizing: border-box;
+    width: 100%;
+    float: center;
   }
 }
 
@@ -719,7 +742,13 @@ footer {
 
   #lineSvg {
     display: none;
+  }
 
+  .box{
+    border:1px solid black;
+    box-sizing: border-box;
+    width: 100%;
+    float: center;
   }
 }
 
@@ -756,10 +785,16 @@ footer {
   #left-blob-mobile {
     width: 60%;
   }
+
+  .box{
+    border:1px solid black;
+    box-sizing: border-box;
+    width: 100%;
+    float: center;
+  }
 }
 
-@media screen and  (max-aspect-ratio: 6/6) and (max-width: 540px) {
-
+@media screen and (max-aspect-ratio: 6/6) and (max-width: 540px) {
   footer {
     color: white;
     padding: 5% !important;
@@ -789,8 +824,14 @@ footer {
   }
 
   #left-blob-mobile {
-
     width: 70%;
+  }
+
+  .box{
+    border:1px solid black;
+    box-sizing: border-box;
+    width: 100%;
+    float: center;
   }
 }
 
@@ -855,9 +896,15 @@ footer {
     line-height: 50px;
   }
 
-
   #get-tickets-button {
     font-size: .3em;
+  }
+
+  .box{
+    border:1px solid black;
+    box-sizing: border-box;
+    width: 100%;
+    float: center;
   }
 }
 
