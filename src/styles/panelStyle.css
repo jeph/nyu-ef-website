@@ -1,0 +1,32 @@
+.panel-speaker{
+  font-size: 1.3em;
+  color: #57068c;
+  font-weight: bold;
+}
+
+h3{
+  font-size: 1.8em;
+}
+
+
+/* .individualPanel{
+  margin-bottom: 10%;
+} */
+
+.about-title{
+  margin-bottom: 5%;
+}
+
+.panel-seperator-line{
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+
+.fa-linkedin-square{
+  color: black;
+  font-size: 1.1em;
+}
+
+.fa-linkedin-square:hover{
+  color: #1eb0bf;
+}
