@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.2.0/anime.min.js"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+  <link href="styles/style.css" rel="stylesheet" type="text/css">
+
+  <title>NYU Entrepreneurs Festival</title>
+
+  <!--Favicons-->
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#1eb0bf">
+  <meta name="msapplication-TileColor" content="#1eb0bf">
+  <meta name="theme-color" content="#ffffff">
+
+</head>
+
+<body class="loading">
+
+  <div id="navbar-container" class="w3-bar w3-white w3-top">
+    <div id="navbar-mobile">
+        <a href= "https://nyuef.org"><img style = "border-radius: 0%;" class= "w3-bar-item" id="eighth-annual" src="images/colorLogo.png"  width = "1876px" height = "834px" alt="Whoops :("></a>
+        <a href="index.html" class="w3-bar-item w3-button w3-hide-small w3-hide-medium">Home</a>
+        <a href="index.html#about" class="w3-bar-item w3-button w3-hide-small w3-hide-medium" >About</a>
+        <a href="schedule.html" class="w3-bar-item w3-button w3-hide-small w3-hide-medium" >Schedule</a>
+        <a href="index.html#speakers" class="w3-bar-item w3-button w3-hide-small w3-hide-medium" >Speakers</a>
+        <a href="https://www.eventbrite.com/e/8th-annual-nyu-entrepreneurs-festival-tickets-53021626111"
+           class="w3-bar-item w3-button w3-hide-small w3-hide-medium">Tickets</a>
+        <a id = "hamburger" href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large" onclick="toggleFunction()">&#9776;</a>
+    </div>
+
+    <div id="navbar" class="w3-bar-block w3-hide w3-hide-large">
+          <a href="index.html" class="navbar-item w3-bar-item w3-button" onclick="toggleFunction()">Home</a>
+          <a href="index.html#about" class="navbar-item w3-bar-item w3-button" onclick="toggleFunction()">About</a>
+          <a href="schedule.html" class="navbar-item w3-bar-item w3-button" onclick="toggleFunction()">Schedule</a>
+          <a href="index.html#speakers" class="navbar-item w3-bar-item w3-button" onclick="toggleFunction()">Speakers</a>
+          <a href="https://www.eventbrite.com/e/8th-annual-nyu-entrepreneurs-festival-tickets-53021626111"
+             class="navbar-item w3-bar-item w3-button" onclick="toggleFunction()">Tickets</a>
+    </div>
+
+
+  </div>
+
+  <main style= "margin-top: 10%;">
+    <section class= "allPanels">
+      <h1 class="sectionSubjectTitle about-title w3-center">Panels</h1>
+
+      <div class = "individualPanel">
+        <h3>Starting a Startup While in School</h3>
+        <h4 class= "panel-moderators">Moderator: Sarah Maibach</h4>
+
+        <div class= "panel-speaker-info w3-row">
+          <div class= "w3-col m6">
+            <div class= "individualSpeaker w3-row">
+              <p class= "panel-speaker" style = "font-size: 1.1em; color: purple; font-weight:bold; ">Kyleigh Russ</p>
+              <p class= "panel-school w3-col m2">Wagner</p>
+              <p class= "panel-connector w3-col m1">-</p>
+              <p class= "panel-company w3-col m4">Govern for America</p>
+
+            </div>
+
+            <div class= "individualSpeaker w3-row">
+              <p class= "panel-speaker" style = "font-size: 1.1em; color: purple; font-weight:bold;">Nader Ahmed</p>
+              <p class= "panel-school w3-col m2">Tandon</p>
+              <p class= "panel-connector w3-col m1">-</p>
+              <p class= "panel-company w3-col m4">Merciless Motors</p>
+            </div>
+          </div>
+
+
+
+          <div class= "w3-col m6">
+            <div class= "individualSpeaker w3-row">
+              <p class= "panel-speaker" style = "font-size: 1.1em; color: purple; font-weight:bold; ">Daniela Blanco</p>
+              <p class= "panel-school w3-col m2">Tandon</p>
+              <p class= "panel-connector w3-col m1">-</p>
+              <p class= "panel-company w3-col m4">Sunethics</p>
+
+            </div>
+
+            <div class= "individualSpeaker w3-row">
+              <p class= "panel-speaker" style = "font-size: 1.1em; color: purple; font-weight:bold;">Mior Hwang</p>
+              <p class= "panel-school w3-col m2">CAS</p>
+              <p class= "panel-connector w3-col m1">-</p>
+              <p class= "panel-company w3-col m4">GigFinesse</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+
+
+      <div class = "individualPanel">
+        <h3>Social Ventures</h3>
+        <h4 class= "panel-moderators">Moderator: TBA</h4>
+
+        <div class= "panel-speaker-info w3-row">
+          <div class= "w3-col m6">
+            <div class= "individualSpeaker w3-row">
+              <p class= "panel-speaker" style = "font-size: 1.1em; color: purple; font-weight:bold; ">Alexandra Clare</p>
+              <p class= "panel-school w3-col m2">SPS</p>
+              <p class= "panel-connector w3-col m1">-</p>
+              <p class= "panel-company w3-col m4">Re:Coded</p>
+
+            </div>
+
+            <div class= "individualSpeaker w3-row">
+              <p class= "panel-speaker" style = "font-size: 1.1em; color: purple; font-weight:bold;">Lyel Resner</p>
+              <p class= "panel-school w3-col m2">Gallatin</p>
+              <p class= "panel-connector w3-col m1">-</p>
+              <p class= "panel-company w3-col m4">Swayable</p>
+            </div>
+          </div>
+
+
+
+          <div class= "w3-col m6">
+            <div class= "individualSpeaker w3-row">
+              <p class= "panel-speaker" style = "font-size: 1.1em; color: purple; font-weight:bold; ">Jesse Vaughan</p>
+              <p class= "panel-school w3-col m2">LS/CAS</p>
+              <p class= "panel-connector w3-col m1">-</p>
+              <p class= "panel-company w3-col m4">Landed</p>
+
+            </div>
+
+            <div class= "individualSpeaker w3-row">
+              <p class= "panel-speaker" style = "font-size: 1.1em; color: purple; font-weight:bold;">Jess Riegel</p>
+              <p class= "panel-school w3-col m2">Wagner</p>
+              <p class= "panel-connector w3-col m1">-</p>
+              <p class= "panel-company w3-col m4">Motivote</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+
+
+      <div class = "individualPanel">
+        <h3>Female Founders</h3>
+        <h4 class= "panel-moderators">Moderator: Emily Baum</h4>
+        <div class= "panel-speaker-info w3-row">
+          <div class= "w3-col m6">
+            <div class= "individualSpeaker w3-row">
+              <p class= "panel-speaker" style = "font-size: 1.1em; color: purple; font-weight:bold; ">Vicki Fulop</p>
+              <p class= "panel-school w3-col m2">CAS</p>
+              <p class= "panel-connector w3-col m1">-</p>
+              <p class= "panel-company w3-col m4">Brooklinen</p>
+
+            </div>
+
+            <div class= "individualSpeaker w3-row">
+              <p class= "panel-speaker" style = "font-size: 1.1em; color: purple; font-weight:bold;">Allie Diracles</p>
+              <p class= "panel-school w3-col m2">Tisch</p>
+              <p class= "panel-connector w3-col m1">-</p>
+              <p class= "panel-company w3-col m4">Vidcode</p>
+            </div>
+          </div>
+
+
+
+          <div class= "w3-col m6">
+            <div class= "individualSpeaker w3-row">
+              <p class= "panel-speaker" style = "font-size: 1.1em; color: purple; font-weight:bold; ">Trisha Goyal</p>
+              <p class= "panel-school w3-col m2">Stern</p>
+              <p class= "panel-connector w3-col m1">-</p>
+              <p class= "panel-company w3-col m4">SavetheLove</p>
+
+            </div>
+
+          </div>
+        </div>
+
+
+      </div>
+
+
+
+      <div class = "individualPanel">
+        <h3>Food and Beverage</h3>
+        <h4 class= "panel-moderators">Moderator: Kenny Lao</h4>
+
+        <div class= "panel-speaker-info w3-row">
+          <div class= "w3-col m6">
+            <div class= "individualSpeaker w3-row">
+              <p class= "panel-speaker" style = "font-size: 1.1em; color: purple; font-weight:bold; ">Britt Martin</p>
+              <p class= "panel-school w3-col m2">GSAS</p>
+              <p class= "panel-connector w3-col m1">-</p>
+              <p class= "panel-company w3-col m4">Food Period</p>
+
+            </div>
+
+            <div class= "individualSpeaker w3-row">
+              <p class= "panel-speaker" style = "font-size: 1.1em; color: purple; font-weight:bold;">Joanas Günther</p>
+              <p class= "panel-school w3-col m2">Tandon</p>
+              <p class= "panel-connector w3-col m1">-</p>
+              <p class= "panel-company w3-col m4">We are the New Farmers</p>
+            </div>
+          </div>
+
+
+
+          <div class= "w3-col m6">
+            <div class= "individualSpeaker w3-row">
+              <p class= "panel-speaker" style = "font-size: 1.1em; color: purple; font-weight:bold; ">Dylan Sprouse</p>
+              <p class= "panel-school w3-col m2">Gallatin</p>
+              <p class= "panel-connector w3-col m1">-</p>
+              <p class= "panel-company w3-col m4">All-Wise</p>
+
+            </div>
+
+          </div>
+        </div>
+
+
+
+
+
+      </div>
+
+
+
+
+
+
+
+      <div class = "individualPanel">
+        <h3>Emerging Tech</h3>
+        <h4 class= "panel-moderators">Moderator: Lindsey Grey</h4>
+
+        <div class= "panel-speaker-info w3-row">
+          <div class= "w3-col m6">
+            <div class= "individualSpeaker w3-row">
+              <p class= "panel-speaker" style = "font-size: 1.1em; color: purple; font-weight:bold; ">Will Canine</p>
+              <p class= "panel-school w3-col m2">Tisch</p>
+              <p class= "panel-connector w3-col m1">-</p>
+              <p class= "panel-company w3-col m4">Opentrons</p>
+
+            </div>
+
+            <div class= "individualSpeaker w3-row">
+              <p class= "panel-speaker" style = "font-size: 1.1em; color: purple; font-weight:bold;">Sophia Dominguez</p>
+              <p class= "panel-school w3-col m2">Gallatin</p>
+              <p class= "panel-connector w3-col m1">-</p>
+              <p class= "panel-company w3-col m4">SVRF</p>
+            </div>
+          </div>
+
+
+
+          <div class= "w3-col m6">
+            <div class= "individualSpeaker w3-row">
+              <p class= "panel-speaker" style = "font-size: 1.1em; color: purple; font-weight:bold; ">Alejandro Matamala</p>
+              <p class= "panel-school w3-col m2">Tisch</p>
+              <p class= "panel-connector w3-col m1">-</p>
+              <p class= "panel-company w3-col m4">Runway</p>
+
+            </div>
+            <div class= "individualSpeaker w3-row">
+              <p class= "panel-speaker" style = "font-size: 1.1em; color: purple; font-weight:bold; ">John Piotrowski</p>
+              <p class= "panel-school w3-col m2">Courant</p>
+              <p class= "panel-connector w3-col m1">-</p>
+              <p class= "panel-company w3-col m4">The Ocean</p>
+
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+
+
+
+      <div class = "individualPanel">
+        <h3>Venture Capital</h3>
+        <h4 class= "panel-moderators">Moderator: Sergei Revzin</h4>
+
+        <div class= "panel-speaker-info w3-row">
+          <div class= "w3-col m6">
+            <div class= "individualSpeaker w3-row">
+              <p class= "panel-speaker" style = "font-size: 1.1em; color: purple; font-weight:bold; ">Dani Grant</p>
+              <p class= "panel-school w3-col m2">Gallatin</p>
+              <p class= "panel-connector w3-col m1">-</p>
+              <p class= "panel-company w3-col m4">Union Square Ventures</p>
+
+            </div>
+
+            <div class= "individualSpeaker w3-row">
+              <p class= "panel-speaker" style = "font-size: 1.1em; color: purple; font-weight:bold;">Kyra Durko</p>
+              <p class= "panel-school w3-col m2">Stern</p>
+              <p class= "panel-connector w3-col m1">-</p>
+              <p class= "panel-company w3-col m4">Two Sigma Ventures</p>
+            </div>
+          </div>
+
+          <div class= "w3-col m6">
+            <div class= "individualSpeaker w3-row">
+              <p class= "panel-speaker" style = "font-size: 1.1em; color: purple; font-weight:bold; ">Oscar Adelman</p>
+              <p class= "panel-school w3-col m2">Stern</p>
+              <p class= "panel-connector w3-col m1">-</p>
+              <p class= "panel-company w3-col m4">Sinai Ventures</p>
+
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+
+
+    </section>
+
+
+
+  </main>
+  <footer class="w3-center">
+    <div class="footer-grid-container">
+      <div class="footer-grid-item footerNoShow">
+        <h3>Contact Us</h3>
+        <a href="https://www.facebook.com/NYUEntrepreneur/"
+           target="_blank"><i class="fa fa-facebook-square w3-xxlarge" aria-hidden="true"></i></a>
+        <a href="https://twitter.com/NYUEntrepreneur"
+           target="_blank"><i class="fa fa-twitter-square w3-xxlarge" aria-hidden="true"></i></a>
+        <a href="mailto:entrepreneur@nyu.edu"
+           target="_blank"><i class="fa fa-envelope-square w3-xxlarge" aria-hidden="true"></i></a>
+        <h4>NYU Stern School of Business</h4>
+        <p>44 West 4th Street New York, NY 10012</p>
+      </div>
+
+      <div class="footer-grid-item poweredBy footerNoShow">
+        <h3>Powered By:</h3>
+        <img src="images/footer/entrepreneurialInstitute.png"
+             alt="entrepreneurial institute logo"
+             width="500"
+             height="88">
+        <img src="images/footer/NYUStern.png" alt="NYU Stern logo" width="500" height="313"><br>
+        <img src="images/footer/entrepreneursNetwork.png"
+             alt="Entrepreneurs Network logo"
+             width="500"
+             height="55">
+      </div>
+
+    </div>
+
+    <div class="backToTop">
+      <a href="#home"><img id="footer-logo"
+                           src="images/colorLogo.png"
+                           alt="Pretend there's something here :)"></a><br>
+      <a href="#home" id="backToTop" class="backToTop w3-btn">To The Top</a>
+    </div>
+
+  </footer>
+
+
+
+
+
+
+
+  <script src="scripts/w3Script.js"></script>
+  <script src="scripts/myScript.js"></script>
+</body>
+
+</html>
