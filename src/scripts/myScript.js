@@ -168,65 +168,6 @@ if ($("#speaker3") != null){
   });
 }
 
-if (document.getElementById('hackathon-modal') != null){
-  var hackathonModal = document.getElementById('hackathon-modal');
-  var hackathonButton = document.getElementById('hackathon');
-  var span = document.getElementsByClassName("close")[0];
-
-  hackathonButton.onclick = function(){
-    hackathonModal.style.display = "block";
-  }
-
-  span.onclick = function(){
-    hackathonModal.style.display = "none";
-  }
-
-  window.addEventListener("click", function(event){
-    if(event.target == hackathonModal){
-      hackathonModal.style.display = "none";
-    }
-  });
-
-  //modal for second speaker
-  var pitchCompeitionModal = document.getElementById('pitch-competition-modal');
-  var pitchCompetitionButton = document.getElementById('pitch-competition');
-  var span = document.getElementsByClassName("close")[1];
-
-  pitchCompetitionButton.onclick = function(){
-    pitchCompeitionModal.style.display = "block";
-  }
-
-  span.onclick = function(){
-    pitchCompeitionModal.style.display = "none";
-  }
-
-  window.addEventListener("click", function(event){
-    if(event.target == pitchCompeitionModal){
-      pitchCompeitionModal.style.display = "none";
-    }
-  });
-
-  //modal for third speaker
-  var afterPartyModal = document.getElementById('after-party-modal');
-  var afterPartyButton = document.getElementById('after-party');
-  var span = document.getElementsByClassName("close")[2];
-
-  afterPartyButton.onclick = function(){
-    afterPartyModal.style.display = "block";
-  }
-
-  span.onclick = function(){
-    afterPartyModal.style.display = "none";
-  }
-
-  window.addEventListener("click", function(event){
-    if(event.target == afterPartyModal){
-      afterPartyModal.style.display = "none";
-    }
-  });
-
-}
-
 function grayscalePic(id){
   $(id).toggleClass("w3-grayscale");
 }

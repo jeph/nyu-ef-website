@@ -253,8 +253,21 @@ button {
   justify-content: center;
 }
 
-#hackathon {
+.event-grid-container {
+  display: block;
+  width: 100%;
+}
+
+.clickable {
   cursor: pointer;
+}
+
+.clickable:hover {
+  background-color: gray;
+}
+
+.event-grid-item {
+  display: flex;
 }
 
 .speaker-container-large img {
