@@ -155,6 +155,16 @@ button {
   padding-top: 40px;
 }
 
+.video-container{
+  margin-bottom: 10%;
+}
+
+#checkOutVideo{
+  color: #1eb0bf;
+  text-align: left;
+  padding-top: 15%;
+}
+
 #featuring {
   font-size: 2em;
 }
@@ -171,6 +181,12 @@ button {
 
 .video-container {
   padding: 10px 0 10px 0;
+}
+
+#checkOutVideo{
+  color: #1eb0bf;
+  text-align: left;
+  margin-right: 5%;
 }
 
 .aboutHighlightsPurp {
@@ -591,6 +607,13 @@ footer {
     width: 100%;
     float: center;
   }
+
+  #checkOutVideo{
+    padding-top: 0%;
+  }
+  .video-container iframe{
+    width: 100%;
+  }
 }
 
 @media (max-aspect-ratio: 6/6) and (max-width: 350px) {
@@ -621,6 +644,14 @@ footer {
     width: 100%;
     float: center;
   }
+
+  #checkOutVideo{
+    padding-top: 0%;
+  }
+  .video-container iframe{
+    width: 100%;
+  }
+
 }
 
 @media screen and  (max-aspect-ratio: 6/6) and (max-width: 509px) {
@@ -639,6 +670,14 @@ footer {
 
   .speaker-modal-header img {
     margin-bottom: 5%;
+  }
+
+  #checkOutVideo{
+    padding-top: 0%;
+  }
+
+  .video-container iframe{
+    width: 100%;
   }
 
   #logo {

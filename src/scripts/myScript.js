@@ -60,6 +60,8 @@ function navScroll(){
     $("#navbar-container").css("box-shadow", "0 5px 5px grey");
     $(".w3-bar-item").each(function(){
       $(this).css("color", "black");
+      $("#tickets-btn").css("background-color", "#1eb0bf");
+
     });
 
     if (mq.matches) {
@@ -77,6 +79,8 @@ function navScroll(){
     $("#navbar-container").css("box-shadow", "none");
     $(".w3-bar-item").each(function(){
       $(this).css("color", "gray");
+      $("#tickets-btn").css("background-color", "#ffffff");
+
     });
     if (mq.matches) {
       $("#eighth-annual").attr("src", "images/colorLogo.png");
