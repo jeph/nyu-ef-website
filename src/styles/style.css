@@ -294,7 +294,7 @@ button {
   text-align: left;
 }
 
-.box{
+.speakers-page-box{
   border:1px solid black;
   box-sizing: border-box;
   min-height: 100px;
@@ -570,7 +570,7 @@ footer {
   footer {
     background: #57068c !important;
   }
-  .box{
+  .speakers-page-box{
     border:1px solid black;
     box-sizing: border-box;
     width: 100%;
@@ -601,7 +601,7 @@ footer {
   .navbar-item, .w3-bar-item {
     width: 100% !important;
   }
-  .box{
+  .speakers-page-box{
     border:1px solid black;
     box-sizing: border-box;
     width: 100%;
@@ -638,7 +638,7 @@ footer {
   .navbar-item, .w3-bar-item {
     width: 100% !important;
   }
-  .box{
+  .speakers-page-box{
     border:1px solid black;
     box-sizing: border-box;
     width: 100%;
@@ -783,7 +783,7 @@ footer {
     display: none;
   }
 
-  .box{
+  .speakers-page-box{
     border:1px solid black;
     box-sizing: border-box;
     width: 100%;
@@ -825,7 +825,7 @@ footer {
     width: 60%;
   }
 
-  .box{
+  .speakers-page-box{
     border:1px solid black;
     box-sizing: border-box;
     width: 100%;
@@ -866,7 +866,7 @@ footer {
     width: 70%;
   }
 
-  .box{
+  .speakers-page-box{
     border:1px solid black;
     box-sizing: border-box;
     width: 100%;
@@ -939,7 +939,7 @@ footer {
     font-size: .3em;
   }
 
-  .box{
+  .speakers-page-box{
     border:1px solid black;
     box-sizing: border-box;
     width: 100%;
