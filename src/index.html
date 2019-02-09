@@ -15,7 +15,7 @@
         href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
   <link href="styles/style.css" rel="stylesheet" type="text/css">
 
-  <title>NYU Entrepreneur's Festival</title>
+  <title>NYU Entrepreneurs Festival</title>
 
   <!--Favicons-->
   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
@@ -54,7 +54,7 @@
          src="images/landing-page-title-logo.png"
          alt="NYU Entrepreneurs Festival Logo">
     <a id="get-tickets-button"
-       href="https://www.eventbrite.com/e/8th-annual-nyu-entrepreneurs-festival-tickets-53021626111">Get
+       href="tickets.html">Get
       Tickets Now</a>
   </div>
 
@@ -94,7 +94,7 @@
          onclick="toggleFunction()">About</a>
       <a href="schedule.html" class="navbar-item w3-bar-item w3-button" onclick="toggleFunction()">Schedule</a>
       <a href="#speakers" class="navbar-item w3-bar-item w3-button" onclick="toggleFunction()">Speakers</a>
-      <a href="https://www.eventbrite.com/e/8th-annual-nyu-entrepreneurs-festival-tickets-53021626111"
+      <a href="tickets.html"
          class="navbar-item w3-bar-item w3-button" onclick="toggleFunction()">Tickets</a>
     </div>
   </div>
@@ -121,16 +121,26 @@
             </p>
             <br>
           </div>
-          <div class="animation-elements video-container">
-            <p>Check out last year's festival in this video!</p>
-            <iframe width="560"
-                    class="video"
-                    height="315"
-                    src="https://www.youtube.com/embed/IicSwDk7uhg"
-                    frameborder="0"
-                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                    allowfullscreen></iframe>
+          <div class="w3-center animation-elements video-container">
+
+            <div class="w3-row">
+              <div class="w3-col s12 m3 w3-center">
+                <h3 id ="checkOutVideo">Check out last year's festival in this video!</h3>
+              </div>
+              <div class="w3-col s12 m9 w3-center">
+                <iframe width="560"
+                        class="video"
+                        height="315"
+                        src="https://www.youtube.com/embed/IicSwDk7uhg"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen>
+                </iframe>
+              </div>
+            </div>
+
           </div>
+
           <h3 id="featuring" class="animation-elements">Events Include:</h3>
           <br>
           <div class="grid-container">
@@ -200,7 +210,6 @@
   </section>
   <br>
 
-
   <section id="speakers-section">
     <div class="w3-large">
 
@@ -210,12 +219,6 @@
           <h1 id="speakers-h1" class="sectionSubjectTitle">
             <span class="about-title">Keynote Speakers</span>
           </h1>
-          <div id="speakers-description" class="animation-elements">
-                        <span>
-                            <!--<h2 style = "color: #57068c">Speakers for the 2019 Festival will be announced soon.</h2>
-                            <h3>Check out our previous speakers below!</h3>-->
-                        </span>
-          </div>
 
           <div id="speakers-container">
 
@@ -223,7 +226,6 @@
                  onmouseover="grayscalePic('#speaker1Profile')"
                  onmouseout="grayscalePic('#speaker1Profile')"
                  class="speaker-container">
-
 
               <img class="speakerBlobs"
                    src="images/speakerBlobs/blobs-06.png"
@@ -238,9 +240,9 @@
                    alt="Jeff Furman Profile Picture">
               <br><br>
               <h3 class="animation-elements">Jeff Furman</h3>
+              <h5>NYU Stern '65    |    NYU Law '68</h5>
               <h4 class="animation-elements">Founder of the Ben & Jerry's Foundation, Inc</h4>
-              <h3 class="readMoreToolTip w3-text w3-tag" style="background-color: #57068c">Click to
-                read more</span>
+              <p class="readMoreToolTip w3-text w3-tag" style="background-color: #57068c">Click to read more</p>
             </div>
 
             <div id="speaker2"
@@ -264,7 +266,7 @@
               <p class="w3-tooltip animation-elements">
                 <!--SECOND SPEAKER SHORT BIO HERE--></br></br>
                 <!--UNCOMMENT BELOW FOR LONGER BIO-->
-                <!--<span class="readMoreToolTip w3-text w3-tag" style = "background-color: #57068c">Click to read more</span>-->
+                <!--<p class="readMoreToolTip w3-text w3-tag" style = "background-color: #57068c">Click to read more</p>-->
               </p>
             </div>
 
@@ -288,10 +290,33 @@
               <p class="w3-tooltip animation-elements">
                 <!--THIRD SPEAKER SHORT BIO HERE--></br></br>
                 <!--UNCOMMENT BELOW FOR LONGER BIO-->
-                <!--<span class="readMoreToolTip w3-text w3-tag" style = "background-color: #57068c">Click to read more</span>-->
+                <!--<p class="readMoreToolTip w3-text w3-tag" style = "background-color: #57068c">Click to read more</p>-->
               </p>
             </div>
 
+            <div id="speaker4"
+                    onmouseover="grayscalePic('#speaker4Profile')"
+                    onmouseout="grayscalePic('#speaker4Profile')"
+                    class="speaker-container">
+
+                <img class="speakerBlobs"
+                    src="images/speakerBlobs/blobs-02.png"
+                    width="2084"
+                    height="2084">
+
+                <img id="speaker4Profile"
+                    class="speakersPics animation-elements"
+                    src="images/mysteryIconCircle.png"
+                    alt="mysterySpeaker4">
+                <br><br>
+                <h3 class="animation-elements">TBA</h3>
+                <h4 class="animation-elements">TBA</h4>
+                <p class="w3-tooltip animation-elements">
+                <!--THIRD SPEAKER SHORT BIO HERE--></br></br>
+                <!--UNCOMMENT BELOW FOR LONGER BIO-->
+                <!--<p class="readMoreToolTip w3-text w3-tag" style = "background-color: #57068c">Click to read more</p>-->
+                </p>
+            </div>
             <!-- end of id speakers container -->
           </div>
 
@@ -385,9 +410,7 @@
   </div>
 
   <div class="backToTop">
-    <a href="#home"><img id="footer-logo"
-                         src="images/colorLogo.png"
-                         alt="Pretend there's something here :)"></a><br>
+    <a href="#home"><img id="footer-logo" src="images/colorLogo.png" alt="Pretend there's something here :)"></a><br>
     <a href="#home" id="backToTop" class="backToTop w3-btn">To The Top</a>
   </div>
 

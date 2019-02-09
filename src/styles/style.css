@@ -155,6 +155,16 @@ button {
   padding-top: 40px;
 }
 
+.video-container{
+  margin-bottom: 10%;
+}
+
+#checkOutVideo{
+  color: #1eb0bf;
+  text-align: left;
+  padding-top: 15%;
+}
+
 #featuring {
   font-size: 2em;
 }
@@ -171,6 +181,12 @@ button {
 
 .video-container {
   padding: 10px 0 10px 0;
+}
+
+#checkOutVideo{
+  color: #1eb0bf;
+  text-align: left;
+  margin-right: 5%;
 }
 
 .aboutHighlightsPurp {
@@ -276,6 +292,14 @@ button {
 
 .speaker-container-hidden p {
   text-align: left;
+}
+
+.speakers-page-box{
+  border:1px solid black;
+  box-sizing: border-box;
+  min-height: 100px;
+  width: 33%;
+  float: left;
 }
 
 .animation-elements {
@@ -513,7 +537,6 @@ footer {
     width: 60%;
     height: auto;
   }
-
 }
 
 @media (max-aspect-ratio: 6/6) {
@@ -542,13 +565,17 @@ footer {
   #logo {
     width: 150% !important;
     margin-left: -20% !important;
-
   }
 
   footer {
     background: #57068c !important;
   }
-
+  .speakers-page-box{
+    border:1px solid black;
+    box-sizing: border-box;
+    width: 100%;
+    float: center;
+  }
 }
 
 @media (max-aspect-ratio: 6/6) and (min-width: 350px) {
@@ -574,6 +601,19 @@ footer {
   .navbar-item, .w3-bar-item {
     width: 100% !important;
   }
+  .speakers-page-box{
+    border:1px solid black;
+    box-sizing: border-box;
+    width: 100%;
+    float: center;
+  }
+
+  #checkOutVideo{
+    padding-top: 0%;
+  }
+  .video-container iframe{
+    width: 100%;
+  }
 }
 
 @media (max-aspect-ratio: 6/6) and (max-width: 350px) {
@@ -598,6 +638,20 @@ footer {
   .navbar-item, .w3-bar-item {
     width: 100% !important;
   }
+  .speakers-page-box{
+    border:1px solid black;
+    box-sizing: border-box;
+    width: 100%;
+    float: center;
+  }
+
+  #checkOutVideo{
+    padding-top: 0%;
+  }
+  .video-container iframe{
+    width: 100%;
+  }
+
 }
 
 @media screen and  (max-aspect-ratio: 6/6) and (max-width: 509px) {
@@ -616,6 +670,14 @@ footer {
 
   .speaker-modal-header img {
     margin-bottom: 5%;
+  }
+
+  #checkOutVideo{
+    padding-top: 0%;
+  }
+
+  .video-container iframe{
+    width: 100%;
   }
 
   #logo {
@@ -719,7 +781,13 @@ footer {
 
   #lineSvg {
     display: none;
+  }
 
+  .speakers-page-box{
+    border:1px solid black;
+    box-sizing: border-box;
+    width: 100%;
+    float: center;
   }
 }
 
@@ -756,10 +824,16 @@ footer {
   #left-blob-mobile {
     width: 60%;
   }
+
+  .speakers-page-box{
+    border:1px solid black;
+    box-sizing: border-box;
+    width: 100%;
+    float: center;
+  }
 }
 
-@media screen and  (max-aspect-ratio: 6/6) and (max-width: 540px) {
-
+@media screen and (max-aspect-ratio: 6/6) and (max-width: 540px) {
   footer {
     color: white;
     padding: 5% !important;
@@ -789,8 +863,14 @@ footer {
   }
 
   #left-blob-mobile {
-
     width: 70%;
+  }
+
+  .speakers-page-box{
+    border:1px solid black;
+    box-sizing: border-box;
+    width: 100%;
+    float: center;
   }
 }
 
@@ -855,9 +935,15 @@ footer {
     line-height: 50px;
   }
 
-
   #get-tickets-button {
     font-size: .3em;
+  }
+
+  .speakers-page-box{
+    border:1px solid black;
+    box-sizing: border-box;
+    width: 100%;
+    float: center;
   }
 }
 
