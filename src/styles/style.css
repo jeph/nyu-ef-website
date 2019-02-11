@@ -295,12 +295,23 @@ button {
 }
 
 .speakers-page-box{
-  border:1px solid black;
+  /*border:1px solid black;*/
   box-sizing: border-box;
   min-height: 100px;
   width: 33%;
+}
+
+.flex-container{
+  display: flex;
+}
+/*
+#panels-section{
   float: left;
 }
+
+#roundtables-section{
+  float: left;
+}*/
 
 .animation-elements {
   opacity: 0;
@@ -570,11 +581,10 @@ footer {
   footer {
     background: #57068c !important;
   }
-  .speakers-page-box{
-    border:1px solid black;
-    box-sizing: border-box;
-    width: 100%;
-    float: center;
+
+  .flex-container{
+    display: flex;
+    flex-direction: column;
   }
 }
 
