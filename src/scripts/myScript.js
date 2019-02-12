@@ -53,7 +53,7 @@ function navScroll(){
   if($(window).scrollTop() >= 100) {
     $("#leftBlob").addClass("fadeOutBlobs");
     $("#right-blob-mobile").addClass("fadeOutBlobs");
-
+    $("#left-blob-mobile").addClass("fadeOutBlobs");
     $("#navbar-container").css("box-shadow", "0 5px 5px grey");
     $(".w3-bar-item").each(function () {
       $(this).css("color", "black");
@@ -62,7 +62,6 @@ function navScroll(){
     });
 
     if (mq.matches) {
-      $("#left-blob-mobile").addClass("fadeOutBlobs");
       $("#eighth-annual").attr("src", "images/landing-page-title-logo.png");
       $("#eighth-annual").css("padding-left", "3%");
       $("#eighth-annual").css("filter", "none");
@@ -75,9 +74,11 @@ function navScroll(){
   } else {
     $("#navbar-container").css("box-shadow", "none");
     $("#leftBlob").removeClass("fadeOutBlobs");
+    $("#left-blob-mobile").removeClass("fadeOutBlobs");
     $("#right-blob-mobile").removeClass("fadeOutBlobs");
     $("#leftBlob").css("opacity", 1);
     $("#right-blob-mobile").css("opacity", 1);
+    $("#left-blob-mobile").css("opacity", 1)
     $(".w3-bar-item").each(function(){
       $(this).css("color", "gray");
       $("#tickets-btn").css("background-color", "#ffffff");
