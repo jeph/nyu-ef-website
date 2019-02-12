@@ -19,12 +19,20 @@ p {
     /* font-size: 1.5em; */
 }
 
+.moderator-speaker{
+  background-color: #333333;
+  color: white;
+  margin-right: 1%;
+  padding: 1px;
+  font-weight: bold;
+  font-size: 1em;
+}
 
 
 .title{
 	font-family: "Gotham-Book", Arial, sans-serif;
-	font-size: 1.1em;
-	padding-top: 5%;
+	font-size: 1.35em;
+	padding-top: 3%;
 
 }
 
@@ -208,8 +216,7 @@ p {
 img {
   border-radius: 50%;
   z-index: 1;
-  width: 100px;
-  padding-right: 15px;
+  width: 90px;
   float: left;
 }
 
@@ -373,9 +380,9 @@ footer img{
   	padding-top: 15px;
   }
 
+
   .event-title {
     font-size: 1.1em;
-
   	color: #333333;
   }
 
@@ -386,9 +393,15 @@ footer img{
   .event-details {
   	color: #333333;
     font-size: 0.9em;
+  }
 
+  .event-speakers {
+    color: #333333;
+    font-size: 0.9em;
+    text-decoration: underline;
 
   }
+
   .event-item-info {
     display: none;
     /*font-size: 1em;*/
@@ -781,8 +794,6 @@ footer img{
   }
 
 
-
-
 }
 
 
@@ -968,7 +979,7 @@ footer img{
 
 
 
-  main{
+main{
     width: 90%;
   }
 
@@ -998,7 +1009,6 @@ footer img{
     background-color: #57068c;
     padding: 5% !important;
   }
-
 
 
   .footer-grid-container i, .footer-grid-container a:link{
@@ -1257,6 +1267,13 @@ footer img{
   	padding-top: 0%;
 
   }
+
+.title{
+  font-family: "Gotham-Book", Arial, sans-serif;
+  font-size: 1.2em;
+  padding-top: 3%;
+
+}
   .box {
     height: 55px;
 	  width: 290px;
