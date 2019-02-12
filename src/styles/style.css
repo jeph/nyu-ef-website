@@ -99,6 +99,82 @@ body, html {
   z-index: 1;
 }
 
+#leftBlob{
+  position:fixed !important;
+}
+
+#right-blob-mobile{
+  position:fixed !important;
+}
+
+#left-blob-mobile{
+  position:fixed !important;
+}
+
+.fadeOutBlobs{
+  -moz-animation-name: fadeOut;
+  -moz-animation-duration: 1s;
+  -moz-animation-fill-mode: forwards;
+  -webkit-animation-name: fadeOut;
+  -webkit-animation-duration: 1s;
+  -webkit-animation-fill-mode: forwards;
+  -o-animation-name: fadeOut;
+  -o-animation-duration: 1s;
+  -o-animation-fill-mode: forwards;
+  animation-name: fadeOut;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+}
+
+.fadeInBlobs{
+  animation-name: fadeIn;
+  animation-duration: 3s;
+  -moz-animation-name: fadeIn;
+  -moz-animation-duration: 3s;
+  -webkit-animation-name: fadeIn;
+  -webkit-animation-duration: 3s;
+  -o-animation-name: fadeIn;
+  -o-animation-duration: 3s;
+}
+
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+@-moz-keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+@-o-keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+@-webkit-keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+
+
 @keyframes fadeIn {
   from {
     opacity: 0;
@@ -295,11 +371,46 @@ button {
 }
 
 .speakers-page-box{
-  border:1px solid black;
+  /*border:1px solid black;*/
   box-sizing: border-box;
   min-height: 100px;
   width: 33%;
+}
+
+.flex-container{
+  display: flex;
+}
+/*
+#panels-section{
   float: left;
+}
+
+#roundtables-section{
+  float: left;
+}*/
+.blob-fade-out {
+  opacity: 0;
+  -moz-transition: all 700ms ease-out;
+  -webkit-transition: all 700ms ease-out;
+  -o-transition: all 700ms ease-out;
+  transition: all 700ms ease-out;
+  -moz-transform: translate3d(0px, 50px, 0px);
+  -webkit-transform: translate3d(0px, 50px, 0px);
+  -o-transform: translate(0px, 50px);
+  -ms-transform: translate(0px, 50px);
+  transform: translate3d(0px, 50, 0px);
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.out-view {
+  opacity: 1;
+  -moz-transform: translate3d(0px, 0px, 0px);
+  -webkit-transform: translate3d(0px, 0px, 0px);
+  -o-transform: translate(0px, 0px);
+  -ms-transform: translate(0px, 0px);
+  transform: translate3d(0px, 0px, 0px);
 }
 
 .animation-elements {
@@ -570,11 +681,10 @@ footer {
   footer {
     background: #57068c !important;
   }
-  .speakers-page-box{
-    border:1px solid black;
-    box-sizing: border-box;
-    width: 100%;
-    float: center;
+
+  .flex-container{
+    display: flex;
+    flex-direction: column;
   }
 }
 
