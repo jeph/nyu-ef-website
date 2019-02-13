@@ -47,10 +47,13 @@ function check_if_in_view() {
 
 
 // function that adds nav shadow on scroll
-function navScroll() {
+function navScroll(){
   const mq = window.matchMedia("(max-width: 500px)");
 
-  if ($(window).scrollTop() >= 100) {
+  if($(window).scrollTop() >= 100) {
+    $("#leftBlob").addClass("fadeOutBlobs");
+    $("#right-blob-mobile").addClass("fadeOutBlobs");
+    $("#left-blob-mobile").addClass("fadeOutBlobs");
     $("#navbar-container").css("box-shadow", "0 5px 5px grey");
     $(".w3-bar-item").each(function () {
       $(this).css("color", "black");
@@ -70,7 +73,13 @@ function navScroll() {
 
   } else {
     $("#navbar-container").css("box-shadow", "none");
-    $(".w3-bar-item").each(function () {
+    $("#leftBlob").removeClass("fadeOutBlobs");
+    $("#left-blob-mobile").removeClass("fadeOutBlobs");
+    $("#right-blob-mobile").removeClass("fadeOutBlobs");
+    $("#leftBlob").css("opacity", 1);
+    $("#right-blob-mobile").css("opacity", 1);
+    $("#left-blob-mobile").css("opacity", 1)
+    $(".w3-bar-item").each(function(){
       $(this).css("color", "gray");
       $("#tickets-btn").css("background-color", "#ffffff");
 
