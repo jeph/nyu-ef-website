@@ -14,7 +14,7 @@
     src: url(../fonts/gotham-book.otf);
 }
 
-p{
+.speakers-page-box p{
   width: 70%;
   font-family: Gotham-Book, Helvetica, sans-serif;
   text-align: center;
@@ -24,8 +24,8 @@ p{
   line-height: 1.8;
 }
 
-h3{
 
+h3{
   margin-top: 5%;
 }
 
@@ -47,14 +47,9 @@ h1{
   text-align: center;
 }
 
-h4{
-  color: #57068c;
-}
 
-h5{
-  font-weight: bold;
-  color: #1eb0bf;
-}
+
+
 
 @media only screen and (max-width: 768px) {
   main{
