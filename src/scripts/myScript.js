@@ -161,6 +161,11 @@ if ($("#speaker3") != null) {
   });
 }
 
+if ($("#speaker4") != null) {
+  $("#speaker4").on("click", function () {
+    window.location.replace("speaker4.html");
+  });
+}
 function grayscalePic(id) {
   $(id).toggleClass("w3-grayscale");
 }
