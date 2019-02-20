@@ -52,4 +52,58 @@ if (document.getElementById('100-speakers') != null) {
       roundtablesModal.style.display = "none";
     }
   });
+
+  const keynoteModal = document.getElementById('keynote-modal');
+  const keynoteButton = document.getElementById('keynote');
+  const span4 = document.getElementsByClassName("close")[3];
+
+  keynoteButton.onclick = function () {
+    keynoteModal.style.display = "block";
+  }
+
+  span4.onclick = function () {
+    keynoteModal.style.display = "none";
+  }
+
+  window.addEventListener("click", function (event) {
+    if (event.target === keynoteModal) {
+      keynoteModal.style.display = "none";
+    }
+  });
+
+  const workshopsModal = document.getElementById('workshops-modal');
+  const workshopsButton = document.getElementById('workshops');
+  const span5 = document.getElementsByClassName("close")[4];
+
+  workshopsButton.onclick = function () {
+    workshopsModal.style.display = "block";
+  }
+
+  span5.onclick = function () {
+    workshopsModal.style.display = "none";
+  }
+
+  window.addEventListener("click", function (event) {
+    if (event.target === workshopsModal) {
+      workshopsModal.style.display = "none";
+    }
+  });
+
+  const panelsModal = document.getElementById('panels-modal');
+  const panelsButton = document.getElementById('panels');
+  const span6 = document.getElementsByClassName("close")[5];
+
+  panelsButton.onclick = function () {
+    panelsModal.style.display = "block";
+  }
+
+  span6.onclick = function () {
+    panelsModal.style.display = "none";
+  }
+
+  window.addEventListener("click", function (event) {
+    if (event.target === panelsModal) {
+      panelsModal.style.display = "none";
+    }
+  });
 }
