@@ -99,6 +99,86 @@ body, html {
   z-index: 1;
 }
 
+.landing-logo {
+  z-index: 9001;
+}
+
+#leftBlob{
+  position:fixed !important;
+}
+
+#right-blob-mobile{
+  position:fixed !important;
+}
+
+#left-blob-mobile{
+  position:fixed !important;
+}
+
+.fadeOutBlobs{
+  -moz-animation-name: fadeOut;
+  -moz-animation-duration: 1s;
+  -moz-animation-fill-mode: forwards;
+  -webkit-animation-name: fadeOut;
+  -webkit-animation-duration: 1s;
+  -webkit-animation-fill-mode: forwards;
+  -o-animation-name: fadeOut;
+  -o-animation-duration: 1s;
+  -o-animation-fill-mode: forwards;
+  animation-name: fadeOut;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+}
+
+.fadeInBlobs{
+  animation-name: fadeIn;
+  animation-duration: 3s;
+  -moz-animation-name: fadeIn;
+  -moz-animation-duration: 3s;
+  -webkit-animation-name: fadeIn;
+  -webkit-animation-duration: 3s;
+  -o-animation-name: fadeIn;
+  -o-animation-duration: 3s;
+}
+
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+@-moz-keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+@-o-keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+@-webkit-keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+
+
 @keyframes fadeIn {
   from {
     opacity: 0;
@@ -155,6 +235,16 @@ button {
   padding-top: 40px;
 }
 
+.video-container{
+  margin-bottom: 10%;
+}
+
+#checkOutVideo{
+  color: #1eb0bf;
+  text-align: left;
+  padding-top: 15%;
+}
+
 #featuring {
   font-size: 2em;
 }
@@ -171,6 +261,12 @@ button {
 
 .video-container {
   padding: 10px 0 10px 0;
+}
+
+#checkOutVideo{
+  color: #1eb0bf;
+  text-align: left;
+  margin-right: 5%;
 }
 
 .aboutHighlightsPurp {
@@ -293,6 +389,49 @@ button {
 
 .speaker-container-hidden p {
   text-align: left;
+}
+
+.speakers-page-box{
+  /*border:1px solid black;*/
+  box-sizing: border-box;
+  min-height: 100px;
+  width: 33%;
+}
+
+.flex-container{
+  display: flex;
+}
+/*
+#panels-section{
+  float: left;
+}
+
+#roundtables-section{
+  float: left;
+}*/
+.blob-fade-out {
+  opacity: 0;
+  -moz-transition: all 700ms ease-out;
+  -webkit-transition: all 700ms ease-out;
+  -o-transition: all 700ms ease-out;
+  transition: all 700ms ease-out;
+  -moz-transform: translate3d(0px, 50px, 0px);
+  -webkit-transform: translate3d(0px, 50px, 0px);
+  -o-transform: translate(0px, 50px);
+  -ms-transform: translate(0px, 50px);
+  transform: translate3d(0px, 50, 0px);
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.out-view {
+  opacity: 1;
+  -moz-transform: translate3d(0px, 0px, 0px);
+  -webkit-transform: translate3d(0px, 0px, 0px);
+  -o-transform: translate(0px, 0px);
+  -ms-transform: translate(0px, 0px);
+  transform: translate3d(0px, 0px, 0px);
 }
 
 .animation-elements {
@@ -530,7 +669,6 @@ footer {
     width: 60%;
     height: auto;
   }
-
 }
 
 @media (max-aspect-ratio: 6/6) {
@@ -559,13 +697,16 @@ footer {
   #logo {
     width: 150% !important;
     margin-left: -20% !important;
-
   }
 
   footer {
     background: #57068c !important;
   }
 
+  .flex-container{
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 @media (max-aspect-ratio: 6/6) and (min-width: 350px) {
@@ -591,6 +732,19 @@ footer {
   .navbar-item, .w3-bar-item {
     width: 100% !important;
   }
+  .speakers-page-box{
+    border:1px solid black;
+    box-sizing: border-box;
+    width: 100%;
+    float: center;
+  }
+
+  #checkOutVideo{
+    padding-top: 0%;
+  }
+  .video-container iframe{
+    width: 100%;
+  }
 }
 
 @media (max-aspect-ratio: 6/6) and (max-width: 350px) {
@@ -615,6 +769,20 @@ footer {
   .navbar-item, .w3-bar-item {
     width: 100% !important;
   }
+  .speakers-page-box{
+    border:1px solid black;
+    box-sizing: border-box;
+    width: 100%;
+    float: center;
+  }
+
+  #checkOutVideo{
+    padding-top: 0%;
+  }
+  .video-container iframe{
+    width: 100%;
+  }
+
 }
 
 @media screen and  (max-aspect-ratio: 6/6) and (max-width: 509px) {
@@ -633,6 +801,14 @@ footer {
 
   .speaker-modal-header img {
     margin-bottom: 5%;
+  }
+
+  #checkOutVideo{
+    padding-top: 0%;
+  }
+
+  .video-container iframe{
+    width: 100%;
   }
 
   #logo {
@@ -736,7 +912,13 @@ footer {
 
   #lineSvg {
     display: none;
+  }
 
+  .speakers-page-box{
+    border:1px solid black;
+    box-sizing: border-box;
+    width: 100%;
+    float: center;
   }
 }
 
@@ -773,10 +955,16 @@ footer {
   #left-blob-mobile {
     width: 60%;
   }
+
+  .speakers-page-box{
+    border:1px solid black;
+    box-sizing: border-box;
+    width: 100%;
+    float: center;
+  }
 }
 
-@media screen and  (max-aspect-ratio: 6/6) and (max-width: 540px) {
-
+@media screen and (max-aspect-ratio: 6/6) and (max-width: 540px) {
   footer {
     color: white;
     padding: 5% !important;
@@ -806,8 +994,14 @@ footer {
   }
 
   #left-blob-mobile {
-
     width: 70%;
+  }
+
+  .speakers-page-box{
+    border:1px solid black;
+    box-sizing: border-box;
+    width: 100%;
+    float: center;
   }
 }
 
@@ -872,9 +1066,15 @@ footer {
     line-height: 50px;
   }
 
-
   #get-tickets-button {
     font-size: .3em;
+  }
+
+  .speakers-page-box{
+    border:1px solid black;
+    box-sizing: border-box;
+    width: 100%;
+    float: center;
   }
 }
 

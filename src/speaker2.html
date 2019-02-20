@@ -1,103 +1,153 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <!--suppress JSUnresolvedLibraryURL -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <!--suppress JSUnresolvedLibraryURL -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
-    <script src= "https://cdnjs.cloudflare.com/ajax/libs/animejs/2.2.0/anime.min.js"> </script>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
-    <link href="styles/style.css" rel="stylesheet" type="text/css">
-    <link href="styles/individualSpeakerStyle.css" rel="stylesheet" type="text/css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.2.0/anime.min.js"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+  <link href="styles/style.css" rel="stylesheet" type="text/css">
+  <link href="styles/individualSpeakerStyle.css" rel="stylesheet" type="text/css">
 
-    <title>NYU Entrepreneur's Festival</title>
+  <title>NYU Entrepreneurs Festival</title>
 
-    <!--Favicons-->
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#1eb0bf">
-    <meta name="msapplication-TileColor" content="#1eb0bf">
-    <meta name="theme-color" content="#ffffff">
+  <!--Favicons-->
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#1eb0bf">
+  <meta name="msapplication-TileColor" content="#1eb0bf">
+  <meta name="theme-color" content="#ffffff">
 
 
 </head>
 
-<body class= "loading">
-    <div id="navbar-container" class="w3-bar w3-white w3-top">
-      <div id="navbar-mobile">
-          <img class= "w3-bar-item" id="eighth-annual" src="images/8th-annual.png"  width = "1876px" height = "834px" alt="Whoops :(">
-          <a href="index.html#home" class="w3-bar-item w3-button w3-hide-small w3-hide-medium">Home</a>
-          <a href="index.html#about" class="w3-bar-item w3-button w3-hide-small w3-hide-medium" >About</a>
-          <a href="schedule.html" class="w3-bar-item w3-button w3-hide-small w3-hide-medium" >Schedule</a>
-          <a href="index.html#speakers" class="w3-bar-item w3-button w3-hide-small w3-hide-medium" >Speakers</a>
-          <a href="https://www.eventbrite.com/e/8th-annual-nyu-entrepreneurs-festival-tickets-53021626111"
-             class="w3-bar-item w3-button w3-hide-small w3-hide-medium">Tickets</a>
-          <a id = "hamburger" href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large" onclick="toggleFunction()">&#9776;</a>
-      </div>
+<body class="loading">
+<div id="navbar-container" class="w3-bar w3-white w3-top">
+  <div id="navbar-mobile">
+    <img class="w3-bar-item"
+         id="eighth-annual"
+         src="images/colorLogo.png"
+         width="1876px"
+         height= "834px"
+         alt="NYUegf Logo">
+    <a href="index.html#home" class="w3-bar-item w3-button w3-hide-small w3-hide-medium">Home</a>
+    <a href="index.html#about" class="w3-bar-item w3-button w3-hide-small w3-hide-medium">About</a>
+    <a href="schedule.html" class="w3-bar-item w3-button w3-hide-small w3-hide-medium">Schedule</a>
+    <a href="index.html#speakers" class="w3-bar-item w3-button w3-hide-small w3-hide-medium">Speakers</a>
+    <a href="https://www.eventbrite.com/e/8th-annual-nyu-entrepreneurs-festival-tickets-53021626111"
+       class="w3-bar-item w3-button w3-hide-small w3-hide-medium">Tickets</a>
+    <a id="hamburger"
+       href="javascript:void(0)"
+       class="w3-bar-item w3-button w3-right w3-hide-large"
+       onclick="toggleFunction()">&#9776;</a>
+  </div>
 
-      <div id="navbar" class="w3-bar-block w3-hide w3-hide-large">
-            <a href="index.html#home" class="navbar-item w3-bar-item w3-button" onclick="toggleFunction()">Home</a>
-            <a href="index.html#about" class="navbar-item w3-bar-item w3-button" onclick="toggleFunction()">About</a>
-            <a href="schedule.html" class="navbar-item w3-bar-item w3-button" onclick="toggleFunction()">Schedule</a>
-            <a href="index.html#speakers" class="navbar-item w3-bar-item w3-button" onclick="toggleFunction()">Speakers</a>
-            <a href="https://www.eventbrite.com/e/8th-annual-nyu-entrepreneurs-festival-tickets-53021626111"
-               class="navbar-item w3-bar-item w3-button" onclick="toggleFunction()">Tickets</a>
-      </div>
-
-
-    </div>
-
+  <div id="navbar" class="w3-bar-block w3-hide w3-hide-large">
+    <a href="index.html#home" class="navbar-item w3-bar-item w3-button" onclick="toggleFunction()">Home</a>
+    <a href="index.html#about" class="navbar-item w3-bar-item w3-button" onclick="toggleFunction()">About</a>
+    <a href="schedule.html" class="navbar-item w3-bar-item w3-button" onclick="toggleFunction()">Schedule</a>
+    <a href="index.html#speakers"
+       class="navbar-item w3-bar-item w3-button"
+       onclick="toggleFunction()">Speakers</a>
+    <a href="https://www.eventbrite.com/e/8th-annual-nyu-entrepreneurs-festival-tickets-53021626111"
+       class="navbar-item w3-bar-item w3-button" onclick="toggleFunction()">Tickets</a>
+  </div>
 
 
 </div>
 
-  <main>
 
-    <a href= "index.html#speakers">
-      <i class="fa fa-arrow-left" aria-hidden="true"></i>
+</div>
 
-      Return to speakers
-    </a>
+<main>
 
-    <h1>Speaker to be announced! Stay tuned!</h1>
+  <a href="speakers.html">
+    <i class="fa fa-arrow-left" aria-hidden="true"></i>
+
+    Go to Speakers Page
+  </a>
+
+  <div class="speaker-modal-header">
+
+    <img class="speakersPics"
+         src="images/speakersPics/nobu.jpg"
+         alt="Jeff Furman Profile Picture"
+         width="345"
+         height="477.67"><br>
+    <h3>Nobu Nakaguchi</h3>
+    <h5>Tisch ’10</h5>
+    <h4>Chief Design Officer and Co-Founder of Zola</h4>
+
+  </div>
+
+  <p style = "width: 90%; margin: auto; line-height: 2; font-size: 18px;">
+    Nobu Nakaguchi is the Chief Design Officer and Co-Founder of Zola, the wedding company
+    reinventing the wedding planning and registry experience by combining compassionate customer
+    service with modern tools and technology. Zola launched in 2013 and quickly became the fastest
+    growing wedding company in the country. Well over half a million couples have used the platform.
+    The company’s suite of tools includes: the premier all-in-one wedding registry, free wedding
+    websites, a guest-list manager, customizable checklist and beautiful save the dates and wedding
+    invitations. Zola also offers best-in-class apps for iPhone, iPad, Android, and Apple Watch.
+
+    Prior to Zola, Nobu worked in user experience design and product management for over 15 years.
+    He was the Senior Director of User Experience at Gilt Groupe, where he managed all of the UX
+    teams across the company and was responsible for the design of Gilt Taste, Gilt Home, Gilt iPad,
+    and Gilt iPhone. Prior to that, he focused on design and product strategies and solutions for a
+    variety of companies such as Salesforce.com, Match.com, HopStop, and Jetsetter. Nobu holds a
+    Master’s degree from New York University’s Interactive Telecommunications Program and a Bachelor
+    of Architecture degree from Carnegie Mellon University.
+  </p>
 
 
+</main>
 
-  </main>
-
-  <footer class="w3-center">
-    <div class="footer-grid-container">
-      <div class="footer-grid-item footerNoShow">
-        <h3>Contact Us</h3>
-        <a href= "https://www.facebook.com/NYUEntrepreneur/" target="_blank"><i class="fa fa-facebook-square w3-xxlarge" aria-hidden="true"></i></a>
-        <a href= "https://twitter.com/NYUEntrepreneur" target="_blank"><i class="fa fa-twitter-square w3-xxlarge" aria-hidden="true"></i></a>
-        <a href= "mailto:entrepreneur@nyu.edu" target="_blank"><i class="fa fa-envelope-square w3-xxlarge" aria-hidden="true"></i></a>
-        <h4>NYU Stern School of Business</h4>
-        <p>44 West 4th Street New York, NY 10012</p>
-      </div>
-
-      <div class="footer-grid-item poweredBy footerNoShow">
-        <h3>Powered By:</h3>
-        <img src = "images/footer/entrepreneurialInstitute.png" alt = "entrepreneurial institute logo" width= "500" height = "88">
-        <img src = "images/footer/NYUStern.png" alt = "NYU Stern logo" width= "500" height = "313"><br>
-        <img src = "images/footer/entrepreneursNetwork.png" alt = "Entrepreneurs Network logo" width= "500" height = "55">
-      </div>
-
+<footer class="w3-center">
+  <div class="footer-grid-container">
+    <div class="footer-grid-item footerNoShow">
+      <h3>Contact Us</h3>
+      <a href="https://www.facebook.com/NYUEntrepreneur/"
+         target="_blank"><i class="fa fa-facebook-square w3-xxlarge" aria-hidden="true"></i></a>
+      <a href="https://twitter.com/NYUEntrepreneur"
+         target="_blank"><i class="fa fa-twitter-square w3-xxlarge" aria-hidden="true"></i></a>
+      <a href="mailto:entrepreneur@nyu.edu"
+         target="_blank"><i class="fa fa-envelope-square w3-xxlarge" aria-hidden="true"></i></a>
+      <h4>NYU Stern School of Business</h4>
+      <p>44 West 4th Street New York, NY 10012</p>
     </div>
 
-    <div class="backToTop">
-      <a href= "#home"><img id="footer-logo" src="images/colorLogo.png" alt="Pretend there's something here :)"></a><br>
-      <a href="#home" id="backToTop" class="backToTop w3-btn">To The Top</a>
+    <div class="footer-grid-item poweredBy footerNoShow">
+      <h3>Powered By:</h3>
+      <img src="images/footer/entrepreneurialInstitute.png"
+           alt="entrepreneurial institute logo"
+           width="500"
+           height="88">
+      <img src="images/footer/NYUStern.png" alt="NYU Stern logo" width="500" height="313"><br>
+      <img src="images/footer/entrepreneursNetwork.png"
+           alt="Entrepreneurs Network logo"
+           width="500"
+           height="55">
     </div>
 
-  </footer>
+  </div>
 
-  <script src="scripts/w3Script.js"></script>
-  <script src="scripts/myScript.js"></script>
+  <div class="backToTop">
+    <a href="#home"><img id="footer-logo"
+                         src="images/colorLogo.png"
+                         alt="Pretend there's something here :)"></a><br>
+    <a href="#home" id="backToTop" class="backToTop w3-btn">To The Top</a>
+  </div>
+
+</footer>
+
+<script src="scripts/w3Script.js"></script>
+<script src="scripts/myScript.js"></script>
 
 </body>
 </html>

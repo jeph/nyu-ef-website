@@ -1,0 +1,48 @@
+.panel-speaker{
+  font-size: 1.3em;
+  color: #57068c;
+  font-weight: bold;
+}
+
+h3{
+  font-size: 1.8em;
+}
+
+
+/* .individualPanel{
+  margin-bottom: 10%;
+} */
+
+
+p{
+  margin-bottom: 0px !important;
+}
+
+.individualSpeaker{
+  margin-bottom: 3%;
+}
+.about-title{
+  margin-bottom: 5%;
+}
+
+.panel-seperator-line{
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+
+.fa-linkedin-square{
+  color: black;
+  font-size: 1.1em;
+}
+
+.fa-linkedin-square:hover{
+  color: #1eb0bf;
+}
+
+.panel-speaker-pic{
+  width: 5%;
+  margin-right: 5%;
+  margin-top: 2%;
+  /* border-radius: 50%; */
+  height: auto;
+}
