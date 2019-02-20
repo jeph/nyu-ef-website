@@ -99,6 +99,10 @@ body, html {
   z-index: 1;
 }
 
+.landing-logo {
+  z-index: 9001;
+}
+
 #leftBlob{
   position:fixed !important;
 }
