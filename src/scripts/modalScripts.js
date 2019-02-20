@@ -1,56 +1,55 @@
-if (document.getElementById('hackathon-modal') != null) {
-  const hackathonModal = document.getElementById('hackathon-modal');
-  const hackathonButton = document.getElementById('hackathon');
+if (document.getElementById('100-speakers') != null) {
+  const speakersModal = document.getElementById('100-speakers-modal');
+  const speakersButton = document.getElementById('100-speakers');
   const span1 = document.getElementsByClassName("close")[0];
 
-  hackathonButton.onclick = function () {
-    hackathonModal.style.display = "block";
+  speakersButton.onclick = function () {
+    speakersModal.style.display = "block";
   }
 
   span1.onclick = function () {
-    hackathonModal.style.display = "none";
+    speakersModal.style.display = "none";
   }
 
   window.addEventListener("click", function (event) {
-    if (event.target === hackathonModal) {
-      hackathonModal.style.display = "none";
+    if (event.target === speakersModal) {
+      speakersModal.style.display = "none";
     }
   });
 
-  //modal for second speaker
-  const pitchCompeitionModal = document.getElementById('pitch-competition-modal');
-  const pitchCompetitionButton = document.getElementById('pitch-competition');
+  const startupsModal = document.getElementById('60-startups-modal');
+  const startupsButton = document.getElementById('60-startups');
   const span2 = document.getElementsByClassName("close")[1];
 
-  pitchCompetitionButton.onclick = function () {
-    pitchCompeitionModal.style.display = "block";
+  startupsButton.onclick = function () {
+    startupsModal.style.display = "block";
   }
 
   span2.onclick = function () {
-    pitchCompeitionModal.style.display = "none";
+    startupsModal.style.display = "none";
   }
 
   window.addEventListener("click", function (event) {
-    if (event.target === pitchCompeitionModal) {
-      pitchCompeitionModal.style.display = "none";
+    if (event.target === startupsModal) {
+      startupsModal.style.display = "none";
     }
   });
 
-  const afterPartyModal = document.getElementById('after-party-modal');
-  const afterPartyButton = document.getElementById('after-party');
+  const roundtablesModal = document.getElementById('roundtables-modal');
+  const roundtablesButton = document.getElementById('roundtables');
   const span3 = document.getElementsByClassName("close")[2];
 
-  afterPartyButton.onclick = function () {
-    afterPartyModal.style.display = "block";
+  roundtablesButton.onclick = function () {
+    roundtablesModal.style.display = "block";
   }
 
   span3.onclick = function () {
-    afterPartyModal.style.display = "none";
+    roundtablesModal.style.display = "none";
   }
 
   window.addEventListener("click", function (event) {
-    if (event.target == afterPartyModal) {
-      afterPartyModal.style.display = "none";
+    if (event.target === roundtablesModal) {
+      roundtablesModal.style.display = "none";
     }
   });
 }
