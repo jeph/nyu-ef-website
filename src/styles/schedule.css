@@ -32,7 +32,7 @@ p {
 .title{
 	font-family: "Gotham-Book", Arial, sans-serif;
 	font-size: 1.35em;
-	padding-top: 3%;
+	padding-top: 4%;
 
 }
 
@@ -45,17 +45,16 @@ p {
 	font-size: 4rem;
 }
 .box {
-	color: #333333;
-    position: relative;
-    background: #1EB0BF;
-
-    /*border: 2px solid #1EB0BF;*/
-	height: 60px;
-	width: 50%;
-    right: 35px;
-    text-align: center;
-    margin-bottom: 5px;
-    border-radius: 2px;
+  color: #333333;
+  position: relative;
+  background: #1EB0BF;
+  /*border: 2px solid #1EB0BF;*/
+  height: 60px;
+  width: 50%;
+  right: 35px;
+  text-align: center;
+  margin-bottom: 5px;
+  border-radius: 2px;
 }
 
 .box:before {
@@ -1271,7 +1270,7 @@ main{
 .title{
   font-family: "Gotham-Book", Arial, sans-serif;
   font-size: 1.2em;
-  padding-top: 3%;
+  padding-top: 4%;
 
 }
   .box {
