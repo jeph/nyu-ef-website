@@ -66,7 +66,18 @@
          class="navbar-item w3-bar-item w3-button"
          onclick="toggleFunction()">About</a>
       <a href="schedule.html" class="navbar-item w3-bar-item w3-button" onclick="toggleFunction()">Schedule</a>
-      <a href="speakers.html" class="navbar-item w3-bar-item w3-button" onclick="toggleFunction()">Speakers</a>
+      <!-- <a href="speakers.html" class="navbar-item w3-bar-item w3-button" onclick="toggleFunction()">Speakers</a> -->
+      <a id= "speakersMobile" class="navbar-item w3-bar-item w3-button">
+        Speakers
+        <i id= "speakersDirection" class="fa fa-caret-down" style= "font-size: 18px;"></i>
+      </a>
+      <!-- href="speakers.html" -->
+        <div id="speakersPanelSlider" class="w3-container">
+          <p><a href= "speakers.html" class= "w3-bar-item">Keynote Speakers</a></p>
+          <p><a href= "panels.html" class= "w3-bar-item">Panels</a></p>
+          <p><a href= "roundtables.html" class= "w3-bar-item">Roundtables</a></p>
+          <p><a href= "workshops.html" class= "w3-bar-item">Workshops</a></p>
+        </div>
       <a href="sponsors.html" class="navbar-item w3-bar-item w3-button" onclick="toggleFunction()">Sponsors</a>
       <a href="tickets.html" class="navbar-item w3-bar-item w3-button" onclick="toggleFunction()">Tickets</a>
     </div>
@@ -213,7 +224,7 @@
 
 			<div class="event-item-info" id="rountable-info">
         <div class="event-description">
-      
+
           	<div class="event-details"><span class= "location">Location: </span>L411-413 44 West 4th Street, New York, NY 10012</div>
           	<div class="event-details"><span class= "innerTime">Time: </span>3:50pm-5:50pm</div>
         </div>
@@ -228,7 +239,7 @@
 	    			<div class="event-title"><span class= "eventTitleSpan">Making Your Own Place at the Table</span></div>
 	    			<div class="event-details">Joseph Schneier | Trusty.care</div>
 	    		</div>
-          
+
 	    		<div class="event-description">
     				<div class="event-title"><span class= "eventTitleSpan">How to Create a Media Buzz for Your Startup</span></div>
     				<div class="event-details">Sarah Ryan | W.R. Berkley Innovation Labs</div>
@@ -253,7 +264,7 @@
 
          <div class="event-description">
             <div class="event-title"><span class= "eventTitleSpan">Design Thinking</span></div>
-            <div class="event-details">Anne Laure Fayard | NYU Tandon</div> 
+            <div class="event-details">Anne Laure Fayard | NYU Tandon</div>
             <br>
           </div>
 
@@ -628,8 +639,8 @@
             <!--<div class="event-title"><span class= "eventTitleSpan">Currency/Tokenization</span></div>-->
             <div class="event-details">Matt Uretsky | McCarter & English</div>
           </div>
-          
-         
+
+
           <div class="event-description">
             <div class="event-title"><span class= "eventTitleSpan">Legal Issues for Startup Companies</span></div>
             <div class="event-details">Jared Sorin | McCarter & English</div>

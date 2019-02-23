@@ -8,6 +8,11 @@ $(document).ready(function () {
     createDropDown();
   }
 
+  if ($("#speakersMobile")){
+    slideMobilePanelSpeakers();
+  }
+
+
   $window.on('scroll', navScroll);
 
   const mq = window.matchMedia("(min-width: 900px)");
@@ -44,18 +49,16 @@ function createDropDown(){
     $("#speakersDropBtn").removeClass("dropStyle");
     $("#dropdown-content").addClass("w3-hide");
   });
-  // $("#dropdown-content").mouseout(function(){
-  //   $("#dropdown-content").addClass("w3-hide");
-  //   // $("#dropdown-content").css({
-  //   //   "display": "block",
-  //   //   "position": "absolute",
-  //   //   "top": sponsorsPos.bottom,
-  //   //   "left": sponsorsPos.left
-  //   //
-  //   // });
-  //
-  // });
 
+}
+
+function slideMobilePanelSpeakers(){
+  $("#speakersMobile").click(function(){
+    $("#speakersPanelSlider").slideToggle();
+    $("#speakersDirection").toggleClass("fa-caret-down");
+    $("#speakersDirection").toggleClass("fa-caret-up");
+
+  });
 }
 
 const $animation_elements = $('.animation-elements');

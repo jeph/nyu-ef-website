@@ -57,7 +57,18 @@
          class="navbar-item w3-bar-item w3-button"
          onclick="toggleFunction()">About</a>
       <a href="schedule.html" class="navbar-item w3-bar-item w3-button" onclick="toggleFunction()">Schedule</a>
-      <a href="speakers.html" class="navbar-item w3-bar-item w3-button" onclick="toggleFunction()">Speakers</a>
+      <!-- <a href="speakers.html" class="navbar-item w3-bar-item w3-button" onclick="toggleFunction()">Speakers</a> -->
+      <a id= "speakersMobile" class="navbar-item w3-bar-item w3-button">
+        Speakers
+        <i id= "speakersDirection" class="fa fa-caret-down" style= "font-size: 18px;"></i>
+      </a>
+      <!-- href="speakers.html" -->
+        <div id="speakersPanelSlider" class="w3-container">
+          <p><a href= "speakers.html" class= "w3-bar-item">Keynote Speakers</a></p>
+          <p><a href= "panels.html" class= "w3-bar-item">Panels</a></p>
+          <p><a href= "roundtables.html" class= "w3-bar-item">Roundtables</a></p>
+          <p><a href= "workshops.html" class= "w3-bar-item">Workshops</a></p>
+        </div>
       <a href="sponsors.html" class="navbar-item w3-bar-item w3-button" onclick="toggleFunction()">Sponsors</a>
       <a href="tickets.html" class="navbar-item w3-bar-item w3-button" onclick="toggleFunction()">Tickets</a>
     </div>
