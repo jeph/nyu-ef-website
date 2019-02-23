@@ -36,7 +36,7 @@ p {
 
 }
 
-.title1{ font-size: 1.35em; }
+.title1{ font-size: 1.25em;}
 
 .heading-title {
 	font-family: "Gotham-Rounded-Medium", Arial, sans-serif;
@@ -185,8 +185,10 @@ p {
 
 .eventTitleSpan{
   background-color: #1EB0BF;
+  border-radius: 2px;
   padding: 1%;
 }
+
 .event-details{
 	color: #333333;
 }
@@ -1274,6 +1276,7 @@ main{
   padding-top: 4%;
 
 }
+.title1{font-size: 1.1em;}
   .box {
     height: 55px;
 	  width: 290px;
