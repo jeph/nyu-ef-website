@@ -427,11 +427,13 @@ button {
   display: flex;
 }
 
-/*
 #panels-section{
-  float: left;
+  display: flex;
+  align-items: center;
+  flex-flow: column nowrap;
 }
 
+/*
 #roundtables-section{
   float: left;
 }*/
