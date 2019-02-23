@@ -27,32 +27,28 @@
   <meta name="theme-color" content="#ffffff">
 </head>
 <body class="loading">
-<div id="navbar-container" class="w3-bar w3-white w3-top" style="box-shadow: 0 5px 5px grey;">
-  <div id="navbar-mobile">
-    <a href="https://nyuef.org">
-      <img class="w3-bar-item"
-           id="eighth-annual"
-           src="images/colorLogo.png"
-           width="1876px"
-           height= "834px"
-           alt="NYUegf Logo">
-    </a>
-    <a href="index.html#home" class="w3-bar-item w3-button w3-hide-small w3-hide-medium">Home</a>
-    <a href="index.html#about" class="w3-bar-item w3-button w3-hide-small w3-hide-medium">About</a>
-    <a href="schedule.html"
-       class="w3-bar-item w3-button w3-hide-small w3-hide-medium">Schedule</a>
-    <a href="speakers.html"
-       class="w3-bar-item w3-button w3-hide-small w3-hide-medium">Speakers</a>
-    <a href="sponsors.html"
-       class="w3-bar-item w3-button w3-hide-small w3-hide-medium">Sponsors</a>
-    <a id="tickets-btn"
-       href="tickets.html"
-       class="w3-bar-item w3-button w3-hide-small w3-hide-medium">Tickets</a>
-    <a id="hamburger"
-       href="javascript:void(0)"
-       class="w3-bar-item w3-button w3-right w3-hide-large"
-       onclick="toggleFunction()">&#9776;</a>
-  </div>
+  <div id="navbar-container" class="w3-bar w3-white w3-top">
+    <div id="navbar-mobile">
+      <a href="https://nyuef.org">
+        <img class="w3-bar-item"
+             id="eighth-annual"
+             src="images/colorLogo.png"
+             width="1876px"
+             height= "834px"
+             alt="NYU Entrepreneurs Festival Logo">
+      </a>
+      <a href="index.html#home" class="w3-bar-item w3-button w3-hide-small w3-hide-medium">Home</a>
+      <a href="index.html#about" class="w3-bar-item w3-button w3-hide-small w3-hide-medium">About</a>
+      <a href="schedule.html" class="w3-bar-item w3-button w3-hide-small w3-hide-medium">Schedule</a>
+      <a id = "speakersDropBtn" href="speakers.html" class="w3-bar-item w3-button w3-hide-small w3-hide-medium">Speakers</a>
+      <a href="sponsors.html" class="w3-dropdown-hover w3-bar-item w3-button w3-hide-small w3-hide-medium">Sponsors</a>
+
+      <a id="tickets-btn" href="tickets.html" class="w3-bar-item w3-button w3-hide-small w3-hide-medium">Tickets</a>
+      <a id="hamburger"
+         href="javascript:void(0)"
+         class="w3-bar-item w3-button w3-right w3-hide-large"
+         onclick="toggleFunction()">&#9776;</a>
+    </div>
 
   <div id="navbar" class="w3-bar-block w3-hide w3-hide-large">
     <a href="index.html#home" class="navbar-item w3-bar-item w3-button" onclick="toggleFunction()">Home</a>
@@ -64,20 +60,26 @@
     <a href="sponsors.html" class="navbar-item w3-bar-item w3-button" onclick="toggleFunction()">Sponsors</a>
     <a href="tickets.html" class="navbar-item w3-bar-item w3-button" onclick="toggleFunction()">Tickets</a>
   </div>
-</div>
-<div style="width:100%; text-align:left;">
-  <iframe class="eventbrite-embed" src="https://eventbrite.com/tickets-external?eid=53021626111&ref=etckt"
-          frameborder="0"
-          height="1800px"
-          width="100%"
-          vspace="0"
-          hspace="0"
-          marginheight="5"
-          marginwidth="5"
-          scrolling="auto"
-          allowtransparency="true"></iframe>
+
 </div>
 
-<!-- <script src="scripts/ticketsScript.js"></script> -->
+<div id = "dropdown-content" class="dropdown-content w3-hide">
+  <a href="panels.html">Panels</a>
+  <a href="roundtables.html">Roundtables</a>
+  <a href="workshops.html">Workshops</a>
+</div>
+<iframe src="https://www.eventbrite.com/e/8th-annual-nyu-entrepreneurs-festival-tickets-53021626111"
+        frameborder="0"
+        height="100%"
+        width="100%"
+        vspace="0"
+        hspace="0"
+        marginheight="5"
+        marginwidth="5"
+        scrolling="auto"
+        allowtransparency="true">
+</iframe>
+
+<script src="scripts/myScript.js"></script>
 </body>
 </html>
