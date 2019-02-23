@@ -4,7 +4,7 @@
   <!--suppress JSUnresolvedLibraryURL -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
-  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.2.0/anime.min.js"></script> -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.2.0/anime.min.js"></script>
   <!-- <script src="blobs/js/anime.min.js"></script> -->
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -29,7 +29,7 @@
 <body class="loading">
 
 <div id="home" class="bgimg w3-display-container w3-center w3-text-black">
-  <div class="w3-display-middle w3-jumbo w3-animate-opacity landing-logo">
+  <div class="w3-display-middle w3-jumbo w3-animate-opacity">
     <img id="eightLogo" src="images/colorLogo.png" width="2060" height="1100">
     <img class="w3-center"
          id="logo"
@@ -54,13 +54,19 @@
              src="images/colorLogo.png"
              width="1876px"
              height= "834px"
-             alt="NYUegf Logo">
+             alt="NYU Entrepreneurs Festival Logo">
       </a>
       <a href="#home" class="w3-bar-item w3-button w3-hide-small w3-hide-medium">Home</a>
       <a href="#about" class="w3-bar-item w3-button w3-hide-small w3-hide-medium">About</a>
       <a href="schedule.html" class="w3-bar-item w3-button w3-hide-small w3-hide-medium">Schedule</a>
+<<<<<<< HEAD
         <a href="speakers.html" class="w3-bar-item w3-button w3-hide-small w3-hide-medium">Speakers</a>
       <a href="sponsors.html" class="w3-bar-item w3-button w3-hide-small w3-hide-medium">Sponsors</a>
+=======
+      <a id = "speakersDropBtn" href="speakers.html" class="w3-bar-item w3-button w3-hide-small w3-hide-medium">Speakers</a>
+      <a href="sponsors.html" class="w3-dropdown-hover w3-bar-item w3-button w3-hide-small w3-hide-medium">Sponsors</a>
+
+>>>>>>> e67a23d74ddd9c72ff31f928e1e8c3172181b6bf
       <a id="tickets-btn" href="tickets.html" class="w3-bar-item w3-button w3-hide-small w3-hide-medium">Tickets</a>
       <a id="hamburger"
          href="javascript:void(0)"
@@ -81,6 +87,14 @@
   </div>
 
 </div>
+
+<div id = "dropdown-content" class="dropdown-content w3-hide">
+  <a href="panels.html">Panels</a>
+  <a href="roundtables.html">Roundtables</a>
+  <a href="workshops.html">Workshops</a>
+</div>
+
+
 <main>
   <section id="about-section">
     <div class="w3-large">
@@ -168,7 +182,7 @@
                    alt="hackathon vector graphic"
                    width="1201"
                    height="1201">
-              <p>Idea Jam</p>
+              <p>Hackathon</p>
             </div>
             <div id="pitch-competition" class="w3-col s4 w3-center">
               <img src="images/vectorGraphics/pitchCompetition.png"
@@ -281,20 +295,8 @@
               </p>
             </div>
           </div>
-
-          <p class="aboutHighlightsPurp">All keynotes and panelists are NYU students, faculty, or
-            alumni entrepreneurs.</p>
-
-          <p>Admission provides unlimited access to all talks, panels, and roundtables, refreshments
-            on both days, and breakfast + lunch on Saturday.</p>
-
-          <h3>Stay tuned!</h3>
-
-          <p>This year's speakers and event topics will be released soon.</p>
-
         </div>
       </div>
-    </div>
     </div>
   </section>
   <br>
@@ -330,9 +332,9 @@
               <br><br>
               <h3 class="animation-elements">Jeff Furman</h3>
               <h5>NYU Stern '65 | NYU Law '68</h5>
-              <h4 class="animation-elements">Ben & Jerry’s Corporate Board Member, Emeritus
+              <h4 class="animation-elements">- Ben & Jerry’s Corporate Board Member, Emeritus
                 <br><br>
-                Ben & Jerry’s Foundation, Co-Founder & President
+                - Ben & Jerry’s Foundation, Co-Founder & President
               </h4>
               <p class="readMoreToolTip w3-text w3-tag" style="background-color: #57068c">Click to
                 read more</p>
@@ -351,7 +353,7 @@
 
               <img id="speaker2Profile"
                    class="speakersPics animation-elements nedalPic"
-                   src="images/speakerBlobs/nobuBlob.png"
+                   src="images/speakersPics/nobuBlob.png"
                    width="100%"
                    height="100%"
                    alt="mysterySpeaker2">
@@ -376,8 +378,8 @@
               <img id="speaker3Profile"
                    class="speakersPics animation-elements"
                    src="images/speakersPics/maryellisBunn.png"
-                   alt="Maryellis Bunn Profile Pic">
-              <br><br>
+                   alt="Maryellis Bunn Profile Pic" width="2008" height="2570">
+              <br><br><br>
               <h3 class="animation-elements">Maryellis Bunn</h3>
               <h5>CAS</h5>
               <h4 class="animation-elements">CEO and Founder of Museum of Ice Cream</h4>
@@ -407,9 +409,64 @@
                 read more</p>
             </div>
           </div>
+
+          <!-- <div id="first-modal" class="modal">
+            <div id="diAnnFull" class="modal-content">
+              <span class="close">&times;</span>
+
+              <div class="speaker-modal-header">
+
+                <img class="speakersPics" src="images/speakersPics/jeffFurman.png" alt="Jeff Furman Profile Picture" width= "345" height = "477.67"><br>
+                <h3>Jeff Furman</h3>
+                <h4>Founder of the Ben & Jerry's Foundation, Inc</h4>
+              </div>
+              <p>
+                Jeff served on the Ben & Jerry's' corporate board for almost 40 years, providing in house legal counsel and fostering many of the
+                company's social initiatives. He was the chairman of the Ben and Jerry's for 10 years. Jeff’s current role is B.O.D Emeritus, a role he
+                is happy to do alongside being President of the Ben & Jerry's Foundation. Jeff resides in Ithaca where he is the president of Social
+                Ventures, as well as a co-founder of the Community Dispute Resolution Center and a community micro-finance program.
+                In addition Jeff has also served on the local school board, working to eliminate race and socio-economic status as a predictor of
+                student success, and is an advisor to the Dorothy Cotton Institute, Alliance of Families For Justice, and the Economic Hardship Reporting
+                Project. Alongside his other commitments Jeff is on the Board of the Oakland Institute and is currently helping with the Poor
+                People’s Campaign as well as working on a voting rights project.
+              </p>
+            </div>
+          </div> -->
+
+          <!--
+          <div id="second-modal" class="modal">
+            <div id= "nedalFull" class="modal-content">
+              <span class="close">&times;</span>
+              <div class="speaker-modal-header">
+                <img class="speakersPics" src="images/speakersPics/nedalShami.jpg" alt="whoops :{"><br><br>
+                <h3>TBA</h3>
+                <h4>TBA</h4>
+              </div>
+              <p>
+                SECOND SPEAKER LONG BIO HERE
+              </p>
+            </div>
+          -->
+          <!--
+          </div>
+          <div id="third-modal" class="modal">
+            <div id= "tonyFull" class="modal-content">
+              <span class="close">&times;</span>
+              <div class="speaker-modal-header">
+
+
+                <img class="speakersPics" src="images/speakersPics/tonyShure.jpeg" alt="whoops :{"><br><br>
+                <h3>TBA</h3>
+                <h4>TBA</h4>
+              </div>
+              <p>
+                THIRD SPEAKER LONG BIO HERE
+              </p>
+            </div>
+          </div>
+      </div>-->
         </div>
       </div>
-    </div>
   </section>
 </main>
 
@@ -453,6 +510,43 @@
 
 <script src="scripts/w3Script.js"></script>
 <script src="scripts/myScript.js"></script>
+<<<<<<< HEAD
+<script>
+function myAccFunc() {
+var x = document.getElementById("demoAcc");
+if (x.className.indexOf("w3-show") == -1) {
+  x.className += " w3-show";
+  x.previousElementSibling.className += " w3-green";
+} else {
+  x.className = x.className.replace(" w3-show", "");
+  x.previousElementSibling.className =
+  x.previousElementSibling.className.replace(" w3-green", "");
+}
+}
+
+function myDropFunc() {
+var x = document.getElementById("demoDrop");
+if (x.className.indexOf("w3-show") == -1) {
+  x.className += " w3-show";
+  x.previousElementSibling.className += " w3-green";
+} else {
+  x.className = x.className.replace(" w3-show", "");
+  x.previousElementSibling.className =
+  x.previousElementSibling.className.replace(" w3-green", "");
+}
+}
+
+
+
+</script>
+=======
 <script src="scripts/modalScripts.js"></script>
+>>>>>>> refs/remotes/origin/master
+
+<!-- blobs scripts -->
+<!-- <script src="blobs/js/homeBlobs.js"></script> -->
+
+
+<!-- <script src="blobs/js/main.js"></script> -->
 </body>
 </html>
