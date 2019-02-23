@@ -321,6 +321,10 @@ button {
   height: auto;
 }
 
+.eventbrite-embed {
+  margin-top: 180px;
+}
+
 #speakers-container {
   text-align: left;
   position: relative;
