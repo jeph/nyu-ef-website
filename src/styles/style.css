@@ -84,6 +84,15 @@ body, html {
   text-align: center;
 }
 
+#sponsors-img{
+  display: block;
+  margin: auto;
+  max-width: 901.8px;
+  max-height: 954px;
+  width: 100%;
+  height: auto;
+}
+
 .close {
   color: #aaaaaa;
   float: right;
