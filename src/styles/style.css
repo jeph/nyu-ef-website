@@ -355,6 +355,10 @@ button {
   height: auto;
 }
 
+.eventbrite-embed {
+  margin-top: 180px;
+}
+
 #speakers-container {
   text-align: left;
   position: relative;
@@ -457,11 +461,13 @@ button {
   display: flex;
 }
 
-/*
 #panels-section{
-  float: left;
+  display: flex;
+  align-items: center;
+  flex-flow: column nowrap;
 }
 
+/*
 #roundtables-section{
   float: left;
 }*/

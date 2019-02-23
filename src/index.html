@@ -132,50 +132,61 @@
           </div>
 
           <h3 id="featuring" class="animation-elements">Events Include:</h3>
+          <p class="animation-elements w3-center">Click on the following to learn more!</p>
           <br>
           <div class="grid-container">
-            <h3 class="gridAlignStats">
-              <span class="statistics animation-elements grid-item">100+</span></h3>
-            <h3 class="grid-item">NYU Alumni Entrepreneur Speakers</h3>
+            <div id="100-speakers" class="event-grid-container clickable">
+              <h3 class="gridAlignStats">
+                <span class="statistics animation-elements grid-item">100+</span></h3>
+              <h3 class="grid-item">NYU Alumni Entrepreneur Speakers</h3>
+            </div>
+            <div id="60-startups" class="event-grid-container clickable">
+              <h3 class="gridAlignStats">
+                <span class="statistics animation-elements grid-item">60+</span></h3>
+              <h3 class="grid-item">NYU Startups on Display</h3>
+            </div>
 
-            <h3 class="gridAlignStats">
-              <span class="statistics animation-elements grid-item">60+</span></h3>
-            <h3 class="grid-item">NYU Startups on Display</h3>
+            <div id="roundtables" class="event-grid-container clickable">
+              <h3 class="gridAlignStats">
+                <span class="statistics animation-elements grid-item">21</span></h3>
+              <h3 class="grid-item">Startup Roundtables</h3>
+            </div>
 
-            <h3 class="gridAlignStats">
-              <span class="statistics animation-elements grid-item">21</span></h3>
-            <h3 class="grid-item">Startup Roundtables</h3>
+            <div id="keynote" class="event-grid-container clickable">
+              <h3 class="gridAlignStats">
+                <span class="statistics animation-elements grid-item">4</span></h3>
+              <h3 class="grid-item">Keynote Speakers</h3>
+            </div>
 
-            <h3 class="gridAlignStats">
-              <span class="statistics animation-elements grid-item">6</span></h3>
-            <h3 class="grid-item">Entrepreneur Panels</h3>
+            <div id="workshops" class="event-grid-container clickable">
+              <h3 class="gridAlignStats">
+                <span class="statistics animation-elements grid-item">3</span></h3>
+              <h3 class="grid-item">Founders Workshops</h3>
+            </div>
 
-            <h3 class="gridAlignStats">
-              <span class="statistics animation-elements grid-item">4</span></h3>
-            <h3 class="grid-item">Keynote Speakers</h3>
-
-            <h3 class="gridAlignStats">
-              <span class="statistics animation-elements grid-item">3</span></h3>
-            <h3 class="grid-item">Founders Workshops</h3>
-
+            <div id="panels" class="event-grid-container clickable">
+              <h3 class="gridAlignStats">
+                <span class="statistics animation-elements grid-item">6</span></h3>
+              <h3 class="grid-item">Entrepreneur Panels</h3>
+            </div>
           </div>
 
           <div class="animation-elements statsVectorGraphics w3-row">
-            <div class="w3-col s4 w3-center">
+            <div id="hackathon" class="w3-col s4 w3-center">
               <img src="images/vectorGraphics/hackathon.png"
                    alt="hackathon vector graphic"
                    width="1201"
                    height="1201">
               <p>Hackathon</p>
             </div>
-            <div class="w3-col s4 w3-center">
+            <div id="pitch-competition" class="w3-col s4 w3-center">
               <img src="images/vectorGraphics/pitchCompetition.png"
                    alt="pitch competition vector graphic"
                    width="1201"
                    height="1201">
               <p>Pitch Competition</p>
             </div>
-            <div class="w3-col s4 w3-center">
+            <div id="after-party" class="w3-col s4 w3-center">
               <img src="images/vectorGraphics/afterParty.png"
                    alt="after party vector graphic"
                    width="1201"
@@ -184,19 +195,103 @@
             </div>
           </div>
 
-          <p class="aboutHighlightsPurp">All keynotes and panelists are NYU students, faculty, or
-            alumni entrepreneurs.</p>
+          <div id="100-speakers-modal" class="modal">
+            <div id="diAnnFull" class="modal-content">
+              <span class="close">&times;</span>
+              <div class="speaker-modal-header">
+                <h3>100+</h3>
+                <h4>NYU Alumni Entrepreneur Speakers</h4>
+              </div>
+              <p>
+                Every speaker at the NYU Entrepreneurs Festival were in your shoes, from the
+                keynotes to panelists to sponsors.
+              </p>
+            </div>
+          </div>
 
-          <p>Admission provides unlimited access to all talks, panels, and roundtables, refreshments
-            on both days, and breakfast + lunch on Saturday.</p>
+          <div id="60-startups-modal" class="modal">
+            <div class="modal-content">
+              <span class="close">&times;</span>
+              <div class="speaker-modal-header">
+                <h3>60+</h3>
+                <h4>NYU Startups on Display</h4>
+              </div>
+              <p>
+                The NYU Entrepreneurs Festival was created to highlight the amazing startup
+                community in both the NYU undergrad and graduate schools. Recent alumni startups are
+                on display Friday and current students display on Saturday. Attendees will vote for
+                their favorite current student startups to compete in a pitch competition. Then, the
+                top 3 vote-getters will pitch their startups to a panel of VC’s for a chance to win
+                $1,000 for their startup.
+              </p>
+            </div>
+          </div>
 
-          <h3>Stay tuned!</h3>
+          <div id="roundtables-modal" class="modal">
+            <div class="modal-content">
+              <span class="close">&times;</span>
+              <div class="speaker-modal-header">
+                <h3>21</h3>
+                <h4>Startup Roundtables</h4>
+              </div>
+              <p>
+                Roundtables give you an opportunity to discuss specific topics of interest in a
+                small group that includes one industry professional and 8 to 10 other attendees.
+                Attendees are welcome to move from table to table to meet and learn from industry
+                professionals in all different fields.
+              </p>
+            </div>
+          </div>
 
-          <p>This year's speakers and event topics will be released soon.</p>
+          <div id="keynote-modal" class="modal">
+            <div class="modal-content">
+              <span class="close">&times;</span>
+              <div class="speaker-modal-header">
+                <h3>4</h3>
+                <h4>Keynote Speakers</h4>
+              </div>
+              <p>
+                Our headlining speakers discussing how they went from studying at NYU to being
+                founders and executives of some of the top companies in the world. See this year’s
+                keynote speakers below!
+              </p>
+            </div>
+          </div>
 
+          <div id="workshops-modal" class="modal">
+            <div class="modal-content">
+              <span class="close">&times;</span>
+              <div class="speaker-modal-header">
+                <h3>3</h3>
+                <h4>Founders Workshops</h4>
+              </div>
+              <p>
+                Whether your company is ready for launch or you’re just figuring out an idea,
+                Founder Workshops will help you figure out what to do next. These seminars — led by
+                one founder or industry professional — let you learn about the different stages of
+                entrepreneurship and give you a chance to get specific questions answered in a
+                smaller classroom setting.
+              </p>
+            </div>
+          </div>
+
+          <div id="panels-modal" class="modal">
+            <div class="modal-content">
+              <span class="close">&times;</span>
+              <div class="speaker-modal-header">
+                <h3>6</h3>
+                <h4>Entrepreneur Panels</h4>
+              </div>
+              <p>
+                Panels are moderated discussions with founders, VC’s, and other industry
+                professionals about their specific areas of interest. Interested in the food
+                industry? Hear from NYU alumni already in the field. Want to know what venture
+                capitalists are looking for? Ask them a question at the end during a Q&A.
+              </p>
+            </div>
+          </div>
         </div>
       </div>
-    </div>
     </div>
   </section>
   <br>
@@ -278,7 +373,7 @@
               <img id="speaker3Profile"
                    class="speakersPics animation-elements"
                    src="images/speakersPics/maryellisBunn.png"
-                   alt="Maryellis Bunn Profile Pic" width= "2008" height = "2570">
+                   alt="Maryellis Bunn Profile Pic" width="2008" height="2570">
               <br><br><br>
               <h3 class="animation-elements">Maryellis Bunn</h3>
               <h5>CAS</h5>
@@ -410,6 +505,7 @@
 
 <script src="scripts/w3Script.js"></script>
 <script src="scripts/myScript.js"></script>
+<<<<<<< HEAD
 <script>
 function myAccFunc() {
 var x = document.getElementById("demoAcc");
@@ -438,6 +534,9 @@ if (x.className.indexOf("w3-show") == -1) {
 
 
 </script>
+=======
+<script src="scripts/modalScripts.js"></script>
+>>>>>>> refs/remotes/origin/master
 
 <!-- blobs scripts -->
 <!-- <script src="blobs/js/homeBlobs.js"></script> -->
