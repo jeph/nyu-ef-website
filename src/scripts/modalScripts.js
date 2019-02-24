@@ -106,4 +106,58 @@ if (document.getElementById('100-speakers') != null) {
       panelsModal.style.display = "none";
     }
   });
+
+  const ideaJamModal = document.getElementById('idea-jam-modal');
+  const ideaJamButton = document.getElementById('idea-jam');
+  const span7 = document.getElementsByClassName("close")[6];
+
+  ideaJamButton.onclick = function () {
+    ideaJamModal.style.display = "block";
+  }
+
+  span7.onclick = function () {
+    ideaJamModal.style.display = "none";
+  }
+
+  window.addEventListener("click", function (event) {
+    if (event.target === ideaJamModal) {
+      ideaJamModal.style.display = "none";
+    }
+  });
+
+  const pitchCompetitionModal = document.getElementById('pitch-competition-modal');
+  const pitchCompetitionButton = document.getElementById('pitch-competition');
+  const span8 = document.getElementsByClassName("close")[7];
+
+  pitchCompetitionButton.onclick = function () {
+    pitchCompetitionModal.style.display = "block";
+  }
+
+  span8.onclick = function () {
+    pitchCompetitionModal.style.display = "none";
+  }
+
+  window.addEventListener("click", function (event) {
+    if (event.target === pitchCompetitionModal) {
+      pitchCompetitionModal.style.display = "none";
+    }
+  });
+
+  const afterPartyModal = document.getElementById('after-party-modal');
+  const afterParty = document.getElementById('after-party');
+  const span9 = document.getElementsByClassName("close")[8];
+
+  afterParty.onclick = function () {
+    afterPartyModal.style.display = "block";
+  }
+
+  span9.onclick = function () {
+    afterPartyModal.style.display = "none";
+  }
+
+  window.addEventListener("click", function (event) {
+    if (event.target === afterPartyModal) {
+      afterPartyModal.style.display = "none";
+    }
+  });
 }

@@ -481,10 +481,6 @@ button {
   flex-flow: column nowrap;
 }
 
-/*
-#roundtables-section{
-  float: left;
-}*/
 .blob-fade-out {
   opacity: 0;
   -moz-transition: all 700ms ease-out;
