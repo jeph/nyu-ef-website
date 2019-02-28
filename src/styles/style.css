@@ -21,7 +21,13 @@ p, a {
   font-family: "Gotham-Book", Arial, sans-serif;
 }
 
+.workshops-img{
+  float: left;
+}
 
+.workshop-section{
+  overflow: auto;
+}
 #speakersPanelSlider{
   padding-left: 5%;
   text-align: left;
