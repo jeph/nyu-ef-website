@@ -195,7 +195,7 @@ p {
 	display: none;
 	/*font-size: 1em;*/
 	position: relative;
-	right: 5%;
+	right: 3%;
   width: 80%;
   padding: 1%;
 }
@@ -823,6 +823,127 @@ footer img{
 
 }
 
+/*Large Screens */
+
+
+@media only screen  and (min-width : 1600px) and (max-width: 1999px) {
+
+  .title {
+    font-family: "Gotham-Book", Arial, sans-serif;
+    font-size: 1.6em;
+    padding-top: 2.5%;
+  }
+
+  .title1{ font-size: 1.5em;}
+
+  .box {
+    color: #333333;
+    position: relative;
+    background: #1EB0BF;
+    height: 70px;
+    width: 45%;
+    right: 35px;
+    text-align: center;
+    margin-bottom: 5px;
+    border-radius: 2px;
+  }
+
+  .event-item-info {
+    display: none;
+    position: relative;
+    right: 10px;
+    width: 150%;
+  }
+
+  .eventTitleSpan{
+    background-color: #1EB0BF;
+    border-radius: 2px;
+    padding: 0.5%;
+}
+
+  .event-title {
+    color: #333333;
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-top: 1%;
+    margin-bottom: 1%;
+  }
+
+
+  .speaker {
+    position: relative;
+    left: 2%;
+    margin-bottom: 2%;
+  }
+
+}
+
+@media only screen  and (min-width : 2000px) {
+
+  .title {
+    font-family: "Gotham-Book", Arial, sans-serif;
+    font-size: 2em;
+    padding-top: 2%;
+  }
+
+  .title1{ font-size: 2em;}
+
+  .box {
+    color: #333333;
+    position: relative;
+    background: #1EB0BF;
+    height: 70px;
+    width: 45%;
+    right: 35px;
+    text-align: center;
+    margin-bottom: 5px;
+    border-radius: 2px;
+  }
+
+  .event-item-info {
+    display: none;
+    position: relative;
+    right: 10px;
+    width: 150%;
+  }
+
+  .eventTitleSpan{
+    background-color: #1EB0BF;
+    border-radius: 2px;
+    padding: 0.5%;
+}
+
+  .event-title {
+    color: #333333;
+    font-size: 1.5em;
+      font-weight: bold;
+    margin-top: 1%;
+    margin-bottom: 1%;
+  }
+
+
+  .speaker {
+    position: relative;
+    left: 2%;
+    margin-bottom: 1%;
+  }
+
+}
+
+/* Giant Screens */
+
+/*
+@media(min-device-width:1600px){
+  html{
+    -moz-transform: scale(0.75, 0.75);
+    zoom: 0.75;
+    zoom: 75%;
+  }
+
+}
+
+
+*/
 
 @media screen and (min-aspect-ratio: 7/7) and (min-width: 1350px){
 
