@@ -83,6 +83,10 @@ p {
   border-radius: 2px;
 }
 
+.large-box{
+  height: 90px !important;
+}
+
 .box:before {
     content:'';
     position: absolute;
@@ -185,6 +189,7 @@ p {
 /* event details */
 
 .event-description {
+  /* padding-top: 6%; */
 	font-family: "Gotham-Book", Arial, sans-serif;
     /*font-weight: bold;*/
 	padding-bottom:10px;
@@ -232,6 +237,9 @@ p {
   margin-bottom: 10%;
 }
 
+.space-top{
+  margin-top: 2%;
+}
 .location, .innerTime{
   background-color: #57068C;
   color: white;
