@@ -569,6 +569,10 @@ footer {
   margin-right: auto;
 }
 
+footer h4{
+  padding-top: 5%;
+  font-size: 1.5em;
+}
 #footer-logo:hover {
   animation-name: slightBounce;
   animation-duration: 1s;
