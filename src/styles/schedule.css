@@ -394,8 +394,8 @@ footer img{
   }
 
   .box {
-    height: 50px;
-    width: 250px;
+    height: 55px;
+    width: 270px;
     right: 40px;
     margin-bottom: 3px;
     border-radius: 2px;
@@ -1426,14 +1426,14 @@ main{
 
 .title{
   font-family: "Gotham-Book", Arial, sans-serif;
-  font-size: 1.2em;
+  font-size: 1.1em;
   padding-top: 4%;
 
 }
-.title1{font-size: 1.1em;}
+.title1{font-size: 1em;}
   .box {
     height: 55px;
-	  width: 290px;
+	  width: 350px;
     right: 40px;
     margin-bottom: 3px;
     border-radius: 2px;
