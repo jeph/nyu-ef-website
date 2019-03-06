@@ -63,6 +63,12 @@ p {
 
 .title1{ font-size: 1.25em;}
 
+.show-on-mobile{
+  display: none;
+  font-family: "Gotham-Book", Arial, sans-serif;
+  padding-bottom: 5%;
+
+}
 .heading-title {
 	font-family: "Gotham-Rounded-Medium", Arial, sans-serif;
 	font-size: 2.5em;
@@ -402,6 +408,10 @@ footer img{
     background: #1EB0BF;
 
   }
+
+  .show-on-mobile{
+  display: block;
+}
 
   .box:before {
   	top: 30%;
@@ -1423,6 +1433,10 @@ main{
   	padding-top: 0%;
 
   }
+
+  .show-on-mobile{
+  display: block;
+}
 
 .title{
   font-family: "Gotham-Book", Arial, sans-serif;
