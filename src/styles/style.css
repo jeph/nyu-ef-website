@@ -556,6 +556,9 @@ footer {
   padding: 10%;
 }
 
+.sponsorship{
+  font-size: 12px;
+}
 .purpleBackFooter {
   background: #57068c !important;
   transition: background 1s;
