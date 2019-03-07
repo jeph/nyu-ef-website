@@ -1,0 +1,21 @@
+h1{
+  text-align: center;
+  margin-bottom: 5%;
+}
+
+@media (max-width: 800px) {
+  body{
+    text-align: center;
+  }
+
+  .workshopImg{
+    width: 80%;
+    height: auto;
+    margin-left: 10%;
+  }
+
+  h1{
+    font-size: 3em !important;
+    margin-top: 20%;
+  }
+}
