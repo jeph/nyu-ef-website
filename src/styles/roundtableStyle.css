@@ -1,0 +1,26 @@
+.individualDays{
+  margin-left: 13%;
+  margin-right: auto;
+}
+
+h3{
+  color: #57068c;
+}
+
+h1{
+  margin-bottom: 5%;
+}
+
+
+@media (max-width: 800px) {
+
+  .individualDays{
+    margin-left: 10% !important;
+
+  }
+
+  h1{
+    font-size: 3em !important;
+    margin-top: 20%;
+  }
+}
