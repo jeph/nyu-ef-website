@@ -570,6 +570,23 @@ footer {
   -o-transition: background 1s;
 }
 
+.shamelessPlug{
+  font-size: .7em;
+}
+
+.shamelessPlug a:link{
+  color: white;
+}
+
+.shamelessPlug a:hover{
+  color: #1eb0bf !important;
+}
+
+.shamelessPlug a:visited{
+  color: white;
+}
+
+
 #footer-logo {
   width: 5%;
   margin-left: auto;
